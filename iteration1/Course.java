@@ -156,4 +156,3 @@ public class Course {
                 '}';
     }
 }
-    student.getCurrentSemester().getCourses().add(course.getCourseCode(),int_random);
