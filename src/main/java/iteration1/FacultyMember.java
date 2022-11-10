@@ -14,7 +14,7 @@ public abstract class FacultyMember {
 		
 	}
 
-	public abstract void gradeStudents();
+	public abstract void gradeStudents(Student student, Course course);
 	
 	public String getName() {
 		return name;
