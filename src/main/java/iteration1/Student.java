@@ -1,5 +1,6 @@
 package iteration1;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -7,6 +8,11 @@ public class Student {
     private String id;
     private String name;
     private Integer term;
+
+    private ArrayList<Course> enrolledCourses=new ArrayList<>();
+
+    private StudentSemester studentSemester = new StudentSemester(term);
+
 
     public Student(String id, String name, Integer term) {
         this.id = id;
@@ -36,6 +42,22 @@ public class Student {
 
     public void setTerm(Integer term) {
         this.term = term;
+    }
+
+    public ArrayList<Course> getEnrolledCourses() {
+        return enrolledCourses;
+    }
+
+    public void setEnrolledCourses(ArrayList<Course> enrolledCourses) {
+        this.enrolledCourses = enrolledCourses;
+    }
+
+    public StudentSemester getStudentSemester() {
+        return studentSemester;
+    }
+
+    public void setStudentSemester(StudentSemester studentSemester) {
+        this.studentSemester = studentSemester;
     }
 
     @Override
