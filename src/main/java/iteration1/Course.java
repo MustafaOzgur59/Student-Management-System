@@ -1,4 +1,4 @@
-package src.main.java.iteration1;
+package iteration1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -22,13 +22,13 @@ public class Course {
     @JsonProperty("quota")
     private Integer quota;
     @JsonProperty("course sessions")
-    private ArrayList<Session> courseSessions;
+    private ArrayList<Section> courseSessions;
     @JsonProperty("lab sessions")
-    private ArrayList<Session> labSessions;
+    private ArrayList<Section> labSessions;
     private ArrayList<String> prerequisiteTo;
 
     public Course(String name, String code, Integer term, Integer year, Integer credit,
-                  Integer quota, ArrayList<String> prerequisiteTo, ArrayList<Session> courseSessions, ArrayList<Session> labSessions) {
+                  Integer quota, ArrayList<String> prerequisiteTo, ArrayList<Section> courseSessions, ArrayList<Section> labSessions) {
         this.name = name;
         this.code = code;
         this.term = term;
@@ -112,19 +112,19 @@ public class Course {
         this.prerequisiteTo = prerequisiteTo;
     }
 
-    public ArrayList<Session> getCourseSessions() {
+    public ArrayList<Section> getCourseSessions() {
         return courseSessions;
     }
 
-    public void setCourseSessions(ArrayList<Session> courseSessions) {
+    public void setCourseSessions(ArrayList<Section> courseSessions) {
         this.courseSessions = courseSessions;
     }
 
-    public ArrayList<Session> getLabSessions() {
+    public ArrayList<Section> getLabSessions() {
         return labSessions;
     }
 
-    public void setLabSessions(ArrayList<Session> labSessions) {
+    public void setLabSessions(ArrayList<Section> labSessions) {
         this.labSessions = labSessions;
     }
 

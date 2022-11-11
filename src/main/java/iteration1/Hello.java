@@ -1,4 +1,4 @@
-package src.main.java.iteration1;
+package iteration1;
 
 public class Hello {
     public static void main(String[] args) {
