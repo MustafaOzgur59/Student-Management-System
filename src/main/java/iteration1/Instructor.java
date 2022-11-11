@@ -15,7 +15,7 @@ public class Instructor extends FacultyMember {
 		
 		Random rand = new Random();
 		float int_random = (float)rand.nextInt(9)/2;
-		student.getCurrentSemester().getCourses().add(course.getCourseCode(),int_random);	
+		student.getStudentSemester().getCourses().put(course,int_random);
 	}
 
 	public ArrayList<Course> getCoursesOfferedList() {
