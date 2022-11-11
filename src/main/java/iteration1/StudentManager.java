@@ -10,8 +10,14 @@ public class StudentManager {
     public StudentManager() {
         studentList = new ArrayList<>();
     }
-    public void addStudent(Student student,Course course) {
-        course.getEnrolledStudents().add(student);
+    public boolean addStudent(Student student,Course course) {
+        if(course.getQuota() > course.getEnrolledStudents().size()) {
+            course.getEnrolledStudents().add(student);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public boolean searchStudent(Student student,Course course) {
         return course.getEnrolledStudents().contains(student);
