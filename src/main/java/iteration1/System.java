@@ -1,15 +1,19 @@
 package iteration1;
 
+import java.io.IOException;
+
 public class System {
     private StudentManager studentManager = new StudentManager();
 
     private JsonParser parser = new JsonParser();
 
+    private Curriculum curriculum=new Curriculum();
+
+    private StudentGenerator studentGenerator = new StudentGenerator();
 
 
-    public System(StudentManager studentManager, JsonParser parser) {
-        this.studentManager = studentManager;
-        this.parser = parser;
+    public System() {
+
     }
 
     public StudentManager getStudentManager() {
@@ -26,5 +30,18 @@ public class System {
 
     public void setParser(JsonParser parser) {
         this.parser = parser;
+    }
+
+    public Curriculum getCurriculum() {
+        return curriculum;
+    }
+
+    public void loadStudentAndCourses() throws IOException {
+        this.parser.parseCourseObjects(this.curriculum);
+        //this.studentGenerator.generateStudents();
+    }
+
+    public void setCurriculum(Curriculum curriculum) {
+        this.curriculum = curriculum;
     }
 }

@@ -10,11 +10,12 @@ import java.lang.System;
 public class JsonParser {
     private final ObjectMapper mapper = new ObjectMapper();
     
-    public ArrayList<Course> parseCourseObjects() throws IOException {
+    public ArrayList<Course> parseCourseObjects(Curriculum curriculum) throws IOException {
         String jsonString = new String(Files.readAllBytes(Path.of("./src/main/java/courses/CourseFirstYear.json")));
         Course[] courses = mapper.readValue(jsonString, Course[].class);
         ArrayList<Course> courseList = new ArrayList<>(Arrays.asList(courses));
         for (Course c : courseList){
+            curriculum.getCOURSES()[c.getTerm()].add(c);
             System.out.println(c.toString());
         }
         return  courseList;

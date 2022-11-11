@@ -11,4 +11,8 @@ public class Curriculum {
            COURSES[i] = new ArrayList<>();
        }
     }
+
+    public ArrayList<Course>[] getCOURSES() {
+        return COURSES;
+    }
 }
