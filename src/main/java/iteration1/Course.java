@@ -1,12 +1,13 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-//@JsonIgnoreProperties({"course sessions","lab sessions"})
+@JsonIgnoreProperties(value={"enrolledStudents"},allowGetters = true)
 @JsonPropertyOrder({"name","code","term","year","credit","quota","course sessions","lab sessions", "prerequisiteTo"})
 public class Course {
     @JsonProperty("name")
@@ -25,6 +26,7 @@ public class Course {
     private ArrayList<Section> courseSessions;
     @JsonProperty("lab sessions")
     private ArrayList<Section> labSessions;
+    @JsonProperty("prerequisiteTo")
     private ArrayList<String> prerequisiteTo;
     private ArrayList<Student> enrolledStudents = new ArrayList<>();
 
