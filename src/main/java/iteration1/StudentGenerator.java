@@ -12,7 +12,7 @@ public class StudentGenerator {
     ArrayList<Student> studentList= new ArrayList<>();
 
     public ArrayList<Student> generateStudents() throws IOException {
-        BufferedReader nameReader = new BufferedReader(new FileReader("C:\\Users\\Mustafa\\Desktop\\deneme\\CSE3063F22P1_GRP4\\src\\main\\java\\iteration1\\names.txt"));
+        BufferedReader nameReader = new BufferedReader(new FileReader("./src/main/java/iteration1/names.txt"));
         for (int i=1;i<=70;i++){
             String name = nameReader.readLine();
             studentList.add(new Student(this.generateId( 1 , i),
