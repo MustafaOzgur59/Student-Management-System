@@ -12,7 +12,7 @@ public class Student {
     private ArrayList<Course> enrolledCourses=new ArrayList<>();
 
     private StudentSemester studentSemester = new StudentSemester(term);
-
+    private Transcript transcript = new Transcript();
 
     public Student(String id, String name, Integer term) {
         this.id = id;
