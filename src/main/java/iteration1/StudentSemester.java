@@ -31,23 +31,32 @@ public class StudentSemester {
 
     public void calculateCredit() {
         totalCredit = 0;
-        for(int i = 0; i < courses.size(); i++){
-            totalCredit += courses.getCredit();
+        for(Course key : courses.keySet()){
+            totalCredit += key.getCredit();
         }
     }
 
     public void calculateLetterGrade() {
         for(Course key : courses.keySet()){
-            switch(courses.get((Course)key)){
-                case 0: letterGrades.add("FF");
-                case 0.5: letterGrades.add("FD");
-                case 1: letterGrades.add("DD");
-                case 1.5: letterGrades.add("DC");
-                case 2: letterGrades.add("CC");
-                case 2.5: letterGrades.add("CB");
-                case 3: letterGrades.add("BB");
-                case 3.5: letterGrades.add("BA");
-                case 4: letterGrades.add("AA");
+            Float aFloat = courses.get(key);
+            if (aFloat == 0) {
+                letterGrades.add("FF");
+            } else if (aFloat == 0.5) {
+                letterGrades.add("FD");
+            } else if (aFloat == 1) {
+                letterGrades.add("DD");
+            } else if (aFloat == 1.5) {
+                letterGrades.add("DC");
+            } else if (aFloat == 2) {
+                letterGrades.add("CC");
+            } else if (aFloat == 2.5) {
+                letterGrades.add("CB");
+            } else if (aFloat == 3) {
+                letterGrades.add("BB");
+            } else if (aFloat == 3.5) {
+                letterGrades.add("BA");
+            } else if (aFloat == 4) {
+                letterGrades.add("AA");
             }
         }
 

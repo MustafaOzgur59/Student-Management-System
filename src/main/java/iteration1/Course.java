@@ -26,6 +26,7 @@ public class Course {
     @JsonProperty("lab sessions")
     private ArrayList<Section> labSessions;
     private ArrayList<String> prerequisiteTo;
+    private ArrayList<Student> enrolledStudents = new ArrayList<>();
 
     public Course(String name, String code, Integer term, Integer year, Integer credit,
                   Integer quota, ArrayList<String> prerequisiteTo, ArrayList<Section> courseSessions, ArrayList<Section> labSessions) {
@@ -55,6 +56,10 @@ public class Course {
         this.courseSessions = courseSessions;
         this.labSessions = labSessions;
     }*/
+
+    public ArrayList<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
 
     public String getName() {
         return name;
