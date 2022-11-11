@@ -8,8 +8,7 @@ public class Transcript {
     private List<StudentSemester> semesters;
     private Integer cumulativeCredit;
 
-    public Transcript (Float gpa) {
-        this.gpa = gpa;
+    public Transcript () {
         semesters = new ArrayList<StudentSemester>();
     }
 
