@@ -1,17 +1,27 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@JsonIgnoreProperties(value={"enrolledCourses"},allowGetters = true)
+@JsonPropertyOrder({"id","name","term","transcript"})
 public class Student {
+    @JsonProperty("id")
     private String id;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("term")
     private Integer term;
 
     private ArrayList<Course> enrolledCourses=new ArrayList<>();
 
     private StudentSemester studentSemester;
+    @JsonProperty("transcript")
     private Transcript transcript = new Transcript();
 
     public Student(String id, String name, Integer term) {
@@ -19,6 +29,19 @@ public class Student {
         this.name = name;
         this.term = term;
         studentSemester = new StudentSemester(term);
+    }
+
+    public Student(String id, String name, Integer term, ArrayList<Course> enrolledCourses,
+                   StudentSemester studentSemester, Transcript transcript) {
+        this.id = id;
+        this.name = name;
+        this.term = term;
+        this.enrolledCourses = enrolledCourses;
+        this.studentSemester = studentSemester;
+        this.transcript = transcript;
+    }
+
+    public Student() {
     }
 
     public String getId() {
@@ -80,6 +103,9 @@ public class Student {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", term=" + term +
+                ", enrolledCourses=" + enrolledCourses +
+                ", studentSemester=" + studentSemester +
+                ", transcript=" + transcript +
                 '}';
     }
 }
