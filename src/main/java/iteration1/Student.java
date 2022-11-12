@@ -100,7 +100,9 @@ public class Student {
     }
 
     public void enroll(ArrayList<Course> availableCourses){
-        advisor.enrollStudent(availableCourses,this);
+        for(int i = 0;i < availableCourses.size();i++) {
+            advisor.enrollStudent(availableCourses.get(i), this);
+        }
     }
 
     @Override
