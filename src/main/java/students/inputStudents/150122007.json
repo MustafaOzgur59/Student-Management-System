@@ -1,10 +1,11 @@
 {
-  {
     "name": "James Bond",
     "id": "150122007",
     "term": 1,
     "transcript": {
-      "semesters": [ ]
+      "semesters": [
+
+      ]
 
     }
-  }
+}
