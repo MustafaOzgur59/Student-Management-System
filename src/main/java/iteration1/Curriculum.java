@@ -15,4 +15,7 @@ public class Curriculum {
     public ArrayList<Course>[] getCOURSES() {
         return COURSES;
     }
+
+
+
 }

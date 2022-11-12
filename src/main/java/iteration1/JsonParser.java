@@ -27,7 +27,7 @@ public class JsonParser {
 
     public ArrayList<Student> parseStudents() throws IOException {
         ArrayList<Student> studentList = new ArrayList<>();
-        File dirPath = new File("./src/main/java/students/");
+        File dirPath = new File("./src/main/java/students/inputStudents");
         File[] studentFiles = dirPath.listFiles();
         assert studentFiles != null;
         for (File f : studentFiles){
@@ -47,4 +47,7 @@ public class JsonParser {
     /*TODO
     Parse the resulting outputs from the student objects into json files
     */
+    public void outputStudentObjects(){
+
+    }
 }

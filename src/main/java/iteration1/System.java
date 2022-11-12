@@ -1,6 +1,7 @@
 package iteration1;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class System {
     private StudentManager studentManager = new StudentManager();
@@ -40,6 +41,23 @@ public class System {
         this.parser.parseCourseObjects(this.curriculum);
         this.parser.parseStudents();
         //this.studentGenerator.generateStudents();
+    }
+
+    public void beginSimulation(){
+
+        for (Student student : studentManager.getStudentList()){
+            ArrayList<Course> availableCourses = getAvailableCourses(student);
+            student.enroll(availableCourses);
+        }
+    }
+
+
+    /*
+     * TODO
+     *  return available courses for particular student
+     */
+    public ArrayList<Course> getAvailableCourses(Student student) {
+            return  null;
     }
 
     public void setCurriculum(Curriculum curriculum) {

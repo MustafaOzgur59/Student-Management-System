@@ -1,5 +1,7 @@
 package iteration1;
 
+import java.util.ArrayList;
+
 public class Advisor extends FacultyMember {
 
     public Advisor(String name, String id) {
@@ -10,8 +12,12 @@ public class Advisor extends FacultyMember {
     public void gradeStudents(Student student, Course course) {
 
     }
-
-    public static boolean enrollStudent(Course course, Student student){
+    /*
+    * TODO
+    *  -semesterleri karşılarştırarak alabileceği dersleri alsın
+    *  -alamazsa loglama yapılmalı
+    * */
+    public  boolean enrollStudent(ArrayList<Course> courseList, Student student){
 
         int x = course.getPrerequisiteTo().size();
         int y = 0;
@@ -44,7 +50,4 @@ public class Advisor extends FacultyMember {
         else
             return true;
     }
-
-
-
 }

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@JsonIgnoreProperties(value={"enrolledCourses"},allowGetters = true)
+@JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
 @JsonPropertyOrder({"id","name","term","transcript"})
 public class Student {
     @JsonProperty("id")
@@ -23,6 +23,8 @@ public class Student {
     private StudentSemester studentSemester;
     @JsonProperty("transcript")
     private Transcript transcript = new Transcript();
+
+    private Advisor advisor;
 
     public Student(String id, String name, Integer term) {
         this.id = id;
@@ -95,6 +97,10 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, term);
+    }
+
+    public void enroll(ArrayList<Course> availableCourses){
+        advisor.enrollStudent(availableCourses,this);
     }
 
     @Override

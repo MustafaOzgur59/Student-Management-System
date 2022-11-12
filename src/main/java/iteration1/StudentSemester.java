@@ -2,6 +2,7 @@ package iteration1;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import java.util.List;
 import java.util.Objects;
 
 @JsonIgnoreProperties(value={"letterGrades","courses"},allowGetters = true)
+@JsonPropertyOrder({"semesterNo","yano","takenCredit","completedCredit","note","givenCredit"})
 public class StudentSemester {
     @JsonProperty("semesterNo")
     private int semesterNo;
