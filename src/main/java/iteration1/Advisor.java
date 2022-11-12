@@ -1,5 +1,6 @@
 package iteration1;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Advisor extends FacultyMember {
@@ -7,6 +8,7 @@ public class Advisor extends FacultyMember {
     public Advisor(String name, String id) {
         super(name, id);
     }
+
 
     @Override
     public void gradeStudents(Student student, Course course) {
@@ -17,7 +19,10 @@ public class Advisor extends FacultyMember {
     *  -semesterleri karşılarştırarak alabileceği dersleri alsın
     *  -alamazsa loglama yapılmalı
     * */
-    public  boolean enrollStudent(ArrayList<Course> courseList, Student student){
+    public boolean enrollStudent(ArrayList<Course> courseList,Student student){
+        return true;
+    }
+  /*  public  boolean enrollStudent(ArrayList<Course> courseList, Student student){
 
         int x = course.getPrerequisiteTo().size();
         int y = 0;
@@ -49,5 +54,5 @@ public class Advisor extends FacultyMember {
         }
         else
             return true;
-    }
+    }*/
 }

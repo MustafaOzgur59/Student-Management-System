@@ -24,7 +24,7 @@ public class Student {
     @JsonProperty("transcript")
     private Transcript transcript = new Transcript();
 
-    private Advisor advisor;
+    private Advisor advisor = new Advisor("dummy","124");
 
     public Student(String id, String name, Integer term) {
         this.id = id;
