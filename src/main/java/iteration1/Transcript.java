@@ -1,10 +1,13 @@
 package iteration1;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Transcript {
 
     private Float gpa;
+    @JsonProperty("semesters")
     private List<StudentSemester> semesters;
     private Integer cumulativeCredit;
 
@@ -12,11 +15,13 @@ public class Transcript {
         semesters = new ArrayList<StudentSemester>();
     }
 
+
+
     public void calculateGpa() {
         calculateCumulativeCredit();
         float grade = 0;
         for (int i = 0; i < semesters.size(); i++) {
-            grade += semesters.get(i).getYano() * semesters.get(i).getTotalCredit();
+            grade += semesters.get(i).getYano() * semesters.get(i).getCompletedCredit();
         }
         gpa = grade / cumulativeCredit;
     }
@@ -24,7 +29,7 @@ public class Transcript {
     public void calculateCumulativeCredit() {
         cumulativeCredit = 0;
         for (int i = 0; i < semesters.size(); i++) {
-            cumulativeCredit += semesters.get(i).getTotalCredit();
+            cumulativeCredit += semesters.get(i).getCompletedCredit();
         }
     }
 
@@ -44,4 +49,13 @@ public class Transcript {
         this.semesters = semesters;
     }
 
+
+    @Override
+    public String toString() {
+        return "Transcript{" +
+                "gpa=" + gpa +
+                ", semesters=" + semesters +
+                ", cumulativeCredit=" + cumulativeCredit +
+                '}';
+    }
 }
