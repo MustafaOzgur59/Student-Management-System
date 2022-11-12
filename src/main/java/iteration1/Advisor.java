@@ -17,7 +17,7 @@ public class Advisor extends FacultyMember {
 
     public  boolean enrollStudent(Course course, Student student){
 
-        if((course.term - student.term) >= 2) {
+        if((course.getTerm() - student.getTerm()) >= 2) {
             return false;
         }
 
