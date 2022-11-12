@@ -41,6 +41,10 @@ public class System {
     public void loadStudentAndCourses() throws IOException {
         this.parser.parseCourseObjects(this.curriculum);
         this.parser.parseStudents(this.studentManager);
+        /*
+        * TODO
+        *  -replace outputStudentObjects function to the end of the simulation
+        * */
         this.parser.outputStudentObjects(this.studentManager.getStudentList());
         //this.studentGenerator.generateStudents();
     }

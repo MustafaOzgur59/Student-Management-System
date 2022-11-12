@@ -7,5 +7,14 @@
     "semesters" : [ ]
   },
   "enrolledCourses" : [ ],
-  "studentSemester" : null
+  "studentSemester" : {
+    "semesterNo" : 1,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "courses" : { },
+    "letterGrades" : [ ],
+    "givenCourses" : null
+  }
 }

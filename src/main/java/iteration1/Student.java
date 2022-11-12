@@ -1,5 +1,6 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -33,14 +34,19 @@ public class Student {
         studentSemester = new StudentSemester(term);
     }
 
-    public Student(String id, String name, Integer term, ArrayList<Course> enrolledCourses,
-                   StudentSemester studentSemester, Transcript transcript) {
+    @JsonCreator
+    public Student(
+            @JsonProperty("id") String id,
+            @JsonProperty("name") String name,
+            @JsonProperty("term") Integer term,
+            @JsonProperty("transcript") Transcript transcript) {
         this.id = id;
         this.name = name;
         this.term = term;
-        this.enrolledCourses = enrolledCourses;
-        this.studentSemester = studentSemester;
-        this.transcript = transcript;
+        this.transcript=transcript;
+        this.enrolledCourses = new ArrayList<>();
+        this.studentSemester = new StudentSemester(this.term);
+
     }
 
     public Student() {
