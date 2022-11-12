@@ -38,7 +38,8 @@ public class System {
 
     public void loadStudentAndCourses() throws IOException {
         this.parser.parseCourseObjects(this.curriculum);
-        this.studentGenerator.generateStudents();
+        this.parser.parseStudents();
+        //this.studentGenerator.generateStudents();
     }
 
     public void setCurriculum(Curriculum curriculum) {
