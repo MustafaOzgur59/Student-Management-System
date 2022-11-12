@@ -1,14 +1,28 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
+@JsonIgnoreProperties(value={"letterGrades","courses"},allowGetters = true)
 public class StudentSemester {
+    @JsonProperty("semesterNo")
     private int semesterNo;
+    @JsonProperty("yano")
     private float yano;
-    private int totalCredit;
+    @JsonProperty("takenCredit")
+    private int takenCredit;
+    @JsonProperty("completedCredit")
+    private int completedCredit;
+    @JsonProperty("note")
     private float note;
+    @JsonProperty("givenCourses")
+    ArrayList<GivenCourses> givenCourses;
+
     HashMap<Course, Float> courses;
     List<String> letterGrades;
 
@@ -16,6 +30,10 @@ public class StudentSemester {
         courses = new HashMap<Course, Float>();
         letterGrades = new ArrayList<>();
         this.semesterNo = semesterNo;
+    }
+
+    public StudentSemester(){
+
     }
 
     public void calculateYano() {
@@ -26,13 +44,13 @@ public class StudentSemester {
         for(Course key : courses.keySet()){
            this.note += key.getCredit() * courses.get((Course)key);
         }
-        this.yano = this.note/totalCredit;
+        this.yano = this.note/completedCredit;
     }
 
     public void calculateCredit() {
-        totalCredit = 0;
+        completedCredit = 0;
         for(Course key : courses.keySet()){
-            totalCredit += key.getCredit();
+            completedCredit += key.getCredit();
         }
     }
 
@@ -69,12 +87,20 @@ public class StudentSemester {
         return yano;
     }
 
-    public void setTotalCredit(int totalCredit) {
-        this.totalCredit = totalCredit;
+    public int getTakenCredit() {
+        return takenCredit;
     }
 
-    public int getTotalCredit() {
-        return totalCredit;
+    public void setTakenCredit(int takenCredit) {
+        this.takenCredit = takenCredit;
+    }
+
+    public int getCompletedCredit() {
+        return completedCredit;
+    }
+
+    public void setCompletedCredit(int completedCredit) {
+        this.completedCredit = completedCredit;
     }
 
     public void setNote(float note) {
@@ -93,6 +119,41 @@ public class StudentSemester {
         return courses;
     }
 
+    public int getSemesterNo() {
+        return semesterNo;
+    }
 
+    public void setSemesterNo(int semesterNo) {
+        this.semesterNo = semesterNo;
+    }
+
+    public ArrayList<GivenCourses> getGivenCourses() {
+        return givenCourses;
+    }
+
+    public void setGivenCourses(ArrayList<GivenCourses> givenCourses) {
+        this.givenCourses = givenCourses;
+    }
+
+    public List<String> getLetterGrades() {
+        return letterGrades;
+    }
+
+    public void setLetterGrades(List<String> letterGrades) {
+        this.letterGrades = letterGrades;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentSemester{" +
+                "semesterNo=" + semesterNo +
+                ", yano=" + yano +
+                ", completedCredit=" + completedCredit +
+                ", note=" + note +
+                ", givenCourses=" + givenCourses +
+                ", courses=" + courses +
+                ", letterGrades=" + letterGrades +
+                '}';
+    }
 }
 
