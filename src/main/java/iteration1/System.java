@@ -3,6 +3,7 @@ package iteration1;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 public class System {
     private StudentManager studentManager = new StudentManager();
 
@@ -39,7 +40,8 @@ public class System {
 
     public void loadStudentAndCourses() throws IOException {
         this.parser.parseCourseObjects(this.curriculum);
-        this.parser.parseStudents();
+        this.parser.parseStudents(this.studentManager);
+        this.parser.outputStudentObjects(this.studentManager.getStudentList());
         //this.studentGenerator.generateStudents();
     }
 
@@ -57,7 +59,7 @@ public class System {
      *  return available courses for particular student
      */
     public ArrayList<Course> getAvailableCourses(Student student) {
-            return  null;
+        return  null;
     }
 
     public void setCurriculum(Curriculum curriculum) {

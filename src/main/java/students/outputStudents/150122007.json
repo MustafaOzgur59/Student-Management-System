@@ -1,0 +1,11 @@
+{
+  "id" : "150122007",
+  "name" : "James Bond",
+  "term" : 1,
+  "transcript" : {
+    "gpa" : null,
+    "semesters" : [ ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : null
+}
