@@ -14,15 +14,12 @@ public class Advisor extends FacultyMember {
     public void gradeStudents(Student student, Course course) {
 
     }
-    /*
-    * TODO
-    *  -semesterleri karşılarştırarak alabileceği dersleri alsın
-    *  -alamazsa loglama yapılmalı
-    * */
-    public boolean enrollStudent(ArrayList<Course> courseList,Student student){
-        return true;
-    }
-  /*  public  boolean enrollStudent(ArrayList<Course> courseList, Student student){
+
+    public  boolean enrollStudent(Course course, Student student){
+
+        if((course.term - student.term) >= 2) {
+            return false;
+        }
 
         int x = course.getPrerequisiteTo().size();
         int y = 0;
@@ -54,5 +51,5 @@ public class Advisor extends FacultyMember {
         }
         else
             return true;
-    }*/
+    }
 }
