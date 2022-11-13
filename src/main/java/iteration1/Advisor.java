@@ -17,8 +17,15 @@ public class Advisor extends FacultyMember {
 
     public  boolean enrollStudent(Course course, Student student,Curriculum curriculum){
         int passedPrerequisiteCount=0;
+
+        //EÄŸer derste Ã¶ÄŸrenci iÃ§in yer yoksa
+        if (! (course.getQuota()>course.getEnrolledStudents().size())){
+            student.getLogs().add("Cant add course: " + course.getName() + " because of course quota exceeded");
+            java.lang.System.out.println("Cant add course: " + course.getName() + " because of course quota exceeded");
+            return  false;
+        }
         // if the student tries to take a course in the two upper semester return false
-        if((( (course.getYear()-1) * 2 + course.getTerm() ) - student.getTerm()) >= 2) {
+        if((( (course.getYear()-1) * 2 + course.getTerm() - 1 ) - student.getTerm()) >= 2) {
             student.getLogs().add("Cant add course: " + course.getName() + " because of semester difference of >= 2");
             java.lang.System.out.println("Cant add course: " + course.getName() + " because of semester difference of >= 2");
             return false;
@@ -28,6 +35,10 @@ public class Advisor extends FacultyMember {
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
             student.getLogs().add("Added course : " + course.getName() + "because of no prerequisites");
             java.lang.System.out.println("Added course : " + course.getName() + "because of no prerequisites");
+            student.getEnrolledCourses().add(course.getName());
+            course.getEnrolledStudents().add(student.getId());
+            java.lang.System.out.println("Students " +course.getEnrolledStudents().toString());
+            java.lang.System.out.println("Courses " +student.getEnrolledCourses().toString());
             return true;
         }
         else{
@@ -55,6 +66,5 @@ public class Advisor extends FacultyMember {
             return false;
         }
     }
-
-
 }
+
