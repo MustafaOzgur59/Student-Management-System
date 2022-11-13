@@ -42,18 +42,17 @@ public class System {
         this.parser.parseCourseObjects(this.curriculum);
         this.parser.parseStudents(this.studentManager);
         /*
-        * TODO
-        *  -replace outputStudentObjects function to the end of the simulation
-        * */
+         * TODO
+         *  -replace outputStudentObjects function to the end of the simulation
+         * */
         this.parser.outputStudentObjects(this.studentManager.getStudentList());
         //this.studentGenerator.generateStudents();
     }
 
     public void beginSimulation(){
-
         for (Student student : studentManager.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
-            student.enroll(availableCourses);
+            student.enroll(availableCourses,curriculum);
         }
     }
 
@@ -66,7 +65,7 @@ public class System {
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
         boolean isFound = false;
-        for(int i=0; i<8; i++) {
+        for(int i=0; i<student.getTranscript().getSemesters().size(); i++) {
             ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
             for (int j=0; j<courses[i].size();j++){
                 for (int k=0;k<givenCourses.size();k++){
@@ -78,6 +77,13 @@ public class System {
                 }
                 if (!isFound)
                     availableCourses.add(courses[i].get(j));
+            }
+        }
+        for (int i=student.getTranscript().getSemesters().size();i<8;i++){
+            for (ArrayList<Course> coursesRow: courses){
+                for (Course course: coursesRow){
+                    availableCourses.add(course);
+                }
             }
         }
         return availableCourses;
