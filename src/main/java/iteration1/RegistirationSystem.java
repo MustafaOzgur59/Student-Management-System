@@ -4,17 +4,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class System {
+public class RegistirationSystem {
     private StudentManager studentManager = new StudentManager();
 
     private JsonParser parser = new JsonParser();
 
     private Curriculum curriculum=new Curriculum();
 
-    private Instructor instructor = new Instructor("name","name");
+    private Instructor instructor = new Instructor("dummy","dummy");
 
 
-    public System() {
+    public RegistirationSystem() {
 
     }
 
@@ -39,7 +39,7 @@ public class System {
     }
 
     public void loadStudentAndCourses() throws IOException {
-        this.parser.parseCourseObjects(this.curriculum);
+        this.parser.parseCourseObjects(this.curriculum,this.instructor);
         this.parser.parseStudents(this.studentManager);
         /*
          * TODO
@@ -50,14 +50,27 @@ public class System {
     }
 
     public void beginSimulation() throws IOException {
+        // courseleri enroll eder
         for (Student student : studentManager.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
-
             student.enroll(availableCourses,curriculum);
         }
 
-        for (Course course : studentManager.getCoursesList()){
-            course.ge
+        // course alan bütün öğrencileri gradeler
+        for (Course course : this.instructor.getCoursesOfferedList()){
+            for (String studentId : course.getEnrolledStudents()){
+                this.instructor.gradeStudents(studentManager.getStudent(studentId),course);
+            }
+        }
+
+        // dönem sonu semesterlerin yanosunu hesapla sonra transciprt gpa hesapla ve ekle
+        for (Student student : studentManager.getStudentList()){
+            student.getTranscript().getSemesters().add(student.getStudentSemester());
+            for (StudentSemester semester : student.getTranscript().getSemesters()){
+                semester.calculateYano();
+                semester.calculateLetterGrade();
+            }
+            student.getTranscript().calculateGpa();
         }
 
 

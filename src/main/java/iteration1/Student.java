@@ -21,7 +21,7 @@ public class Student {
     @JsonProperty("term")
     private Integer term;
 
-    private ArrayList<Course> enrolledCourses=new ArrayList<>();
+    private ArrayList<String> enrolledCourses=new ArrayList<>();
 
     private StudentSemester studentSemester;
     @JsonProperty("transcript")
@@ -80,11 +80,11 @@ public class Student {
         this.term = term;
     }
 
-    public ArrayList<Course> getEnrolledCourses() {
+    public ArrayList<String> getEnrolledCourses() {
         return enrolledCourses;
     }
 
-    public void setEnrolledCourses(ArrayList<Course> enrolledCourses) {
+    public void setEnrolledCourses(ArrayList<String> enrolledCourses) {
         this.enrolledCourses = enrolledCourses;
     }
 
@@ -124,7 +124,7 @@ public class Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
+        iteration1.Student student = (iteration1.Student) o;
         return Objects.equals(id, student.id) && Objects.equals(name, student.name) && Objects.equals(term, student.term);
     }
 
@@ -134,9 +134,15 @@ public class Student {
     }
 
     public void enroll(ArrayList<Course> availableCourses,Curriculum curriculum){
-        for(int i = 0;i < availableCourses.size();i++) {
+      /* for(int i = 0;i < availableCourses.size();i++) {
             advisor.enrollStudent(availableCourses.get(i), this,curriculum);
+        }*/
+        for (ArrayList<Course> courseRow: curriculum.getCOURSES()){
+            for (Course course: courseRow){
+                advisor.enrollStudent(course,this,curriculum);
+            }
         }
+
     }
 
     @Override
