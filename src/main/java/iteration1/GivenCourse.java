@@ -8,9 +8,12 @@ public class GivenCourse {
     @JsonProperty("grade")
     private float grade;
 
-    public GivenCourse(String courseCode, float grade) {
+    private Integer credit;
+
+    public GivenCourse(String courseCode, float grade, Integer credit) {
         this.courseCode = courseCode;
         this.grade = grade;
+        this.credit = credit;
     }
 
     public GivenCourse() {
@@ -30,6 +33,10 @@ public class GivenCourse {
 
     public void setGrade(float grade) {
         this.grade = grade;
+    }
+
+    public Integer getCredit() {
+        return credit;
     }
 
     @Override

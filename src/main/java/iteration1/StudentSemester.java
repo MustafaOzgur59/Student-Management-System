@@ -24,12 +24,9 @@ public class StudentSemester {
     private float note;
     @JsonProperty("givenCourses")
     ArrayList<GivenCourse> givenCourses;
-
-    HashMap<Course, Float> courses;
     List<String> letterGrades;
 
     public StudentSemester(int semesterNo) {
-        courses = new HashMap<Course, Float>();
         letterGrades = new ArrayList<>();
         this.semesterNo = semesterNo;
     }
@@ -43,22 +40,22 @@ public class StudentSemester {
         calculateCredit();
 
         this.note=0;
-        for(Course key : courses.keySet()){
-           this.note += key.getCredit() * courses.get((Course)key);
+        for(GivenCourse course : givenCourses){
+           this.note += course.getCredit() * course.getGrade();
         }
         this.yano = this.note/completedCredit;
     }
 
     public void calculateCredit() {
         completedCredit = 0;
-        for(Course key : courses.keySet()){
-            completedCredit += key.getCredit();
+        for(GivenCourse course : givenCourses){
+            completedCredit += course.getCredit();
         }
     }
 
     public void calculateLetterGrade() {
-        for(Course key : courses.keySet()){
-            Float aFloat = courses.get(key);
+        for(GivenCourse course : givenCourses){
+            Float aFloat = course.getGrade();
             if (aFloat == 0) {
                 letterGrades.add("FF");
             } else if (aFloat == 0.5) {
@@ -113,14 +110,6 @@ public class StudentSemester {
         return note;
     }
 
-    public void setCourses(HashMap<Course, Float> courses) {
-        this.courses = courses;
-    }
-
-    public HashMap<Course, Float> getCourses() {
-        return courses;
-    }
-
     public int getSemesterNo() {
         return semesterNo;
     }
@@ -153,7 +142,6 @@ public class StudentSemester {
                 ", completedCredit=" + completedCredit +
                 ", note=" + note +
                 ", givenCourses=" + givenCourses +
-                ", courses=" + courses +
                 ", letterGrades=" + letterGrades +
                 '}';
     }
