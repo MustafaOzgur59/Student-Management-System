@@ -109,9 +109,9 @@ public class Student {
         return Objects.hash(id, name, term);
     }
 
-    public void enroll(ArrayList<Course> availableCourses){
+    public void enroll(ArrayList<Course> availableCourses,Curriculum curriculum){
         for(int i = 0;i < availableCourses.size();i++) {
-            advisor.enrollStudent(availableCourses.get(i), this);
+            advisor.enrollStudent(availableCourses.get(i), this,curriculum);
         }
     }
 
