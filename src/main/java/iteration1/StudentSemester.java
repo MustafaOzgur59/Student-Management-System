@@ -1,5 +1,6 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -29,10 +30,12 @@ public class StudentSemester {
     public StudentSemester(int semesterNo) {
         letterGrades = new ArrayList<>();
         this.semesterNo = semesterNo;
+        givenCourses=new ArrayList<>();
     }
 
+    @JsonCreator
     public StudentSemester(){
-
+        letterGrades = new ArrayList<>();
     }
 
     public void calculateYano() {
@@ -43,7 +46,7 @@ public class StudentSemester {
         for(GivenCourse course : givenCourses){
            this.note += course.getCredit() * course.getGrade();
         }
-        this.yano = this.note/completedCredit;
+        this.yano = (float) (((int)((this.note/completedCredit) * 100)) / 100.0);
     }
 
     public void calculateCredit() {

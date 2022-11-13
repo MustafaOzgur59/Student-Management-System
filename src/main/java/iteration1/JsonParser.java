@@ -29,6 +29,7 @@ public class JsonParser {
                 allCourses.add(course);
             }
             inputStream.close();
+<<<<<<< HEAD
         }
 
         for (Course c : allCourses){
@@ -38,6 +39,15 @@ public class JsonParser {
             c.setInstructor(instructor);
         }
 
+=======
+        }
+
+        for (Course c : allCourses){
+            curriculum.getCOURSES()[c.getTerm()].add(c);
+            System.out.println(c.toString());
+        }
+
+>>>>>>> a5aa1b908a55a4ebbdc0bf27c59e11f68024e5c4
         return  allCourses;
     }
 
@@ -81,6 +91,23 @@ public class JsonParser {
             ArrayList<String> logs = new ArrayList<>();
             logs.add("Hello I am here");
             logs.add("DENEMEE");
+<<<<<<< HEAD
+=======
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+            logs.add("DENEMEE");
+>>>>>>> a5aa1b908a55a4ebbdc0bf27c59e11f68024e5c4
             JsonNode arrayNode = mapper.valueToTree(logs);
             jsonObject.set("logs",arrayNode);
             jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);
