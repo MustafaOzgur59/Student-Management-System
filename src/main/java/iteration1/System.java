@@ -57,7 +57,24 @@ public class System {
      *  return available courses for particular student
      */
     public ArrayList<Course> getAvailableCourses(Student student) {
-            return  null;
+        ArrayList<Course>[] courses = getCurriculum().getCOURSES();
+        ArrayList<Course> availableCourses = new ArrayList<>();
+        boolean isFound = false;
+        for(int i=0; i<8; i++) {
+            ArrayList<GivenCourses> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
+            for (int j=0; j<courses[i].size();j++){
+                for (int k=0;k<givenCourses.size();k++){
+                    if(givenCourses.get(k).getCourseCode() == courses[i].get(j).getCode()){
+                        isFound = true;
+                        if(givenCourses.get(k).getGrade() < 2)
+                            availableCourses.add(courses[i].get(j));
+                    }
+                }
+                if (!isFound)
+                    availableCourses.add(courses[i].get(j));
+            }
+        }
+        return availableCourses;
     }
 
     public void setCurriculum(Curriculum curriculum) {

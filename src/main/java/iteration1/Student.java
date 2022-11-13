@@ -86,6 +86,10 @@ public class Student {
         this.studentSemester = studentSemester;
     }
 
+    public Transcript getTranscript() {
+        return transcript;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
