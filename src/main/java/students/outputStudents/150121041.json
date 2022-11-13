@@ -1,0 +1,103 @@
+{
+  "id" : "150121041",
+  "name" : "Walter White",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : null,
+    "semesters" : [ {
+      "semesterNo" : 1,
+      "yano" : 2.12,
+      "takenCredit" : 31,
+      "completedCredit" : 27,
+      "note" : 80.0,
+      "letterGrades" : null,
+      "givenCourses" : [ {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 2.0
+      }, {
+        "credit" : 5,
+        "code" : "MBG1201",
+        "grade" : 3.0
+      }, {
+        "credit" : 4,
+        "code" : "CSE1200",
+        "grade" : 0.0
+      }, {
+        "credit" : 6,
+        "code" : "CSE1241",
+        "grade" : 2.5
+      }, {
+        "credit" : 6,
+        "code" : "MATH1001",
+        "grade" : 1.5
+      }, {
+        "credit" : 2,
+        "code" : "PHYS1103",
+        "grade" : 2.5
+      }, {
+        "credit" : 4,
+        "code" : "PHYS1101",
+        "grade" : 2.0
+      }, {
+        "credit" : 2,
+        "code" : "TRD121",
+        "grade" : 3.5
+      } ]
+    }, {
+      "semesterNo" : 2,
+      "yano" : 2.79,
+      "takenCredit" : 34,
+      "completedCredit" : 30,
+      "note" : 97.0,
+      "letterGrades" : null,
+      "givenCourses" : [ {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 3.0
+      }, {
+        "credit" : 6,
+        "code" : "CSE1242",
+        "grade" : 2.0
+      }, {
+        "credit" : 6,
+        "code" : "MATH1002",
+        "grade" : 2.5
+      }, {
+        "credit" : 5,
+        "code" : "MATH2256",
+        "grade" : 2.5
+      }, {
+        "credit" : 4,
+        "code" : "PHYS1102",
+        "grade" : 0.0
+      }, {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.0
+      }, {
+        "credit" : 2,
+        "code" : "TRD122",
+        "grade" : 3.5
+      }, {
+        "credit" : 3,
+        "code" : "NTExxx",
+        "grade" : 4.0
+      }, {
+        "credit" : 4,
+        "code" : "CSE1200",
+        "grade" : 3.0
+      } ]
+    } ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : {
+    "semesterNo" : 3,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id" : "150122069",
+  "name" : "Natalie Portman ",
+  "term" : 1,
+  "transcript" : {
+    "gpa" : null,
+    "semesters" : [ ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : {
+    "semesterNo" : 1,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : null
+  }
+}
