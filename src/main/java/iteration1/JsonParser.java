@@ -1,29 +1,44 @@
 package iteration1;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.json.JSONObject;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 import java.lang.System;
-import java.util.List;
 
 public class JsonParser {
     private final ObjectMapper mapper = new ObjectMapper();
 
-    public ArrayList<Course> parseCourseObjects(Curriculum curriculum) throws IOException {
+    public ArrayList<Course> parseCourseObjects(Curriculum curriculum,Instructor instructor) throws IOException {
         // Old implementation  --> Files.readAllBytes(Path.of(path));
-        FileInputStream inputStream = new FileInputStream("./src/main/java/courses/CourseFirstYear.json");
-        String jsonString = new String(inputStream.readAllBytes());
-        Course[] courses = mapper.readValue(jsonString, Course[].class);
-        ArrayList<Course> courseList = new ArrayList<>(Arrays.asList(courses));
-        for (Course c : courseList){
-            curriculum.getCOURSES()[c.getTerm()].add(c);
-            System.out.println(c.toString());
+        ArrayList<Course> allCourses = new ArrayList<>();
+        File dirPath = new File("./src/main/java/courses");
+        File[] courseFiles = dirPath.listFiles();
+        for (File f : courseFiles){
+            FileInputStream inputStream = new FileInputStream(f);
+            String jsonString = new String(inputStream.readAllBytes());
+            Course[] courses = mapper.readValue(jsonString, Course[].class);
+            ArrayList<Course> courseList = new ArrayList<>(Arrays.asList(courses));
+            for (Course course : courseList){
+                allCourses.add(course);
+            }
+            inputStream.close();
         }
-        inputStream.close();
-        return  courseList;
+
+        for (Course c : allCourses){
+            curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
+            System.out.println(c.toString());
+            instructor.getCoursesOfferedList().add(c);
+            c.setInstructor(instructor);
+        }
+
+        return  allCourses;
     }
 
     public ArrayList<Student> parseStudents(StudentManager manager) throws IOException {
@@ -44,12 +59,32 @@ public class JsonParser {
 
 
     /*TODO
-    Parse the resulting outputs from the student objects into json files
+        -Parse the resulting outputs from the student objects into json files
     */
     public void outputStudentObjects(List<Student> studentList) throws IOException {
         File dirPath = new File("./src/main/java/students/outputStudents");
         for (Student s : studentList){
             String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(s);
+            File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
+            studentJsonFile.createNewFile();
+            PrintWriter writer = new PrintWriter(studentJsonFile);
+            writer.write(jsonString);
+            writer.close();
+        }
+    }
+
+    public void outputStudentObjectsWithProblems(List<Student> studentList) throws IOException {
+        File dirPath = new File("./src/main/java/students/outputStudents");
+        for (Student s : studentList){
+            String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(s);
+            /*ObjectNode jsonObject = (ObjectNode) mapper.readTree(jsonString);
+            ArrayList<String> logs = new ArrayList<>();
+            logs.add("Hello I am here");
+            logs.add("DENEMEE");
+            JsonNode arrayNode = mapper.valueToTree(logs);
+            jsonObject.set("logs",arrayNode);
+            jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);
+            String newString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);*/
             File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
             studentJsonFile.createNewFile();
             PrintWriter writer = new PrintWriter(studentJsonFile);
