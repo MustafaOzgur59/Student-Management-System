@@ -14,16 +14,26 @@ public class JsonParser {
 
     public ArrayList<Course> parseCourseObjects(Curriculum curriculum) throws IOException {
         // Old implementation  --> Files.readAllBytes(Path.of(path));
-        FileInputStream inputStream = new FileInputStream("./src/main/java/courses/CourseFirstYear.json");
-        String jsonString = new String(inputStream.readAllBytes());
-        Course[] courses = mapper.readValue(jsonString, Course[].class);
-        ArrayList<Course> courseList = new ArrayList<>(Arrays.asList(courses));
-        for (Course c : courseList){
+        ArrayList<Course> allCourses = new ArrayList<>();
+        File dirPath = new File("./src/main/java/courses");
+        File[] courseFiles = dirPath.listFiles();
+        for (File f : courseFiles){
+            FileInputStream inputStream = new FileInputStream(f);
+            String jsonString = new String(inputStream.readAllBytes());
+            Course[] courses = mapper.readValue(jsonString, Course[].class);
+            ArrayList<Course> courseList = new ArrayList<>(Arrays.asList(courses));
+            for (Course course : courseList){
+                allCourses.add(course);
+            }
+            inputStream.close();
+        }
+
+        for (Course c : allCourses){
             curriculum.getCOURSES()[c.getTerm()].add(c);
             System.out.println(c.toString());
         }
-        inputStream.close();
-        return  courseList;
+
+        return  allCourses;
     }
 
     public ArrayList<Student> parseStudents(StudentManager manager) throws IOException {
