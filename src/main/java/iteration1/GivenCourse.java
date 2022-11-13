@@ -1,20 +1,19 @@
 package iteration1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 
-public class GivenCourses {
+public class GivenCourse {
     @JsonProperty("code")
     private String courseCode;
     @JsonProperty("grade")
     private float grade;
 
-    public GivenCourses(String courseCode, float grade) {
+    public GivenCourse(String courseCode, float grade) {
         this.courseCode = courseCode;
         this.grade = grade;
     }
 
-    public GivenCourses() {
+    public GivenCourse() {
     }
 
     public String getCourseCode() {

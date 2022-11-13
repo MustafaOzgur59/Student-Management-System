@@ -1,0 +1,20 @@
+{
+  "id" : "150122062",
+  "name" : "Jordan Belfort",
+  "term" : 1,
+  "transcript" : {
+    "gpa" : null,
+    "semesters" : [ ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : {
+    "semesterNo" : 1,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "courses" : { },
+    "letterGrades" : [ ],
+    "givenCourses" : null
+  }
+}

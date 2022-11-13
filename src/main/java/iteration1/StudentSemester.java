@@ -23,7 +23,7 @@ public class StudentSemester {
     @JsonProperty("note")
     private float note;
     @JsonProperty("givenCourses")
-    ArrayList<GivenCourses> givenCourses;
+    ArrayList<GivenCourse> givenCourses;
 
     HashMap<Course, Float> courses;
     List<String> letterGrades;
@@ -129,11 +129,11 @@ public class StudentSemester {
         this.semesterNo = semesterNo;
     }
 
-    public ArrayList<GivenCourses> getGivenCourses() {
+    public ArrayList<GivenCourse> getGivenCourses() {
         return givenCourses;
     }
 
-    public void setGivenCourses(ArrayList<GivenCourses> givenCourses) {
+    public void setGivenCourses(ArrayList<GivenCourse> givenCourses) {
         this.givenCourses = givenCourses;
     }
 

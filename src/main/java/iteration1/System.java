@@ -3,6 +3,7 @@ package iteration1;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 public class System {
     private StudentManager studentManager = new StudentManager();
 
@@ -39,7 +40,12 @@ public class System {
 
     public void loadStudentAndCourses() throws IOException {
         this.parser.parseCourseObjects(this.curriculum);
-        this.parser.parseStudents();
+        this.parser.parseStudents(this.studentManager);
+        /*
+        * TODO
+        *  -replace outputStudentObjects function to the end of the simulation
+        * */
+        this.parser.outputStudentObjects(this.studentManager.getStudentList());
         //this.studentGenerator.generateStudents();
     }
 
@@ -61,7 +67,7 @@ public class System {
         ArrayList<Course> availableCourses = new ArrayList<>();
         boolean isFound = false;
         for(int i=0; i<8; i++) {
-            ArrayList<GivenCourses> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
+            ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
             for (int j=0; j<courses[i].size();j++){
                 for (int k=0;k<givenCourses.size();k++){
                     if(givenCourses.get(k).getCourseCode() == courses[i].get(j).getCode()){

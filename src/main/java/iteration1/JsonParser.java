@@ -1,13 +1,14 @@
 package iteration1;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.lang.System;
+import java.util.List;
+
 public class JsonParser {
     private final ObjectMapper mapper = new ObjectMapper();
 
@@ -25,7 +26,7 @@ public class JsonParser {
         return  courseList;
     }
 
-    public ArrayList<Student> parseStudents() throws IOException {
+    public ArrayList<Student> parseStudents(StudentManager manager) throws IOException {
         ArrayList<Student> studentList = new ArrayList<>();
         File dirPath = new File("./src/main/java/students/inputStudents");
         File[] studentFiles = dirPath.listFiles();
@@ -34,12 +35,10 @@ public class JsonParser {
             FileInputStream inputStream = new FileInputStream(f);
             String jsonString = new String(inputStream.readAllBytes());
             Student student = mapper.readValue(jsonString,Student.class);
+            manager.getStudentList().add(student);
             inputStream.close();
             System.out.println(student.toString());
         }
-        /*String jsonString = new String(Files.readAllBytes(Path.of("./src/main/java/students/150121017.json")));
-        Student student  = mapper.readValue(jsonString, Student.class);
-        System.out.println(student.toString());*/
         return  studentList;
     }
 
@@ -47,7 +46,15 @@ public class JsonParser {
     /*TODO
     Parse the resulting outputs from the student objects into json files
     */
-    public void outputStudentObjects(){
-
+    public void outputStudentObjects(List<Student> studentList) throws IOException {
+        File dirPath = new File("./src/main/java/students/outputStudents");
+        for (Student s : studentList){
+            String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(s);
+            File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
+            studentJsonFile.createNewFile();
+            PrintWriter writer = new PrintWriter(studentJsonFile);
+            writer.write(jsonString);
+            writer.close();
+        }
     }
 }
