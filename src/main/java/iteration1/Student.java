@@ -4,13 +4,15 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 @JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
-@JsonPropertyOrder({"id","name","term","transcript"})
+@JsonPropertyOrder({"id","name","term","transcript",""})
 public class Student {
     @JsonProperty("id")
     private String id;
@@ -26,6 +28,9 @@ public class Student {
     private Transcript transcript = new Transcript();
 
     private Advisor advisor = new Advisor("dummy","124");
+
+    @JsonProperty("logs")
+    private ArrayList<String> logs=new ArrayList<>();
 
     public Student(String id, String name, Integer term) {
         this.id = id;
@@ -46,7 +51,6 @@ public class Student {
         this.transcript=transcript;
         this.enrolledCourses = new ArrayList<>();
         this.studentSemester = new StudentSemester(this.term);
-
     }
 
     public Student() {
@@ -96,6 +100,26 @@ public class Student {
         return transcript;
     }
 
+    public void setTranscript(Transcript transcript) {
+        this.transcript = transcript;
+    }
+
+    public Advisor getAdvisor() {
+        return advisor;
+    }
+
+    public void setAdvisor(Advisor advisor) {
+        this.advisor = advisor;
+    }
+
+    public ArrayList<String> getLogs() {
+        return logs;
+    }
+
+    public void setLogs(ArrayList<String> logs) {
+        this.logs = logs;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -124,6 +148,8 @@ public class Student {
                 ", enrolledCourses=" + enrolledCourses +
                 ", studentSemester=" + studentSemester +
                 ", transcript=" + transcript +
+                ", advisor=" + advisor +
+                ", logs=" + logs +
                 '}';
     }
 }

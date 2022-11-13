@@ -45,15 +45,16 @@ public class System {
          * TODO
          *  -replace outputStudentObjects function to the end of the simulation
          * */
-        this.parser.outputStudentObjects(this.studentManager.getStudentList());
+
         //this.studentGenerator.generateStudents();
     }
 
-    public void beginSimulation(){
+    public void beginSimulation() throws IOException {
         for (Student student : studentManager.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
             student.enroll(availableCourses,curriculum);
         }
+        this.parser.outputStudentObjectsWithProblems(this.studentManager.getStudentList());
     }
 
 

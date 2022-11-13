@@ -7,5 +7,8 @@ public class Main {
         System system = new System();
         system.loadStudentAndCourses();
         system.beginSimulation();
+        for (Student s : system.getStudentManager().getStudentList()){
+            java.lang.System.out.println(s.toString());
+        }
     }
 }
