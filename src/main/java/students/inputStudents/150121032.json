@@ -13,35 +13,44 @@
       "givenCourses": [
         {
           "code":"ATA121",
-          "grade": 3.5
+          "grade": 3.5,
+          "credit":2
         },
         {
           "code": "MBG1201",
-          "grade": 2.5
+          "grade": 2.5,
+          "credit":5
         },
         {
           "code":"CSE1200",
-          "grade": 3.5
+          "grade": 3.5,
+          "credit":4
+
         },
         {
           "code": "CSE1241",
-          "grade": 3.0
+          "grade": 3.0,
+          "credit":6
         },
         {
           "code": "MATH1001",
-          "grade": 0.0
+          "grade": 0.0,
+          "credit":6
         },
         {
           "code": "PHYS1103",
-          "grade": 3.0
+          "grade": 3.0,
+          "credit":2
         },
         {
           "code": "PHYS1101",
-          "grade": 3.5
+          "grade": 3.5,
+          "credit":4
         },
         {
           "code": "TRD121",
-          "grade": 4.0
+          "grade": 4.0,
+          "credit":2
         }
       ]
     },
@@ -54,35 +63,43 @@
       "givenCourses": [
         {
           "code": "ATA122",
-          "grade": 2.5
+          "grade": 2.5,
+          "credit":2
         },
         {
           "code": "CSE1242",
-          "grade": 3.0
+          "grade": 3.0,
+          "credit":6
         },
         {
           "code": "MATH1001",
-          "grade": 2.5
+          "grade": 2.5,
+          "credit":6
         },
         {
           "code": "MATH2256",
-          "grade": 3.0
+          "grade": 3.0,
+          "credit":5
         },
         {
           "code": "PHYS1102",
-          "grade": 3.0
+          "grade": 3.0,
+          "credit":4
         },
         {
           "code": "PHYS1104",
-          "grade": 2.5
+          "grade": 2.5,
+          "credit":2
         },
         {
           "code": "TRD122",
-          "grade": 4.0
+          "grade": 4.0,
+          "credit":2
         },
         {
           "code": "NTExxx",
-          "grade": 3.5
+          "grade": 3.5,
+          "credit":3
           }
         ]
       }
