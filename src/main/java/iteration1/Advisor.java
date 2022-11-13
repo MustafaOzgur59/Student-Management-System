@@ -28,7 +28,7 @@ public class Advisor extends FacultyMember {
         }
         else{
             for(int i = 0;i < course.getPrerequisiteTo().size();i++) {
-                for (Course key : student.getStudentSemester().getourses().keySet()) {
+                for (Course key : student.getStudentSemester().getCourses().keySet()) {
                     //We checked that he passed the prerequisite course from the Student Semester class.
                     String s = key.getCode();
                     Float f = student.getStudentSemester().getCourses().get(key);
