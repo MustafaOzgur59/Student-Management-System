@@ -4,11 +4,11 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System system = new System();
+        RegistirationSystem system = new RegistirationSystem();
         system.loadStudentAndCourses();
         system.beginSimulation();
         for (Student s : system.getStudentManager().getStudentList()){
-            java.lang.System.out.println(s.toString());
+            System.out.println(s.toString());
         }
     }
 }
