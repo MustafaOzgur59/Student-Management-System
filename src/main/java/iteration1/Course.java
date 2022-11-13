@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.util.ArrayList;
 import java.util.Objects;
 
-@JsonIgnoreProperties(value={"enrolledStudents"},allowGetters = true)
+@JsonIgnoreProperties(value={"enrolledStudents","instructor"},allowGetters = true)
 @JsonPropertyOrder({"name","code","term","year","credit","quota","course sessions","lab sessions", "prerequisiteTo"})
 public class Course {
     @JsonProperty("name")
@@ -28,7 +28,8 @@ public class Course {
     private ArrayList<Section> labSessions;
     @JsonProperty("prerequisiteTo")
     private ArrayList<String> prerequisiteTo;
-    private ArrayList<Student> enrolledStudents = new ArrayList<>();
+    private Instructor instructor;
+    private ArrayList<String> enrolledStudents = new ArrayList<>();
 
     public Course(String name, String code, Integer term, Integer year, Integer credit,
                   Integer quota, ArrayList<String> prerequisiteTo, ArrayList<Section> courseSessions, ArrayList<Section> labSessions) {
@@ -59,7 +60,7 @@ public class Course {
         this.labSessions = labSessions;
     }*/
 
-    public ArrayList<Student> getEnrolledStudents() {
+    public ArrayList<String> getEnrolledStudents() {
         return enrolledStudents;
     }
 
@@ -133,6 +134,18 @@ public class Course {
 
     public void setLabSessions(ArrayList<Section> labSessions) {
         this.labSessions = labSessions;
+    }
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public void setEnrolledStudents(ArrayList<String> enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
     }
 
     @Override

@@ -16,4 +16,5 @@ public class Curriculum {
         return COURSES;
     }
 
+
 }
