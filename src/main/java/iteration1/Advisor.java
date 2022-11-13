@@ -15,41 +15,42 @@ public class Advisor extends FacultyMember {
 
     }
 
-    public  boolean enrollStudent(Course course, Student student){
-
-        if((course.getTerm() - student.getTerm()) >= 2) {
+    public  boolean enrollStudent(Course course, Student student,Curriculum curriculum){
+        int passedPrerequisiteCount=0;
+        // if the student tries to take a course in the two upper semester return false
+        if((( (course.getYear()-1) * 2 + course.getTerm() ) - student.getTerm()) >= 2) {
+            java.lang.System.out.println("Cant add course: " + course.getName() + " because of semester difference of >= 2");
             return false;
         }
 
-        int x = course.getPrerequisiteTo().size();
-        int y = 0;
+        //if no prerequisite is need for the course.
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
+            java.lang.System.out.println("Added course : " + course.getName() + "because of no prerequisites");
             return true;
         }
         else{
+            // checks every prerequisite for the course
             for(int i = 0;i < course.getPrerequisiteTo().size();i++) {
-                for (Course key : student.getStudentSemester().getCourses().keySet()) {
-                    //We checked that he passed the prerequisite course from the Student Semester class.
-                    String s = key.getCode();
-                    Float f = student.getStudentSemester().getCourses().get(key);
-                    if(course.getPrerequisiteTo().get(i) == s){
-                        y++;
-                        if(f >= 1){
-                            continue;
-                        }
-                        else{
-                            return false;
+                String prerequisiteCode = course.getPrerequisiteTo().get(i);
+                for (StudentSemester semester: student.getTranscript().getSemesters()){
+                    for (GivenCourse givenCourse: semester.getGivenCourses()){
+                        if (givenCourse.getCourseCode().equals(prerequisiteCode)){
+                            passedPrerequisiteCount++;
                         }
                     }
-
                 }
             }
+        }
 
-            }
-        if(x > y){//if he has never taken the prerequisite course
+        if (passedPrerequisiteCount == course.getPrerequisiteTo().size()){
+            java.lang.System.out.println("Added course:"+ course.getName() +" because student passed every prerequiste");
+            return true;
+        }
+        else{
+            java.lang.System.out.println("Cant add course: " +course.getName() + " because student didnt pass a prerequisite");
             return false;
         }
-        else
-            return true;
     }
+
+
 }
