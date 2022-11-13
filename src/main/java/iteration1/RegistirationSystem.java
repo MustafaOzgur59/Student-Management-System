@@ -11,7 +11,7 @@ public class System {
 
     private Curriculum curriculum=new Curriculum();
 
-    private StudentGenerator studentGenerator = new StudentGenerator();
+    private Instructor instructor = new Instructor("name","name");
 
 
     public System() {
@@ -52,8 +52,15 @@ public class System {
     public void beginSimulation() throws IOException {
         for (Student student : studentManager.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
+
             student.enroll(availableCourses,curriculum);
         }
+
+        for (Course course : studentManager.getCoursesList()){
+            course.ge
+        }
+
+
         this.parser.outputStudentObjectsWithProblems(this.studentManager.getStudentList());
     }
 
@@ -70,7 +77,7 @@ public class System {
             ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
             for (int j=0; j<courses[i].size();j++){
                 for (int k=0;k<givenCourses.size();k++){
-                    if(givenCourses.get(k).getCourseCode() == courses[i].get(j).getCode()){
+                    if(givenCourses.get(k).getCourseCode().equals(courses[i].get(j).getCode())){
                         isFound = true;
                         if(givenCourses.get(k).getGrade() < 2)
                             availableCourses.add(courses[i].get(j));
@@ -78,6 +85,7 @@ public class System {
                 }
                 if (!isFound)
                     availableCourses.add(courses[i].get(j));
+                isFound=false;
             }
         }
         for (int i=student.getTranscript().getSemesters().size();i<8;i++){

@@ -23,7 +23,7 @@ public class Transcript {
         for (int i = 0; i < semesters.size(); i++) {
             grade += semesters.get(i).getYano() * semesters.get(i).getCompletedCredit();
         }
-        gpa = grade / cumulativeCredit;
+        gpa = (float) (((int)((grade/cumulativeCredit) * 100)) / 100.0);
     }
 
     public void calculateCumulativeCredit() {

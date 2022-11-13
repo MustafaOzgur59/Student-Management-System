@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentManager {
-    private List<Student> studentList ;
+    private List<Student> studentList;
+    private List<Course> coursesList;
     private Advisor advisor;
 
     public StudentManager() {
-        studentList = new ArrayList<>();
+        this.studentList = new ArrayList<>();
+        this.coursesList = new ArrayList<>();
     }
-    public boolean addStudent(Student student,Course course) {
+
+    public boolean addStudent(Student student, Course course) {
         if(course.getQuota() > course.getEnrolledStudents().size()) {
-            course.getEnrolledStudents().add(student);
+            course.getEnrolledStudents().add(student.getId());
             return true;
         }
         else{
@@ -30,5 +33,20 @@ public class StudentManager {
     }
     public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
+    }
+
+    public List<Course> getCoursesList() {
+        return coursesList;
+    }
+
+    public void setCoursesList(List<Course> coursesList) {
+        this.coursesList = coursesList;
+    }
+
+    public Student getStudent(String studentId){
+        for (Student student : this.studentList){
+            if (student.getId().equals(studentId)) return student;
+        }
+        return null;
     }
 }
