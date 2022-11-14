@@ -98,4 +98,13 @@ public class JsonParser {
             writer.close();
         }
     }
+
+    public SystemParameter parseParameters() throws IOException {
+        FileInputStream parameterStream = new FileInputStream("./src/main/java/parameters.json");
+        String parameterJsonString = new String(parameterStream.readAllBytes());
+        System.out.println("Json is : " + parameterJsonString);
+        SystemParameter parameterObject = mapper.readValue(parameterJsonString, SystemParameter.class);
+        System.out.println(parameterObject.toString());
+        return parameterObject;
+    }
 }

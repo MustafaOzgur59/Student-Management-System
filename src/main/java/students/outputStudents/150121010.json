@@ -3,7 +3,7 @@
   "name" : "Vinsmoke Sanji",
   "term" : 3,
   "transcript" : {
-    "gpa" : 3.0,
+    "gpa" : 2.72,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,49 +141,49 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 2.69,
+        "yano" : 1.8,
         "takenCredit" : 0,
         "completedCredit" : 28,
-        "note" : 75.5,
+        "note" : 50.5,
         "letterGrades" : [
-          "BB",
-          "BB",
           "CC",
-          "AA",
-          "AA",
           "DC",
-          "DC"
+          "BB",
+          "BA",
+          "FD",
+          "DC",
+          "DD"
         ],
         "givenCourses" : [
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 3,
-            "code" : "CSE-NTE1",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD122 ",
             "grade" : 2.0,
             "letterGrade" : "CC"
           },
           {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 4,
@@ -194,8 +194,8 @@
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           }
         ]
       }
@@ -212,49 +212,49 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 2.69,
+    "yano" : 1.8,
     "takenCredit" : 0,
     "completedCredit" : 28,
-    "note" : 75.5,
+    "note" : 50.5,
     "letterGrades" : [
-      "BB",
-      "BB",
       "CC",
-      "AA",
-      "AA",
       "DC",
-      "DC"
+      "BB",
+      "BA",
+      "FD",
+      "DC",
+      "DD"
     ],
     "givenCourses" : [
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
-      },
-      {
-        "credit" : 3,
-        "code" : "CSE-NTE1",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
-      },
-      {
-        "credit" : 2,
-        "code" : "TRD122 ",
         "grade" : 2.0,
         "letterGrade" : "CC"
       },
       {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD122 ",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 3.5,
+        "letterGrade" : "BA"
       },
       {
         "credit" : 4,
         "code" : "ECON2004 ",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       },
       {
         "credit" : 4,
@@ -265,8 +265,8 @@
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 1.0,
+        "letterGrade" : "DD"
       }
     ]
   },
@@ -275,19 +275,19 @@
     "id" : "124"
   },
   "logs" : [
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
-    "Added course : Non-Technical Elective - 1 because of no prerequisites",
-    "Added course : Türk Dili II  because of no prerequisites",
-    "Added course : Discrete Computational Structures because of no prerequisites",
-    "Added course:Data Structures because student passed every prerequiste",
-    "Added course : Engineering Economy because of no prerequisites",
-    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
-    "Added course : Differential Equations because of no prerequisites",
-    "Added course:Numerical Methods because student passed every prerequiste",
-    "Cant add course: Analysis of Algorithms because student didnt pass a prerequisite",
-    "Added course : Systems Programming because of no prerequisites",
-    "Added course:Principles of Programming Languages because student passed every prerequiste",
-    "Cant add course: Electronics because student didnt pass a prerequisite",
-    "Cant add course: Prob. and Stat. for Computer Engineering because student didnt pass a prerequisite"
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course : Non-Technical Elective - 1 to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course : Türk Dili II  to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course : Discrete Computational Structures to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course:Data Structures to Student : Vinsmoke Sanji because student passed every prerequiste",
+    "Added course : Engineering Economy to Student : Vinsmoke Sanji because of no prerequisites",
+    "Cant add course: Electric Circuits to Student : Vinsmoke Sanji because student didnt pass a prerequisite",
+    "Added course : Differential Equations to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course:Numerical Methods to Student : Vinsmoke Sanji because student passed every prerequiste",
+    "Cant add course: Analysis of Algorithms to Student : Vinsmoke Sanji because student didnt pass a prerequisite",
+    "Added course : Systems Programming to Student : Vinsmoke Sanji because of no prerequisites",
+    "Added course:Principles of Programming Languages to Student : Vinsmoke Sanji because student passed every prerequiste",
+    "Cant add course: Electronics to Student : Vinsmoke Sanji because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : Vinsmoke Sanji because student didnt pass a prerequisite"
   ]
 }

@@ -3,7 +3,7 @@
   "name" : "Patrick Bateman",
   "term" : 3,
   "transcript" : {
-    "gpa" : 2.48,
+    "gpa" : 2.65,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,44 +141,44 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 1.62,
+        "yano" : 2.1,
         "takenCredit" : 0,
         "completedCredit" : 32,
-        "note" : 52.0,
+        "note" : 67.5,
         "letterGrades" : [
-          "FD",
-          "BB",
           "BA",
+          "DD",
           "CB",
+          "DD",
           "CB",
-          "CC",
-          "FD",
-          "FD"
+          "DC",
+          "FF",
+          "BB"
         ],
         "givenCourses" : [
           {
             "credit" : 4,
             "code" : "PHYS1101",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
-          },
-          {
-            "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 3,
-            "code" : "CSE-NTE1",
             "grade" : 3.5,
             "letterGrade" : "BA"
           },
           {
             "credit" : 2,
-            "code" : "TRD122 ",
+            "code" : "ATA121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
             "grade" : 2.5,
             "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           },
           {
             "credit" : 6,
@@ -189,20 +189,20 @@
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 0.0,
+            "letterGrade" : "FF"
           },
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       }
@@ -220,44 +220,44 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 1.62,
+    "yano" : 2.1,
     "takenCredit" : 0,
     "completedCredit" : 32,
-    "note" : 52.0,
+    "note" : 67.5,
     "letterGrades" : [
-      "FD",
-      "BB",
       "BA",
+      "DD",
       "CB",
+      "DD",
       "CB",
-      "CC",
-      "FD",
-      "FD"
+      "DC",
+      "FF",
+      "BB"
     ],
     "givenCourses" : [
       {
         "credit" : 4,
         "code" : "PHYS1101",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
-      },
-      {
-        "credit" : 2,
-        "code" : "ATA121",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
-      },
-      {
-        "credit" : 3,
-        "code" : "CSE-NTE1",
         "grade" : 3.5,
         "letterGrade" : "BA"
       },
       {
         "credit" : 2,
-        "code" : "TRD122 ",
+        "code" : "ATA121",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
         "grade" : 2.5,
         "letterGrade" : "CB"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD122 ",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
       },
       {
         "credit" : 6,
@@ -268,20 +268,20 @@
       {
         "credit" : 4,
         "code" : "ECON2004 ",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 4,
         "code" : "MATH2055 ",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 0.0,
+        "letterGrade" : "FF"
       },
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       }
     ]
   },
@@ -290,20 +290,20 @@
     "id" : "124"
   },
   "logs" : [
-    "Added course : Physics I because of no prerequisites",
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
-    "Added course : Non-Technical Elective - 1 because of no prerequisites",
-    "Added course : Türk Dili II  because of no prerequisites",
-    "Added course : Discrete Computational Structures because of no prerequisites",
-    "Added course:Data Structures because student passed every prerequiste",
-    "Added course : Engineering Economy because of no prerequisites",
-    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
-    "Added course : Differential Equations because of no prerequisites",
-    "Added course:Numerical Methods because student passed every prerequiste",
-    "Cant add course: Analysis of Algorithms because student didnt pass a prerequisite",
-    "Added course : Systems Programming because of no prerequisites",
-    "Added course:Principles of Programming Languages because student passed every prerequiste",
-    "Cant add course: Electronics because student didnt pass a prerequisite",
-    "Cant add course: Prob. and Stat. for Computer Engineering because student didnt pass a prerequisite"
+    "Added course : Physics I to Student : Patrick Bateman because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : Patrick Bateman because of no prerequisites",
+    "Added course : Non-Technical Elective - 1 to Student : Patrick Bateman because of no prerequisites",
+    "Added course : Türk Dili II  to Student : Patrick Bateman because of no prerequisites",
+    "Added course : Discrete Computational Structures to Student : Patrick Bateman because of no prerequisites",
+    "Added course:Data Structures to Student : Patrick Bateman because student passed every prerequiste",
+    "Added course : Engineering Economy to Student : Patrick Bateman because of no prerequisites",
+    "Cant add course: Electric Circuits to Student : Patrick Bateman because student didnt pass a prerequisite",
+    "Added course : Differential Equations to Student : Patrick Bateman because of no prerequisites",
+    "Added course:Numerical Methods to Student : Patrick Bateman because student passed every prerequiste",
+    "Cant add course: Analysis of Algorithms to Student : Patrick Bateman because student didnt pass a prerequisite",
+    "Added course : Systems Programming to Student : Patrick Bateman because of no prerequisites",
+    "Added course:Principles of Programming Languages to Student : Patrick Bateman because student passed every prerequiste",
+    "Cant add course: Electronics to Student : Patrick Bateman because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : Patrick Bateman because student didnt pass a prerequisite"
   ]
 }

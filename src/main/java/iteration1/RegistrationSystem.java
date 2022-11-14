@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class RegistirationSystem {
+public class RegistrationSystem {
     private StudentManager studentManager = new StudentManager();
 
     private JsonParser parser = new JsonParser();
@@ -13,8 +13,10 @@ public class RegistirationSystem {
 
     private Instructor instructor = new Instructor("dummy","dummy");
 
+    private SystemParameter systemParameter;
 
-    public RegistirationSystem() {
+
+    public RegistrationSystem() {
 
     }
 
@@ -38,7 +40,24 @@ public class RegistirationSystem {
         return curriculum;
     }
 
-    public void loadStudentAndCourses() throws IOException {
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public SystemParameter getSystemParameter() {
+        return systemParameter;
+    }
+
+    public void setSystemParameter(SystemParameter systemParameter) {
+        this.systemParameter = systemParameter;
+    }
+
+    public void readJsonFiles() throws IOException {
+        this.systemParameter=this.parser.parseParameters();
         this.parser.parseCourseObjects(this.curriculum,this.instructor);
         this.parser.parseStudents(this.studentManager);
         /*

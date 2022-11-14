@@ -3,7 +3,7 @@
   "name" : "Walter White",
   "term" : 3,
   "transcript" : {
-    "gpa" : 2.12,
+    "gpa" : 1.89,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -148,27 +148,27 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 2.0,
+        "yano" : 1.36,
         "takenCredit" : 0,
         "completedCredit" : 38,
-        "note" : 76.0,
+        "note" : 52.0,
         "letterGrades" : [
-          "FD",
-          "FD",
-          "BB",
-          "BA",
-          "DC",
           "CC",
+          "FD",
+          "BA",
+          "FD",
+          "FD",
           "DC",
-          "AA",
-          "CB"
+          "FD",
+          "CB",
+          "DC"
         ],
         "givenCourses" : [
           {
             "credit" : 4,
             "code" : "CSE1200",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 6,
@@ -179,44 +179,44 @@
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 3,
-            "code" : "CSE-NTE1",
             "grade" : 3.5,
             "letterGrade" : "BA"
           },
           {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
             "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 4,
-            "code" : "ECON2004 ",
             "grade" : 1.5,
             "letterGrade" : "DC"
           },
           {
             "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           }
         ]
       }
@@ -235,27 +235,27 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 2.0,
+    "yano" : 1.36,
     "takenCredit" : 0,
     "completedCredit" : 38,
-    "note" : 76.0,
+    "note" : 52.0,
     "letterGrades" : [
-      "FD",
-      "FD",
-      "BB",
-      "BA",
-      "DC",
       "CC",
+      "FD",
+      "BA",
+      "FD",
+      "FD",
       "DC",
-      "AA",
-      "CB"
+      "FD",
+      "CB",
+      "DC"
     ],
     "givenCourses" : [
       {
         "credit" : 4,
         "code" : "CSE1200",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 6,
@@ -266,44 +266,44 @@
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
-      },
-      {
-        "credit" : 3,
-        "code" : "CSE-NTE1",
         "grade" : 3.5,
         "letterGrade" : "BA"
       },
       {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 0.5,
+        "letterGrade" : "FD"
+      },
+      {
         "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       },
       {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 4,
-        "code" : "ECON2004 ",
         "grade" : 1.5,
         "letterGrade" : "DC"
       },
       {
         "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 0.5,
+        "letterGrade" : "FD"
+      },
+      {
+        "credit" : 4,
         "code" : "MATH2055 ",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       }
     ]
   },
@@ -312,22 +312,22 @@
     "id" : "124"
   },
   "logs" : [
-    "Added course : Introduction to Computer Engineering because of no prerequisites",
-    "Added course : CALCULUS I because of no prerequisites",
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
-    "Added course : Non-Technical Elective - 1 because of no prerequisites",
-    "Cant add course: Physics II because student didnt pass a prerequisite",
-    "Added course : Türk Dili II  because of no prerequisites",
-    "Added course : Discrete Computational Structures because of no prerequisites",
-    "Added course:Data Structures because student passed every prerequiste",
-    "Added course : Engineering Economy because of no prerequisites",
-    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
-    "Added course : Differential Equations because of no prerequisites",
-    "Added course:Numerical Methods because student passed every prerequiste",
-    "Cant add course: Analysis of Algorithms because student didnt pass a prerequisite",
-    "Added course : Systems Programming because of no prerequisites",
-    "Added course:Principles of Programming Languages because student passed every prerequiste",
-    "Cant add course: Electronics because student didnt pass a prerequisite",
-    "Cant add course: Prob. and Stat. for Computer Engineering because student didnt pass a prerequisite"
+    "Added course : Introduction to Computer Engineering to Student : Walter White because of no prerequisites",
+    "Added course : CALCULUS I to Student : Walter White because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : Walter White because of no prerequisites",
+    "Added course : Non-Technical Elective - 1 to Student : Walter White because of no prerequisites",
+    "Cant add course: Physics II to Student : Walter White because student didnt pass a prerequisite",
+    "Added course : Türk Dili II  to Student : Walter White because of no prerequisites",
+    "Added course : Discrete Computational Structures to Student : Walter White because of no prerequisites",
+    "Added course:Data Structures to Student : Walter White because student passed every prerequiste",
+    "Added course : Engineering Economy to Student : Walter White because of no prerequisites",
+    "Cant add course: Electric Circuits to Student : Walter White because student didnt pass a prerequisite",
+    "Added course : Differential Equations to Student : Walter White because of no prerequisites",
+    "Added course:Numerical Methods to Student : Walter White because student passed every prerequiste",
+    "Cant add course: Analysis of Algorithms to Student : Walter White because student didnt pass a prerequisite",
+    "Added course : Systems Programming to Student : Walter White because of no prerequisites",
+    "Added course:Principles of Programming Languages to Student : Walter White because student passed every prerequiste",
+    "Cant add course: Electronics to Student : Walter White because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : Walter White because student didnt pass a prerequisite"
   ]
 }

@@ -3,7 +3,7 @@
   "name" : "Jimmy Mcgill",
   "term" : 3,
   "transcript" : {
-    "gpa" : 2.69,
+    "gpa" : 2.58,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,61 +141,61 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 1.62,
+        "yano" : 1.28,
         "takenCredit" : 0,
         "completedCredit" : 28,
-        "note" : 45.5,
+        "note" : 36.0,
         "letterGrades" : [
-          "BB",
-          "BA",
-          "CB",
-          "DD",
-          "DD",
-          "BA",
-          "FF"
+          "CC",
+          "FD",
+          "AA",
+          "FD",
+          "FF",
+          "AA",
+          "FD"
         ],
         "givenCourses" : [
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 0.0,
+            "letterGrade" : "FF"
           },
           {
             "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           }
         ]
       }
@@ -212,61 +212,61 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 1.62,
+    "yano" : 1.28,
     "takenCredit" : 0,
     "completedCredit" : 28,
-    "note" : 45.5,
+    "note" : 36.0,
     "letterGrades" : [
-      "BB",
-      "BA",
-      "CB",
-      "DD",
-      "DD",
-      "BA",
-      "FF"
+      "CC",
+      "FD",
+      "AA",
+      "FD",
+      "FF",
+      "AA",
+      "FD"
     ],
     "givenCourses" : [
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 3,
         "code" : "CSE-NTE1",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       },
       {
         "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       },
       {
         "credit" : 4,
         "code" : "ECON2004 ",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 0.0,
+        "letterGrade" : "FF"
       },
       {
         "credit" : 4,
         "code" : "MATH2055 ",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       }
     ]
   },
@@ -275,19 +275,19 @@
     "id" : "124"
   },
   "logs" : [
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
-    "Added course : Non-Technical Elective - 1 because of no prerequisites",
-    "Added course : Türk Dili II  because of no prerequisites",
-    "Added course : Discrete Computational Structures because of no prerequisites",
-    "Added course:Data Structures because student passed every prerequiste",
-    "Added course : Engineering Economy because of no prerequisites",
-    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
-    "Added course : Differential Equations because of no prerequisites",
-    "Added course:Numerical Methods because student passed every prerequiste",
-    "Cant add course: Analysis of Algorithms because student didnt pass a prerequisite",
-    "Added course : Systems Programming because of no prerequisites",
-    "Added course:Principles of Programming Languages because student passed every prerequiste",
-    "Cant add course: Electronics because student didnt pass a prerequisite",
-    "Cant add course: Prob. and Stat. for Computer Engineering because student didnt pass a prerequisite"
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course : Non-Technical Elective - 1 to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course : Türk Dili II  to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course : Discrete Computational Structures to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course:Data Structures to Student : Jimmy Mcgill because student passed every prerequiste",
+    "Added course : Engineering Economy to Student : Jimmy Mcgill because of no prerequisites",
+    "Cant add course: Electric Circuits to Student : Jimmy Mcgill because student didnt pass a prerequisite",
+    "Added course : Differential Equations to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course:Numerical Methods to Student : Jimmy Mcgill because student passed every prerequiste",
+    "Cant add course: Analysis of Algorithms to Student : Jimmy Mcgill because student didnt pass a prerequisite",
+    "Added course : Systems Programming to Student : Jimmy Mcgill because of no prerequisites",
+    "Added course:Principles of Programming Languages to Student : Jimmy Mcgill because student passed every prerequiste",
+    "Cant add course: Electronics to Student : Jimmy Mcgill because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : Jimmy Mcgill because student didnt pass a prerequisite"
   ]
 }

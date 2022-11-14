@@ -3,50 +3,50 @@
   "name" : "Jordan Belfort",
   "term" : 1,
   "transcript" : {
-    "gpa" : 2.51,
+    "gpa" : 2.59,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 2.51,
+        "yano" : 2.59,
         "takenCredit" : 0,
         "completedCredit" : 60,
-        "note" : 151.0,
+        "note" : 155.5,
         "letterGrades" : [
-          "CB",
-          "DD",
+          "AA",
           "BA",
+          "CC",
           "CB",
-          "DC",
           "BB",
+          "CB",
           "DC",
-          "CC",
-          "CC",
-          "BA",
-          "AA",
+          "CB",
+          "BB",
           "CB",
           "CB",
-          "AA",
+          "BB",
+          "CC",
+          "CC",
           "DC",
-          "FF"
+          "BB"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 4,
             "code" : "CSE1200",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 6,
@@ -57,14 +57,14 @@
           {
             "credit" : 5,
             "code" : "MBG1201",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 4,
             "code" : "PHYS1101",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 2,
@@ -75,44 +75,44 @@
           {
             "credit" : 2,
             "code" : "TRD121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 6,
             "code" : "MATH1002",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 2,
             "code" : "PHYS1104",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 4,
@@ -123,8 +123,8 @@
           {
             "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       }
@@ -150,46 +150,46 @@
   ],
   "studentSemester" : {
     "semesterNo" : 1,
-    "yano" : 2.51,
+    "yano" : 2.59,
     "takenCredit" : 0,
     "completedCredit" : 60,
-    "note" : 151.0,
+    "note" : 155.5,
     "letterGrades" : [
-      "CB",
-      "DD",
+      "AA",
       "BA",
+      "CC",
       "CB",
-      "DC",
       "BB",
+      "CB",
       "DC",
-      "CC",
-      "CC",
-      "BA",
-      "AA",
+      "CB",
+      "BB",
       "CB",
       "CB",
-      "AA",
+      "BB",
+      "CC",
+      "CC",
       "DC",
-      "FF"
+      "BB"
     ],
     "givenCourses" : [
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 3.5,
+        "letterGrade" : "BA"
       },
       {
         "credit" : 4,
         "code" : "CSE1200",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 6,
@@ -200,14 +200,14 @@
       {
         "credit" : 5,
         "code" : "MBG1201",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 4,
         "code" : "PHYS1101",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 2,
@@ -218,44 +218,44 @@
       {
         "credit" : 2,
         "code" : "TRD121",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 3,
         "code" : "CSE-NTE1",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 6,
         "code" : "MATH1002",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 2,
         "code" : "PHYS1104",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 4,
@@ -266,8 +266,8 @@
       {
         "credit" : 4,
         "code" : "MATH2055 ",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       }
     ]
   },
@@ -276,32 +276,32 @@
     "id" : "124"
   },
   "logs" : [
-    "Added course : Computer Programming I because of no prerequisites",
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation I  because of no prerequisites",
-    "Added course : Introduction to Computer Engineering because of no prerequisites",
-    "Added course : CALCULUS I because of no prerequisites",
-    "Added course : Introduction to Modern Biology because of no prerequisites",
-    "Added course : Physics I because of no prerequisites",
-    "Added course : Physics Lab I because of no prerequisites",
-    "Added course : Türk Dili I because of no prerequisites",
-    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
-    "Cant add course: Computer Programming II because student didnt pass a prerequisite",
-    "Added course : Non-Technical Elective - 1 because of no prerequisites",
-    "Added course : Calculus II because of no prerequisites",
-    "Cant add course: Linear Algebra for Computer Engineering because student didnt pass a prerequisite",
-    "Cant add course: Physics II because student didnt pass a prerequisite",
-    "Added course : Physics Lab II because of no prerequisites",
-    "Added course : Türk Dili II  because of no prerequisites",
-    "Added course : Discrete Computational Structures because of no prerequisites",
-    "Cant add course: Data Structures because student didnt pass a prerequisite",
-    "Added course : Engineering Economy because of no prerequisites",
-    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
-    "Added course : Differential Equations because of no prerequisites",
-    "Cant add course: Numerical Methods because student didnt pass a prerequisite",
-    "Cant add course: Analysis of Algorithms because of semester difference of >= 2",
-    "Cant add course: Systems Programming because of semester difference of >= 2",
-    "Cant add course: Principles of Programming Languages because of semester difference of >= 2",
-    "Cant add course: Electronics because of semester difference of >= 2",
-    "Cant add course: Prob. and Stat. for Computer Engineering because of semester difference of >= 2"
+    "Added course : Computer Programming I to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation I  to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Introduction to Computer Engineering to Student : Jordan Belfort because of no prerequisites",
+    "Added course : CALCULUS I to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Introduction to Modern Biology to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Physics I to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Physics Lab I to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Türk Dili I to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : Jordan Belfort because of no prerequisites",
+    "Cant add course: Computer Programming II to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Added course : Non-Technical Elective - 1 to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Calculus II to Student : Jordan Belfort because of no prerequisites",
+    "Cant add course: Linear Algebra for Computer Engineering to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Cant add course: Physics II to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Added course : Physics Lab II to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Türk Dili II  to Student : Jordan Belfort because of no prerequisites",
+    "Added course : Discrete Computational Structures to Student : Jordan Belfort because of no prerequisites",
+    "Cant add course: Data Structures to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Added course : Engineering Economy to Student : Jordan Belfort because of no prerequisites",
+    "Cant add course: Electric Circuits to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Added course : Differential Equations to Student : Jordan Belfort because of no prerequisites",
+    "Cant add course: Numerical Methods to Student : Jordan Belfort because student didnt pass a prerequisite",
+    "Cant add course: Analysis of Algorithms to Student : Jordan Belfort because of semester difference of >= 2",
+    "Cant add course: Systems Programming to Student : Jordan Belfort because of semester difference of >= 2",
+    "Cant add course: Principles of Programming Languages to Student : Jordan Belfort because of semester difference of >= 2",
+    "Cant add course: Electronics to Student : Jordan Belfort because of semester difference of >= 2",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : Jordan Belfort because of semester difference of >= 2"
   ]
 }
