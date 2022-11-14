@@ -17,11 +17,10 @@ public class GivenCourse {
         this.courseCode = courseCode;
         this.grade = grade;
         this.credit = credit;
-        calculateLetterGrade();
     }
 
     public GivenCourse() {
-        calculateLetterGrade();
+
     }
 
     public String getCourseCode() {

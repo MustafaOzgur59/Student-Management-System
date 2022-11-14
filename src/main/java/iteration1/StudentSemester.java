@@ -58,6 +58,7 @@ public class StudentSemester {
 
     public void calculateLetterGrade() {
         for(GivenCourse course : givenCourses){
+            course.calculateLetterGrade();
             Float aFloat = course.getGrade();
             if (aFloat == 0) {
                 letterGrades.add("FF");
