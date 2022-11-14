@@ -1,5 +1,6 @@
 package iteration1;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class GivenCourse {
@@ -20,6 +21,7 @@ public class GivenCourse {
     }
 
     public GivenCourse() {
+        calculateLetterGrade();
     }
 
     public String getCourseCode() {

@@ -134,15 +134,9 @@ public class Student {
     }
 
     public void enroll(ArrayList<Course> availableCourses,Curriculum curriculum){
-      /* for(int i = 0;i < availableCourses.size();i++) {
-            advisor.enrollStudent(availableCourses.get(i), this,curriculum);
-        }*/
-        for (ArrayList<Course> courseRow: curriculum.getCOURSES()){
-            for (Course course: courseRow){
-                advisor.enrollStudent(course,this,curriculum);
-            }
+        for (Course availableCourse : availableCourses) {
+            advisor.enrollStudent(availableCourse, this, curriculum);
         }
-
     }
 
     @Override

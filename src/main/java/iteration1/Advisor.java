@@ -1,8 +1,5 @@
 package iteration1;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class Advisor extends FacultyMember {
 
     public Advisor(String name, String id) {
@@ -33,8 +30,8 @@ public class Advisor extends FacultyMember {
 
         //if no prerequisite is need for the course.
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
-            student.getLogs().add("Added course : " + course.getName() + "because of no prerequisites");
-            java.lang.System.out.println("Added course : " + course.getName() + "because of no prerequisites");
+            student.getLogs().add("Added course : " + course.getName() + " because of no prerequisites");
+            java.lang.System.out.println("Added course : " + course.getName() + " because of no prerequisites");
             student.getEnrolledCourses().add(course.getName());
             course.getEnrolledStudents().add(student.getId());
             java.lang.System.out.println("Students " +course.getEnrolledStudents().toString());

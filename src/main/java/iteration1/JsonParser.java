@@ -1,6 +1,8 @@
 package iteration1;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -14,6 +16,11 @@ import java.lang.System;
 
 public class JsonParser {
     private final ObjectMapper mapper = new ObjectMapper();
+    private final DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
+    {
+        this.prettyPrinter.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+        mapper.setDefaultPrettyPrinter(prettyPrinter);
+    }
 
     public ArrayList<Course> parseCourseObjects(Curriculum curriculum,Instructor instructor) throws IOException {
         // Old implementation  --> Files.readAllBytes(Path.of(path));
@@ -29,25 +36,13 @@ public class JsonParser {
                 allCourses.add(course);
             }
             inputStream.close();
-<<<<<<< HEAD
-        }
 
+        }
         for (Course c : allCourses){
             curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
-            System.out.println(c.toString());
             instructor.getCoursesOfferedList().add(c);
             c.setInstructor(instructor);
         }
-
-=======
-        }
-
-        for (Course c : allCourses){
-            curriculum.getCOURSES()[c.getTerm()].add(c);
-            System.out.println(c.toString());
-        }
-
->>>>>>> a5aa1b908a55a4ebbdc0bf27c59e11f68024e5c4
         return  allCourses;
     }
 
@@ -74,7 +69,7 @@ public class JsonParser {
     public void outputStudentObjects(List<Student> studentList) throws IOException {
         File dirPath = new File("./src/main/java/students/outputStudents");
         for (Student s : studentList){
-            String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(s);
+            String jsonString = mapper.writeValueAsString(s);
             File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
             studentJsonFile.createNewFile();
             PrintWriter writer = new PrintWriter(studentJsonFile);
@@ -86,28 +81,12 @@ public class JsonParser {
     public void outputStudentObjectsWithProblems(List<Student> studentList) throws IOException {
         File dirPath = new File("./src/main/java/students/outputStudents");
         for (Student s : studentList){
-            String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(s);
+            String jsonString = mapper.writer(prettyPrinter).writeValueAsString(s);
             /*ObjectNode jsonObject = (ObjectNode) mapper.readTree(jsonString);
             ArrayList<String> logs = new ArrayList<>();
             logs.add("Hello I am here");
             logs.add("DENEMEE");
-<<<<<<< HEAD
-=======
             logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
->>>>>>> a5aa1b908a55a4ebbdc0bf27c59e11f68024e5c4
             JsonNode arrayNode = mapper.valueToTree(logs);
             jsonObject.set("logs",arrayNode);
             jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);

@@ -83,6 +83,7 @@ public class RegistirationSystem {
      *  return available courses for particular student
      */
     public ArrayList<Course> getAvailableCourses(Student student) {
+        // 0-> 8  1->8 2->6 3->5
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
         boolean isFound = false;
@@ -102,10 +103,8 @@ public class RegistirationSystem {
             }
         }
         for (int i=student.getTranscript().getSemesters().size();i<8;i++){
-            for (ArrayList<Course> coursesRow: courses){
-                for (Course course: coursesRow){
-                    availableCourses.add(course);
-                }
+            for (Course course: courses[i]){
+                 availableCourses.add(course);
             }
         }
         return availableCourses;
