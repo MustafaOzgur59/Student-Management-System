@@ -1,0 +1,325 @@
+{
+  "id" : "150121032",
+  "name" : "Pedro Dinamit",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : 2.34,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 2.56,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 79.5,
+        "letterGrades" : [
+          "BA",
+          "CB",
+          "BA",
+          "BB",
+          "FF",
+          "BB",
+          "BA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 2.95,
+        "takenCredit" : 31,
+        "completedCredit" : 30,
+        "note" : 88.5,
+        "letterGrades" : [
+          "CB",
+          "BB",
+          "CB",
+          "BB",
+          "BB",
+          "CB",
+          "AA",
+          "BA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1242",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 5,
+            "code" : "MATH2256",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1102",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 3,
+            "code" : "NTExxx",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 3,
+        "yano" : 1.72,
+        "takenCredit" : 0,
+        "completedCredit" : 40,
+        "note" : 69.0,
+        "letterGrades" : [
+          "FF",
+          "DD",
+          "DD",
+          "BB",
+          "CC",
+          "DD",
+          "CB",
+          "BB",
+          "CC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "CALCULUS I",
+    "Ataturk’s Principles and the History of Turkish Renovation II ",
+    "Non-Technical Elective - 1",
+    "Calculus II",
+    "Türk Dili II ",
+    "Discrete Computational Structures",
+    "Engineering Economy",
+    "Differential Equations",
+    "Systems Programming"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 3,
+    "yano" : 1.72,
+    "takenCredit" : 0,
+    "completedCredit" : 40,
+    "note" : 69.0,
+    "letterGrades" : [
+      "FF",
+      "DD",
+      "DD",
+      "BB",
+      "CC",
+      "DD",
+      "CB",
+      "BB",
+      "CC"
+    ],
+    "givenCourses" : [
+      {
+        "credit" : 6,
+        "code" : "MATH1001",
+        "grade" : 0.0,
+        "letterGrade" : "FF"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 6,
+        "code" : "MATH1002",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD122 ",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE2023",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 7,
+        "code" : "CSE2138",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      }
+    ]
+  },
+  "advisor" : {
+    "name" : "dummy",
+    "id" : "124"
+  },
+  "logs" : [
+    "Added course : CALCULUS I because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  because of no prerequisites",
+    "Added course : Non-Technical Elective - 1 because of no prerequisites",
+    "Added course : Calculus II because of no prerequisites",
+    "Added course : Türk Dili II  because of no prerequisites",
+    "Added course : Discrete Computational Structures because of no prerequisites",
+    "Added course:Data Structures because student passed every prerequiste",
+    "Added course : Engineering Economy because of no prerequisites",
+    "Cant add course: Electric Circuits because student didnt pass a prerequisite",
+    "Added course : Differential Equations because of no prerequisites",
+    "Cant add course: Numerical Methods because student didnt pass a prerequisite",
+    "Cant add course: Analysis of Algorithms because student didnt pass a prerequisite",
+    "Added course : Systems Programming because of no prerequisites",
+    "Added course:Principles of Programming Languages because student passed every prerequiste",
+    "Cant add course: Electronics because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering because student didnt pass a prerequisite"
+  ]
+}
