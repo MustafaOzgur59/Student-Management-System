@@ -3,7 +3,7 @@
   "name" : "Jimmy Mcgill",
   "term" : 3,
   "transcript" : {
-    "gpa" : 2.58,
+    "gpa" : 3.05,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,49 +141,49 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 1.28,
+        "yano" : 2.76,
         "takenCredit" : 0,
         "completedCredit" : 28,
-        "note" : 36.0,
+        "note" : 77.5,
         "letterGrades" : [
+          "BB",
           "CC",
-          "FD",
+          "CB",
+          "BA",
+          "DC",
           "AA",
-          "FD",
-          "FF",
-          "AA",
-          "FD"
+          "CB"
         ],
         "givenCourses" : [
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 4,
@@ -194,8 +194,8 @@
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           }
         ]
       }
@@ -212,49 +212,49 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 1.28,
+    "yano" : 2.76,
     "takenCredit" : 0,
     "completedCredit" : 28,
-    "note" : 36.0,
+    "note" : 77.5,
     "letterGrades" : [
+      "BB",
       "CC",
-      "FD",
+      "CB",
+      "BA",
+      "DC",
       "AA",
-      "FD",
-      "FF",
-      "AA",
-      "FD"
+      "CB"
     ],
     "givenCourses" : [
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 3,
         "code" : "CSE-NTE1",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 3.5,
+        "letterGrade" : "BA"
       },
       {
         "credit" : 4,
         "code" : "ECON2004 ",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 4,
@@ -265,8 +265,8 @@
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       }
     ]
   },

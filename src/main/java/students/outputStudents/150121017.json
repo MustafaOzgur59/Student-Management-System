@@ -3,7 +3,7 @@
   "name" : "Patrick Bateman",
   "term" : 3,
   "transcript" : {
-    "gpa" : 2.65,
+    "gpa" : 2.83,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,68 +141,68 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 2.1,
+        "yano" : 2.65,
         "takenCredit" : 0,
         "completedCredit" : 32,
-        "note" : 67.5,
+        "note" : 85.0,
         "letterGrades" : [
-          "BA",
-          "DD",
-          "CB",
-          "DD",
-          "CB",
           "DC",
-          "FF",
-          "BB"
+          "AA",
+          "DD",
+          "BB",
+          "AA",
+          "DD",
+          "DC",
+          "AA"
         ],
         "givenCourses" : [
           {
             "credit" : 4,
             "code" : "PHYS1101",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
-          },
-          {
-            "credit" : 3,
-            "code" : "CSE-NTE1",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD122 ",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE2023",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
-          },
-          {
-            "credit" : 4,
-            "code" : "ECON2004 ",
             "grade" : 1.5,
             "letterGrade" : "DC"
           },
           {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
             "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           }
         ]
       }
@@ -220,68 +220,68 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 2.1,
+    "yano" : 2.65,
     "takenCredit" : 0,
     "completedCredit" : 32,
-    "note" : 67.5,
+    "note" : 85.0,
     "letterGrades" : [
-      "BA",
-      "DD",
-      "CB",
-      "DD",
-      "CB",
       "DC",
-      "FF",
-      "BB"
+      "AA",
+      "DD",
+      "BB",
+      "AA",
+      "DD",
+      "DC",
+      "AA"
     ],
     "givenCourses" : [
       {
         "credit" : 4,
         "code" : "PHYS1101",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
-      },
-      {
-        "credit" : 2,
-        "code" : "ATA121",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
-      },
-      {
-        "credit" : 3,
-        "code" : "CSE-NTE1",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
-      },
-      {
-        "credit" : 2,
-        "code" : "TRD122 ",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE2023",
-        "grade" : 2.5,
-        "letterGrade" : "CB"
-      },
-      {
-        "credit" : 4,
-        "code" : "ECON2004 ",
         "grade" : 1.5,
         "letterGrade" : "DC"
       },
       {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD122 ",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE2023",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
         "credit" : 4,
         "code" : "MATH2055 ",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       }
     ]
   },
