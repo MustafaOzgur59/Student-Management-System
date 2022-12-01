@@ -1,6 +1,6 @@
 package iteration2;
 
-import iteration1.RegistrationSystem;
+import iteration2.RegistrationSystem;
 
 import java.io.IOException;
 

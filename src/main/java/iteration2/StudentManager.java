@@ -1,8 +1,8 @@
 package iteration2;
 
-import iteration1.Advisor;
-import iteration1.Course;
-import iteration1.Student;
+import iteration2.Advisor;
+import iteration2.Course;
+import iteration2.Student;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,16 +4,14 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import iteration1.Advisor;
-import iteration1.Course;
-import iteration1.Curriculum;
-import iteration1.StudentSemester;
-import iteration1.Transcript;
-import org.apache.log4j.Logger;
+import iteration2.Advisor;
+import iteration2.Course;
+import iteration2.Curriculum;
+import iteration2.StudentSemester;
+import iteration2.SystemParameter;
+import iteration2.Transcript;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
@@ -28,9 +26,9 @@ public class Student {
 
     private ArrayList<String> enrolledCourses=new ArrayList<>();
 
-    private StudentSemester studentSemester;
+    private iteration1.StudentSemester studentSemester;
     @JsonProperty("transcript")
-    private Transcript transcript = new Transcript();
+    private iteration1.Transcript transcript = new iteration1.Transcript();
 
     private iteration1.Advisor advisor = new iteration1.Advisor("dummy","124");
 
@@ -41,7 +39,7 @@ public class Student {
         this.id = id;
         this.name = name;
         this.term = term;
-        studentSemester = new StudentSemester(term);
+        studentSemester = new iteration1.StudentSemester(term);
     }
 
     @JsonCreator
@@ -49,13 +47,13 @@ public class Student {
             @JsonProperty("id") String id,
             @JsonProperty("name") String name,
             @JsonProperty("term") Integer term,
-            @JsonProperty("transcript") Transcript transcript) {
+            @JsonProperty("transcript") iteration1.Transcript transcript) {
         this.id = id;
         this.name = name;
         this.term = term;
         this.transcript=transcript;
         this.enrolledCourses = new ArrayList<>();
-        this.studentSemester = new StudentSemester(this.term);
+        this.studentSemester = new iteration1.StudentSemester(this.term);
     }
 
     public Student() {
@@ -93,7 +91,7 @@ public class Student {
         this.enrolledCourses = enrolledCourses;
     }
 
-    public StudentSemester getStudentSemester() {
+    public iteration1.StudentSemester getStudentSemester() {
         return studentSemester;
     }
 
@@ -101,7 +99,7 @@ public class Student {
         this.studentSemester = studentSemester;
     }
 
-    public Transcript getTranscript() {
+    public iteration1.Transcript getTranscript() {
         return transcript;
     }
 
@@ -129,7 +127,7 @@ public class Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        iteration1.Student student = (iteration1.Student) o;
+        Student student = (Student) o;
         return Objects.equals(id, student.id) && Objects.equals(name, student.name) && Objects.equals(term, student.term);
     }
 
@@ -138,9 +136,9 @@ public class Student {
         return Objects.hash(id, name, term);
     }
 
-    public void enroll(ArrayList<iteration1.Course> availableCourses, Curriculum curriculum){
+    public void enroll(ArrayList<iteration1.Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
-            advisor.enrollStudent(availableCourse, this, curriculum);
+            advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
         }
     }
 

@@ -8,11 +8,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import iteration1.*;
-import iteration1.Course;
-import iteration1.Curriculum;
-import iteration1.Instructor;
-import iteration1.Student;
+import iteration2.*;
+import iteration2.Course;
+import iteration2.Curriculum;
+import iteration2.Instructor;
+import iteration2.Student;
 import org.json.JSONObject;
 
 import java.io.*;

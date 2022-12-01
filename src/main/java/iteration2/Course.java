@@ -3,8 +3,8 @@ package iteration2;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import iteration1.Instructor;
-import iteration1.Section;
+import iteration2.Instructor;
+import iteration2.Section;
 
 import java.util.ArrayList;
 import java.util.Objects;
