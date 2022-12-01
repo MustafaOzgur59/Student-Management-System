@@ -8,13 +8,25 @@ public class SystemParameter {
     private int semester;
     @JsonProperty("passRatio")
     private int passRatio;
+    @JsonProperty("studentPerSemester")
+    private int studentPerSemester;
+    @JsonProperty("maxCoursePerSemester")
+    private int maxCoursePerSemester;
+    @JsonProperty("maxCreditPerSemester")
+    private int maxCreditPerSemester;
 
     @JsonCreator
     public SystemParameter(
             @JsonProperty("semester") int semester,
-            @JsonProperty("passRatio") int passRatio) {
+            @JsonProperty("passRatio") int passRatio,
+            @JsonProperty("studentPerSemester")int studentPerSemester,
+            @JsonProperty("maxCoursePerSemester")int maxCoursePerSemester,
+            @JsonProperty("maxCreditPerSemester")int maxCreditPerSemester) {
         this.semester = semester;
         this.passRatio = passRatio;
+        this.studentPerSemester= studentPerSemester;
+        this.maxCoursePerSemester=maxCoursePerSemester;
+        this.maxCreditPerSemester=maxCreditPerSemester;
     }
 
     public int getSemester() {
@@ -33,11 +45,38 @@ public class SystemParameter {
         this.passRatio = passRatio;
     }
 
+    public int getStudentPerSemester() {
+        return studentPerSemester;
+    }
+
+    public void setStudentPerSemester(int studentPerSemester) {
+        this.studentPerSemester = studentPerSemester;
+    }
+
+    public int getMaxCoursePerSemester() {
+        return maxCoursePerSemester;
+    }
+
+    public void setMaxCoursePerSemester(int maxCoursePerSemester) {
+        this.maxCoursePerSemester = maxCoursePerSemester;
+    }
+
+    public int getMaxCreditPerSemester() {
+        return maxCreditPerSemester;
+    }
+
+    public void setMaxCreditPerSemester(int maxCreditPerSemester) {
+        this.maxCreditPerSemester = maxCreditPerSemester;
+    }
+
     @Override
     public String toString() {
         return "SystemParameter{" +
                 "semester=" + semester +
                 ", passRatio=" + passRatio +
+                ", studentPerSemester=" + studentPerSemester +
+                ", maxCoursePerSemester=" + maxCoursePerSemester +
+                ", maxCreditPerSemester=" + maxCreditPerSemester +
                 '}';
     }
 }
