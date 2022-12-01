@@ -1,4 +1,4 @@
-package iteration1;
+package iteration2;
 
 public class Advisor extends FacultyMember {
 
