@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import iteration1.GivenCourse;
+import iteration2.GivenCourse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class StudentSemester {
     @JsonProperty("note")
     private float note;
     @JsonProperty("givenCourses")
-    ArrayList<iteration1.GivenCourse> givenCourses;
+    ArrayList<iteration2.GivenCourse> givenCourses;
     List<String> letterGrades;
 
     public StudentSemester(int semesterNo) {
@@ -44,7 +44,7 @@ public class StudentSemester {
         calculateCredit();
 
         this.note=0;
-        for(iteration1.GivenCourse course : givenCourses){
+        for(iteration2.GivenCourse course : givenCourses){
            this.note += course.getCredit() * course.getGrade();
         }
         this.yano = (float) (((int)((this.note/completedCredit) * 100)) / 100.0);
@@ -52,13 +52,13 @@ public class StudentSemester {
 
     public void calculateCredit() {
         completedCredit = 0;
-        for(iteration1.GivenCourse course : givenCourses){
+        for(iteration2.GivenCourse course : givenCourses){
             completedCredit += course.getCredit();
         }
     }
 
     public void calculateLetterGrade() {
-        for(iteration1.GivenCourse course : givenCourses){
+        for(iteration2.GivenCourse course : givenCourses){
             course.calculateLetterGrade();
             Float aFloat = course.getGrade();
             if (aFloat == 0) {
@@ -123,7 +123,7 @@ public class StudentSemester {
         this.semesterNo = semesterNo;
     }
 
-    public ArrayList<iteration1.GivenCourse> getGivenCourses() {
+    public ArrayList<iteration2.GivenCourse> getGivenCourses() {
         return givenCourses;
     }
 

@@ -15,22 +15,22 @@ import java.util.ArrayList;
 
 
 public class RegistrationSystem {
-    private iteration1.StudentManager studentManager = new iteration1.StudentManager();
+    private iteration2.StudentManager studentManager = new iteration2.StudentManager();
 
-    private iteration1.JsonParser parser = new iteration1.JsonParser();
+    private iteration2.JsonParser parser = new iteration2.JsonParser();
 
-    private iteration1.Curriculum curriculum=new iteration1.Curriculum();
+    private iteration2.Curriculum curriculum=new iteration2.Curriculum();
 
-    private iteration1.Instructor instructor = new iteration1.Instructor("dummy","dummy");
+    private iteration2.Instructor instructor = new iteration2.Instructor("dummy","dummy");
 
-    private iteration1.SystemParameter systemParameter;
+    private iteration2.SystemParameter systemParameter;
 
 
     public RegistrationSystem() {
 
     }
 
-    public iteration1.StudentManager getStudentManager() {
+    public iteration2.StudentManager getStudentManager() {
         return studentManager;
     }
 
@@ -38,7 +38,7 @@ public class RegistrationSystem {
         this.studentManager = studentManager;
     }
 
-    public iteration1.JsonParser getParser() {
+    public iteration2.JsonParser getParser() {
         return parser;
     }
 
@@ -46,11 +46,11 @@ public class RegistrationSystem {
         this.parser = parser;
     }
 
-    public iteration1.Curriculum getCurriculum() {
+    public iteration2.Curriculum getCurriculum() {
         return curriculum;
     }
 
-    public iteration1.Instructor getInstructor() {
+    public iteration2.Instructor getInstructor() {
         return instructor;
     }
 
@@ -58,7 +58,7 @@ public class RegistrationSystem {
         this.instructor = instructor;
     }
 
-    public iteration1.SystemParameter getSystemParameter() {
+    public iteration2.SystemParameter getSystemParameter() {
         return systemParameter;
     }
 
@@ -89,15 +89,15 @@ public class RegistrationSystem {
 
     public void enrollStudents(){
         // courseleri enroll eder
-        for (iteration1.Student student : studentManager.getStudentList()){
-            ArrayList<iteration1.Course> availableCourses = getAvailableCourses(student);
+        for (iteration2.Student student : studentManager.getStudentList()){
+            ArrayList<iteration2.Course> availableCourses = getAvailableCourses(student);
             student.enroll(availableCourses,curriculum,systemParameter);
         }
     }
 
     public void gradeStudents(){
         // course alan bütün öğrencileri gradeler
-        for (iteration1.Course course : this.instructor.getCoursesOfferedList()){
+        for (iteration2.Course course : this.instructor.getCoursesOfferedList()){
             for (String studentId : course.getEnrolledStudents()){
                 this.instructor.gradeStudents(studentManager.getStudent(studentId),course);
             }
@@ -106,9 +106,9 @@ public class RegistrationSystem {
 
     public void calculateTranscript(){
         // dönem sonu semesterlerin yanosunu hesapla sonra transciprt gpa hesapla ve ekle
-        for (iteration1.Student student : studentManager.getStudentList()){
+        for (iteration2.Student student : studentManager.getStudentList()){
             student.getTranscript().getSemesters().add(student.getStudentSemester());
-            for (iteration1.StudentSemester semester : student.getTranscript().getSemesters()){
+            for (iteration2.StudentSemester semester : student.getTranscript().getSemesters()){
                 semester.calculateYano();
                 semester.calculateLetterGrade();
             }
@@ -120,10 +120,10 @@ public class RegistrationSystem {
      * TODO
      *  return available courses for particular student
      */
-    public ArrayList<iteration1.Course> getAvailableCourses(iteration1.Student student) {
+    public ArrayList<iteration2.Course> getAvailableCourses(iteration2.Student student) {
         // 0-> 8  1->8 2->6 3->5
-        ArrayList<iteration1.Course>[] courses = getCurriculum().getCOURSES();
-        ArrayList<iteration1.Course> availableCourses = new ArrayList<>();
+        ArrayList<iteration2.Course>[] courses = getCurriculum().getCOURSES();
+        ArrayList<iteration2.Course> availableCourses = new ArrayList<>();
         boolean isFound = false;
         for(int i=0; i<student.getTranscript().getSemesters().size(); i++) {
             ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
@@ -141,7 +141,7 @@ public class RegistrationSystem {
             }
         }
         for (int i=student.getTranscript().getSemesters().size();i<8;i++){
-            for (iteration1.Course course: courses[i]){
+            for (iteration2.Course course: courses[i]){
                  availableCourses.add(course);
             }
         }
@@ -156,7 +156,7 @@ public class RegistrationSystem {
             for (int j=1;j<=this.systemParameter.getStudentPerSemester();j++){
                 String entryPlace = j < 10 ? "00"+j : "0"+j ;
                 String studentNumber = departmentCode + entryYear + entryPlace;
-                studentManager.getStudentList().add(new iteration1.Student(studentNumber,studentNumber, term));
+                studentManager.getStudentList().add(new iteration2.Student(studentNumber,studentNumber, term));
             }
         }
     }
@@ -171,11 +171,11 @@ public class RegistrationSystem {
                     int termOfStudent = student.getTerm();
                     student.setTerm(k);
                     student.setEnrolledCourses(new ArrayList<String>());
-                    ArrayList<iteration1.Course> availableCourses = getAvailableCourses(student);
+                    ArrayList<iteration2.Course> availableCourses = getAvailableCourses(student);
                     for (Course course : availableCourses){
                         System.out.println("Available course : " + course.getName());
                     }
-                    student.setStudentSemester(new iteration1.StudentSemester(k));
+                    student.setStudentSemester(new iteration2.StudentSemester(k));
                     student.enroll(availableCourses,curriculum,systemParameter);
                     //grade student
                     for (String courseName: student.getEnrolledCourses()){

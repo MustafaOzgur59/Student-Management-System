@@ -26,11 +26,11 @@ public class Student {
 
     private ArrayList<String> enrolledCourses=new ArrayList<>();
 
-    private iteration1.StudentSemester studentSemester;
+    private iteration2.StudentSemester studentSemester;
     @JsonProperty("transcript")
-    private iteration1.Transcript transcript = new iteration1.Transcript();
+    private iteration2.Transcript transcript = new iteration2.Transcript();
 
-    private iteration1.Advisor advisor = new iteration1.Advisor("dummy","124");
+    private iteration2.Advisor advisor = new iteration2.Advisor("dummy","124");
 
     @JsonProperty("logs")
     private ArrayList<String> logs=new ArrayList<>();
@@ -39,7 +39,7 @@ public class Student {
         this.id = id;
         this.name = name;
         this.term = term;
-        studentSemester = new iteration1.StudentSemester(term);
+        studentSemester = new iteration2.StudentSemester(term);
     }
 
     @JsonCreator
@@ -47,13 +47,13 @@ public class Student {
             @JsonProperty("id") String id,
             @JsonProperty("name") String name,
             @JsonProperty("term") Integer term,
-            @JsonProperty("transcript") iteration1.Transcript transcript) {
+            @JsonProperty("transcript") iteration2.Transcript transcript) {
         this.id = id;
         this.name = name;
         this.term = term;
         this.transcript=transcript;
         this.enrolledCourses = new ArrayList<>();
-        this.studentSemester = new iteration1.StudentSemester(this.term);
+        this.studentSemester = new iteration2.StudentSemester(this.term);
     }
 
     public Student() {
@@ -91,7 +91,7 @@ public class Student {
         this.enrolledCourses = enrolledCourses;
     }
 
-    public iteration1.StudentSemester getStudentSemester() {
+    public iteration2.StudentSemester getStudentSemester() {
         return studentSemester;
     }
 
@@ -99,7 +99,7 @@ public class Student {
         this.studentSemester = studentSemester;
     }
 
-    public iteration1.Transcript getTranscript() {
+    public iteration2.Transcript getTranscript() {
         return transcript;
     }
 
@@ -107,7 +107,7 @@ public class Student {
         this.transcript = transcript;
     }
 
-    public iteration1.Advisor getAdvisor() {
+    public iteration2.Advisor getAdvisor() {
         return advisor;
     }
 
@@ -136,7 +136,7 @@ public class Student {
         return Objects.hash(id, name, term);
     }
 
-    public void enroll(ArrayList<iteration1.Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
+    public void enroll(ArrayList<iteration2.Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
             advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
         }

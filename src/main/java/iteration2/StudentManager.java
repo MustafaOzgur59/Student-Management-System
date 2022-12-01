@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentManager {
-    private List<iteration1.Student> studentList;
-    private List<iteration1.Course> coursesList;
+    private List<iteration2.Student> studentList;
+    private List<iteration2.Course> coursesList;
     private Advisor advisor;
 
     public StudentManager() {
@@ -17,7 +17,7 @@ public class StudentManager {
         this.coursesList = new ArrayList<>();
     }
 
-    public boolean addStudent(iteration1.Student student, iteration1.Course course) {
+    public boolean addStudent(iteration2.Student student, iteration2.Course course) {
         if(course.getQuota() > course.getEnrolledStudents().size()) {
             course.getEnrolledStudents().add(student.getId());
             return true;
@@ -26,20 +26,20 @@ public class StudentManager {
             return false;
         }
     }
-    public boolean searchStudent(iteration1.Student student, iteration1.Course course) {
+    public boolean searchStudent(iteration2.Student student, iteration2.Course course) {
         return course.getEnrolledStudents().contains(student);
     }
-    public void removeStudent(iteration1.Student student, iteration1.Course course) {
+    public void removeStudent(iteration2.Student student, iteration2.Course course) {
         course.getEnrolledStudents().remove(student);
     }
-    public List<iteration1.Student> getStudentList() {
+    public List<iteration2.Student> getStudentList() {
         return studentList;
     }
-    public void setStudentList(List<iteration1.Student> studentList) {
+    public void setStudentList(List<iteration2.Student> studentList) {
         this.studentList = studentList;
     }
 
-    public List<iteration1.Course> getCoursesList() {
+    public List<iteration2.Course> getCoursesList() {
         return coursesList;
     }
 
@@ -47,7 +47,7 @@ public class StudentManager {
         this.coursesList = coursesList;
     }
 
-    public iteration1.Student getStudent(String studentId){
+    public iteration2.Student getStudent(String studentId){
         for (Student student : this.studentList){
             if (student.getId().equals(studentId)) return student;
         }

@@ -1,6 +1,6 @@
 package iteration2;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import iteration1.StudentSemester;
+import iteration2.StudentSemester;
 
 import java.util.ArrayList;
 import java.util.List;

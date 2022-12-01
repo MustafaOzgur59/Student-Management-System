@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Instructor extends FacultyMember {
 
 
-	private ArrayList<iteration1.Course> coursesOfferedList;
+	private ArrayList<iteration2.Course> coursesOfferedList;
 
 	public Instructor(String name, String id) {
 		super(name, id);
@@ -25,7 +25,7 @@ public class Instructor extends FacultyMember {
 		student.getStudentSemester().getGivenCourses().add(new GivenCourse(course.getCode(),int_random,course.getCredit()));
 	}
 
-	public ArrayList<iteration1.Course> getCoursesOfferedList() {
+	public ArrayList<iteration2.Course> getCoursesOfferedList() {
 		return coursesOfferedList;
 	}
 

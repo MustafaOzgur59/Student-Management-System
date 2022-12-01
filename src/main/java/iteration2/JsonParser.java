@@ -27,17 +27,17 @@ public class JsonParser {
         mapper.setDefaultPrettyPrinter(prettyPrinter);
     }
 
-    public ArrayList<iteration1.Course> parseCourseObjects(Curriculum curriculum, Instructor instructor) throws IOException {
+    public ArrayList<iteration2.Course> parseCourseObjects(Curriculum curriculum, Instructor instructor) throws IOException {
         // Old implementation  --> Files.readAllBytes(Path.of(path));
-        ArrayList<iteration1.Course> allCourses = new ArrayList<>();
+        ArrayList<iteration2.Course> allCourses = new ArrayList<>();
         File dirPath = new File("./src/main/java/courses");
         File[] courseFiles = dirPath.listFiles();
         for (File f : courseFiles){
             FileInputStream inputStream = new FileInputStream(f);
             String jsonString = new String(inputStream.readAllBytes());
-            iteration1.Course[] courses = mapper.readValue(jsonString, iteration1.Course[].class);
-            ArrayList<iteration1.Course> courseList = new ArrayList<>(Arrays.asList(courses));
-            for (iteration1.Course course : courseList){
+            iteration2.Course[] courses = mapper.readValue(jsonString, iteration2.Course[].class);
+            ArrayList<iteration2.Course> courseList = new ArrayList<>(Arrays.asList(courses));
+            for (iteration2.Course course : courseList){
                 allCourses.add(course);
             }
             inputStream.close();
@@ -51,15 +51,15 @@ public class JsonParser {
         return  allCourses;
     }
 
-    public ArrayList<iteration1.Student> parseStudents(StudentManager manager) throws IOException {
-        ArrayList<iteration1.Student> studentList = new ArrayList<>();
+    public ArrayList<iteration2.Student> parseStudents(StudentManager manager) throws IOException {
+        ArrayList<iteration2.Student> studentList = new ArrayList<>();
         File dirPath = new File("./src/main/java/students/inputStudents");
         File[] studentFiles = dirPath.listFiles();
         assert studentFiles != null;
         for (File f : studentFiles){
             FileInputStream inputStream = new FileInputStream(f);
             String jsonString = new String(inputStream.readAllBytes());
-            iteration1.Student student = mapper.readValue(jsonString, iteration1.Student.class);
+            iteration2.Student student = mapper.readValue(jsonString, iteration2.Student.class);
             manager.getStudentList().add(student);
             inputStream.close();
             System.out.println(student.toString());
@@ -71,9 +71,9 @@ public class JsonParser {
     /*TODO
         -Parse the resulting outputs from the student objects into json files
     */
-    public void outputStudentObjects(List<iteration1.Student> studentList) throws IOException {
+    public void outputStudentObjects(List<iteration2.Student> studentList) throws IOException {
         File dirPath = new File("./src/main/java/students/outputStudents");
-        for (iteration1.Student s : studentList){
+        for (iteration2.Student s : studentList){
             String jsonString = mapper.writeValueAsString(s);
             File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
             studentJsonFile.createNewFile();
@@ -83,7 +83,7 @@ public class JsonParser {
         }
     }
 
-    public void outputStudentObjectsWithProblems(List<iteration1.Student> studentList) throws IOException {
+    public void outputStudentObjectsWithProblems(List<iteration2.Student> studentList) throws IOException {
         File dirPath = new File("./src/main/java/students/outputStudents");
         for (Student s : studentList){
             String jsonString = mapper.writer(prettyPrinter).writeValueAsString(s);
