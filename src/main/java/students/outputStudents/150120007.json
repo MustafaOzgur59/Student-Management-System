@@ -1,0 +1,306 @@
+{
+  "id" : "150120007",
+  "name" : "150120007",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : 2.52,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 2.45,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 76.0,
+        "letterGrades" : [
+          "CC",
+          "FD",
+          "CB",
+          "BA",
+          "BB",
+          "AA",
+          "FD",
+          "FF",
+          "CC",
+          "FD",
+          "CB",
+          "BA",
+          "BB",
+          "AA",
+          "FD",
+          "FF"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 2.65,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 53.0,
+        "letterGrades" : [
+          "DC",
+          "BB",
+          "CC",
+          "BB",
+          "AA",
+          "BB",
+          "AA",
+          "CC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1242",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "Ataturk’s Principles and the History of Turkish Renovation I ",
+    "Physics Lab I",
+    "Türk Dili I",
+    "Ataturk’s Principles and the History of Turkish Renovation I ",
+    "Physics Lab I",
+    "Türk Dili I",
+    "Ataturk’s Principles and the History of Turkish Renovation II ",
+    "Computer Programming II"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 2,
+    "yano" : 2.65,
+    "takenCredit" : 20,
+    "completedCredit" : 20,
+    "note" : 53.0,
+    "letterGrades" : [
+      "DC",
+      "BB",
+      "CC",
+      "BB",
+      "AA",
+      "BB",
+      "AA",
+      "CC"
+    ],
+    "givenCourses" : [
+      {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1103",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD121",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1103",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD121",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE1242",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      }
+    ]
+  },
+  "advisor" : {
+    "name" : "dummy",
+    "id" : "124"
+  },
+  "logs" : [
+    "Added course : Computer Programming I to Student : 150120007 because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation I  to Student : 150120007 because of no prerequisites",
+    "Added course : Introduction to Computer Engineering to Student : 150120007 because of no prerequisites",
+    "Added course : CALCULUS I to Student : 150120007 because of no prerequisites",
+    "Added course : Introduction to Modern Biology to Student : 150120007 because of no prerequisites",
+    "Added course : Physics I to Student : 150120007 because of no prerequisites",
+    "Added course : Physics Lab I to Student : 150120007 because of no prerequisites",
+    "Added course : Türk Dili I to Student : 150120007 because of no prerequisites",
+    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Computer Programming II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Non-Technical Elective - 1 to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Calculus II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Linear Algebra for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Türk Dili II  to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Discrete Computational Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Data Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Engineering Economy to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electric Circuits to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Differential Equations to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Numerical Methods to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Analysis of Algorithms to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Systems Programming to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Principles of Programming Languages to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electronics to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation I  to Student : 150120007 because of no prerequisites",
+    "Added course : Physics Lab I to Student : 150120007 because of no prerequisites",
+    "Added course : Türk Dili I to Student : 150120007 because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation I  to Student : 150120007 because of no prerequisites",
+    "Added course : Physics Lab I to Student : 150120007 because of no prerequisites",
+    "Added course : Türk Dili I to Student : 150120007 because of no prerequisites",
+    "Added course : Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150120007 because of no prerequisites",
+    "Added course:Computer Programming II to Student : 150120007 because student passed every prerequiste",
+    "Cant add course: Non-Technical Elective - 1 to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Calculus II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Linear Algebra for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Türk Dili II  to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Computer Programming II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Non-Technical Elective - 1 to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Calculus II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Linear Algebra for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Türk Dili II  to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Discrete Computational Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Data Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Engineering Economy to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electric Circuits to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Differential Equations to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Numerical Methods to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Discrete Computational Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Data Structures to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Engineering Economy to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electric Circuits to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Differential Equations to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Numerical Methods to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Analysis of Algorithms to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Systems Programming to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Principles of Programming Languages to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electronics to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Analysis of Algorithms to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Systems Programming to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Principles of Programming Languages to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Electronics to Student : 150120007 because of maximum allowed course amount exceeded",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150120007 because of maximum allowed course amount exceeded"
+  ]
+}

@@ -4,12 +4,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import iteration2.Advisor;
-import iteration2.Course;
-import iteration2.Curriculum;
-import iteration2.StudentSemester;
-import iteration2.SystemParameter;
-import iteration2.Transcript;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -26,11 +20,11 @@ public class Student {
 
     private ArrayList<String> enrolledCourses=new ArrayList<>();
 
-    private iteration2.StudentSemester studentSemester;
+    private StudentSemester studentSemester;
     @JsonProperty("transcript")
-    private iteration2.Transcript transcript = new iteration2.Transcript();
+    private Transcript transcript = new Transcript();
 
-    private iteration2.Advisor advisor = new iteration2.Advisor("dummy","124");
+    private Advisor advisor = new Advisor("dummy","124");
 
     @JsonProperty("logs")
     private ArrayList<String> logs=new ArrayList<>();
@@ -39,7 +33,7 @@ public class Student {
         this.id = id;
         this.name = name;
         this.term = term;
-        studentSemester = new iteration2.StudentSemester(term);
+        studentSemester = new StudentSemester(term);
     }
 
     @JsonCreator
@@ -47,13 +41,13 @@ public class Student {
             @JsonProperty("id") String id,
             @JsonProperty("name") String name,
             @JsonProperty("term") Integer term,
-            @JsonProperty("transcript") iteration2.Transcript transcript) {
+            @JsonProperty("transcript") Transcript transcript) {
         this.id = id;
         this.name = name;
         this.term = term;
         this.transcript=transcript;
         this.enrolledCourses = new ArrayList<>();
-        this.studentSemester = new iteration2.StudentSemester(this.term);
+        this.studentSemester = new StudentSemester(this.term);
     }
 
     public Student() {
@@ -91,7 +85,7 @@ public class Student {
         this.enrolledCourses = enrolledCourses;
     }
 
-    public iteration2.StudentSemester getStudentSemester() {
+    public StudentSemester getStudentSemester() {
         return studentSemester;
     }
 
@@ -99,7 +93,7 @@ public class Student {
         this.studentSemester = studentSemester;
     }
 
-    public iteration2.Transcript getTranscript() {
+    public Transcript getTranscript() {
         return transcript;
     }
 
@@ -107,7 +101,7 @@ public class Student {
         this.transcript = transcript;
     }
 
-    public iteration2.Advisor getAdvisor() {
+    public Advisor getAdvisor() {
         return advisor;
     }
 
@@ -136,7 +130,7 @@ public class Student {
         return Objects.hash(id, name, term);
     }
 
-    public void enroll(ArrayList<iteration2.Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
+    public void enroll(ArrayList<Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
             advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
         }
