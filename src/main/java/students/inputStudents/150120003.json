@@ -1,0 +1,128 @@
+{
+  "id" : "150120003",
+  "name" : "150120003",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : 2.69,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 3.21,
+        "takenCredit" : 23,
+        "completedCredit" : 23,
+        "note" : 74.0,
+        "letterGrades" : [
+          "CC",
+          "AA",
+          "CB",
+          "AA",
+          "AA",
+          "CC",
+          "AA",
+          "CB",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 1.85,
+        "takenCredit" : 14,
+        "completedCredit" : 14,
+        "note" : 26.0,
+        "letterGrades" : [
+          "DC",
+          "CB",
+          "FF",
+          "BB",
+          "DC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "Physics I",
+    "Physics Lab I",
+    "Türk Dili I",
+    "Physics I",
+    "Physics Lab I"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 3,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Doc. Dr. Mustafa AGAOGLU",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}

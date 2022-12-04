@@ -1,0 +1,24 @@
+{
+  "id" : "150121001",
+  "name" : "150121001",
+  "term" : 1,
+  "transcript" : {
+    "gpa" : null,
+    "semesters" : [ ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : {
+    "semesterNo" : 1,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Prof.Dr.Cigdem Eroglu ERDEM",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}

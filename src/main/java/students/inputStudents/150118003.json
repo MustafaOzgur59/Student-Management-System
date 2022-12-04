@@ -1,0 +1,382 @@
+{
+  "id" : "150118003",
+  "name" : "150118003",
+  "term" : 7,
+  "transcript" : {
+    "gpa" : 1.45,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 1.84,
+        "takenCredit" : 23,
+        "completedCredit" : 23,
+        "note" : 42.5,
+        "letterGrades" : [
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB",
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB",
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB",
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB",
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB",
+          "BA",
+          "FD",
+          "FD",
+          "DD",
+          "CB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 1.77,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 32.0,
+        "letterGrades" : [
+          "DC",
+          "FF",
+          "BA",
+          "DC",
+          "DD",
+          "DC",
+          "FF",
+          "BA",
+          "DC",
+          "DD",
+          "DC",
+          "FF",
+          "BA",
+          "DC",
+          "DD",
+          "DC",
+          "FF",
+          "BA",
+          "DC",
+          "DD",
+          "DC",
+          "FF",
+          "BA",
+          "DC",
+          "DD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 3,
+        "yano" : 0.77,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 14.0,
+        "letterGrades" : [
+          "DD",
+          "FD",
+          "DD",
+          "FD",
+          "DD",
+          "DD",
+          "FD",
+          "DD",
+          "FD",
+          "DD",
+          "DD",
+          "FD",
+          "DD",
+          "FD",
+          "DD",
+          "DD",
+          "FD",
+          "DD",
+          "FD",
+          "DD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 4,
+        "yano" : 0.94,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 17.0,
+        "letterGrades" : [
+          "DC",
+          "FF",
+          "FF",
+          "CB",
+          "CC",
+          "DC",
+          "FF",
+          "FF",
+          "CB",
+          "CC",
+          "DC",
+          "FF",
+          "FF",
+          "CB",
+          "CC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 5,
+        "yano" : 2.16,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 39.0,
+        "letterGrades" : [
+          "CB",
+          "BA",
+          "FD",
+          "BB",
+          "CB",
+          "CB",
+          "BA",
+          "FD",
+          "BB",
+          "CB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 6,
+        "yano" : 1.16,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 21.0,
+        "letterGrades" : [
+          "CC",
+          "DD",
+          "CC",
+          "FF",
+          "FD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "Ataturk’s Principles and the History of Turkish Renovation I ",
+    "Introduction to Computer Engineering",
+    "CALCULUS I",
+    "Physics I",
+    "Physics Lab I"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 7,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Prof. Dr. Ali Fuat ALKAYA",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}

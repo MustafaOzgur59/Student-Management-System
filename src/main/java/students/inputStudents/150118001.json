@@ -1,0 +1,382 @@
+{
+  "id" : "150118001",
+  "name" : "150118001",
+  "term" : 7,
+  "transcript" : {
+    "gpa" : 1.54,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 2.17,
+        "takenCredit" : 23,
+        "completedCredit" : 23,
+        "note" : 50.0,
+        "letterGrades" : [
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "DD",
+          "CC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 1.4,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 28.0,
+        "letterGrades" : [
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "FD",
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "FD",
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "FD",
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "FD",
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "FD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 3,
+        "yano" : 0.8,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 16.0,
+        "letterGrades" : [
+          "FD",
+          "DC",
+          "DC",
+          "CC",
+          "FF",
+          "FD",
+          "DC",
+          "DC",
+          "CC",
+          "FF",
+          "FD",
+          "DC",
+          "DC",
+          "CC",
+          "FF",
+          "FD",
+          "DC",
+          "DC",
+          "CC",
+          "FF"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 4,
+        "yano" : 1.9,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 38.0,
+        "letterGrades" : [
+          "AA",
+          "FD",
+          "BA",
+          "DD",
+          "FD",
+          "AA",
+          "FD",
+          "BA",
+          "DD",
+          "FD",
+          "AA",
+          "FD",
+          "BA",
+          "DD",
+          "FD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 5,
+        "yano" : 1.04,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 21.0,
+        "letterGrades" : [
+          "FD",
+          "FF",
+          "FD",
+          "DD",
+          "CB",
+          "FD",
+          "FF",
+          "FD",
+          "DD",
+          "CB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 6,
+        "yano" : 1.85,
+        "takenCredit" : 20,
+        "completedCredit" : 20,
+        "note" : 37.0,
+        "letterGrades" : [
+          "CB",
+          "BB",
+          "BB",
+          "CC",
+          "FF"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "CALCULUS I",
+    "Physics I",
+    "Physics Lab I",
+    "Türk Dili I",
+    "CALCULUS I"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 7,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Prof. Dr. Haluk Rahmi TOPCUOGLU",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}
