@@ -51,6 +51,17 @@ public class JsonParser {
         return  allCourses;
     }
 
+    public ArrayList<Advisor> parseAdvisors(StudentManager manager) throws IOException {
+        File dirPath = new File("./src/main/java/Advisors.json");
+        FileInputStream inputStream = new FileInputStream(dirPath);
+        String jsonString = new String(inputStream.readAllBytes());
+        Advisor[] advisors = mapper.readValue(jsonString, Advisor[].class);
+        inputStream.close();
+        ArrayList<Advisor> advisorList = new ArrayList<>(Arrays.asList(advisors));
+        manager.setAdvisorList(advisorList);
+        return advisorList;
+    }
+
     public ArrayList<iteration2.Student> parseStudents(StudentManager manager) throws IOException {
         ArrayList<iteration2.Student> studentList = new ArrayList<>();
         File dirPath = new File("./src/main/java/students/inputStudents");
@@ -83,20 +94,11 @@ public class JsonParser {
         }
     }
 
-    public void outputStudentObjectsWithProblems(List<iteration2.Student> studentList) throws IOException {
-        File dirPath = new File("./src/main/java/students/outputStudents");
+    public void outputStudentObjectsWithProblems(List<iteration2.Student> studentList,String path) throws IOException {
+        File dirPath = new File(path);
         for (Student s : studentList){
             String jsonString = mapper.writer(prettyPrinter).writeValueAsString(s);
-            /*ObjectNode jsonObject = (ObjectNode) mapper.readTree(jsonString);
-            ArrayList<String> logs = new ArrayList<>();
-            logs.add("Hello I am here");
-            logs.add("DENEMEE");
-            logs.add("DENEMEE");
-            JsonNode arrayNode = mapper.valueToTree(logs);
-            jsonObject.set("logs",arrayNode);
-            jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);
-            String newString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);*/
-            File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
+            File studentJsonFile = new File(path + s.getId() + ".json");
             studentJsonFile.createNewFile();
             PrintWriter writer = new PrintWriter(studentJsonFile);
             writer.write(jsonString);

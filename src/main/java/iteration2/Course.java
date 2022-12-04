@@ -1,14 +1,26 @@
 package iteration2;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.*;
 import iteration2.Instructor;
 import iteration2.Section;
 
+import java.text.DateFormat;
+import java.text.Format;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Objects;
+import java.util.zip.DataFormatException;
 
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "type")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = MandatoryCourse.class, name = "MD"),
+        @JsonSubTypes.Type(value = TechnicalElective.class, name = "TE")
+})
 @JsonIgnoreProperties(value={"enrolledStudents","instructor"},allowGetters = true)
 @JsonPropertyOrder({"name","code","term","year","credit","quota","course sessions","lab sessions", "prerequisiteTo"})
 public class Course {
@@ -176,5 +188,38 @@ public class Course {
                 ", courseSessions=" + courseSessions +
                 ", labSessions=" + labSessions +
                 '}';
+    }
+
+    public boolean checkCollision(Course studentCourse){
+        for (Section courseSection : this.getCourseSessions()){
+            for (Section stdCourseSection : studentCourse.getCourseSessions()){
+                // if the two sections are in the same day
+                if (stdCourseSection.getDay().equals(courseSection.getDay())){
+                    String[] courseHours = courseSection.getHours().split(","); // 1 hour range 2 or 3
+                    for (String hourRange: courseHours){
+                        System.out.println("Course section range : " + hourRange);
+                    }
+                    String[] stdCourseHours = stdCourseSection.getHours().split(",");// 1 hour range  3 or 3
+                    for (String courseHour: courseHours){
+                        String[] splitHours = courseHour.split("-"); // 2 hours
+                        for (String studentCourseHour : stdCourseHours){
+                            String[] studentSplitHours = studentCourseHour.split("-"); // 2 hour
+                            try {
+                                Date startDate = new SimpleDateFormat("HH:mm").parse(splitHours[0]);
+                                Date endDate = new SimpleDateFormat("HH:mm").parse(splitHours[1]);
+                                Date stdStartDate = new SimpleDateFormat("HH:mm").parse(studentSplitHours[0]);
+                                if (stdStartDate.after(startDate) && stdStartDate.before(endDate)){
+                                    return true;
+                                }
+                            } catch (ParseException exception){
+                                System.out.println("Invalid date format" + exception.getMessage());
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

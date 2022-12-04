@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentManager {
     private List<iteration2.Student> studentList;
     private List<iteration2.Course> coursesList;
-    private Advisor advisor;
+    private ArrayList<Advisor> advisorList;
 
     public StudentManager() {
         this.studentList = new ArrayList<>();
@@ -45,6 +45,14 @@ public class StudentManager {
 
     public void setCoursesList(List<Course> coursesList) {
         this.coursesList = coursesList;
+    }
+
+    public ArrayList<Advisor> getAdvisorList() {
+        return advisorList;
+    }
+
+    public void setAdvisorList(ArrayList<Advisor> advisorList) {
+        this.advisorList = advisorList;
     }
 
     public iteration2.Student getStudent(String studentId){

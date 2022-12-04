@@ -4,6 +4,7 @@ package iteration2;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class RegistrationSystem {
@@ -61,9 +62,10 @@ public class RegistrationSystem {
     public void readJsonFiles() throws IOException {
         this.systemParameter=this.parser.parseParameters();
         this.parser.parseCourseObjects(this.curriculum,this.instructor);
-        //this.parser.parseStudents(this.studentManager);
+        this.parser.parseAdvisors(this.studentManager);
         this.initializeStudents();
         this.prepareInitializedStudents();
+
         /*
          * TODO
          *  -replace outputStudentObjects function to the end of the simulation
@@ -73,11 +75,18 @@ public class RegistrationSystem {
     }
 
     public void beginSimulation() throws IOException {
-        //enrollStudents();
-        //gradeStudents();
-        //calculateTranscript();
-        this.parser.outputStudentObjectsWithProblems(this.studentManager.getStudentList());
+        this.parser.outputStudentObjectsWithProblems(
+                this.studentManager.getStudentList(),
+                "./src/main/java/students/inputStudents/");
+        enrollStudents();
+        gradeStudents();
+        calculateTranscript();
+        this.parser.outputStudentObjectsWithProblems(
+                this.studentManager.getStudentList(),
+                "./src/main/java/students/outputStudents/");
+
     }
+
 
     public void enrollStudents(){
         // courseleri enroll eder
@@ -112,6 +121,7 @@ public class RegistrationSystem {
      * TODO
      *  return available courses for particular student
      */
+    // potential bug here
     public ArrayList<Course> getAvailableCourses(Student student) {
         // 0-> 8  1->8 2->6 3->5
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
@@ -141,20 +151,22 @@ public class RegistrationSystem {
     }
 
     public void initializeStudents(){
-        for (int i=1;i<=2;i++){
+        for (int i=1;i<=4;i++){
             int term = 2 * (i-1) + 1;
             String departmentCode= "1501";
             String entryYear = Integer.toString(22 - i);
             for (int j=1;j<=this.systemParameter.getStudentPerSemester();j++){
                 String entryPlace = j < 10 ? "00"+j : "0"+j ;
                 String studentNumber = departmentCode + entryYear + entryPlace;
-                studentManager.getStudentList().add(new Student(studentNumber,studentNumber, term));
+                Student student = new Student(studentNumber,studentNumber, term);
+                student.setAdvisor(studentManager.getAdvisorList().get(new Random().nextInt(studentManager.getAdvisorList().size())));
+                studentManager.getStudentList().add(student);
             }
         }
     }
-
+    // potential bug here
     public void prepareInitializedStudents() throws IOException {
-        for (int i=1;i<=2;i++){
+        for (int i=1;i<=4;i++){
             int maxTerm = 2 * i -1;
             for (int k=1;k<maxTerm;k++){
                 for (int j=0;j<this.systemParameter.getStudentPerSemester();j++){
@@ -171,7 +183,7 @@ public class RegistrationSystem {
                     student.enroll(availableCourses,curriculum,systemParameter);
                     //grade student
                     for (String courseName: student.getEnrolledCourses()){
-                        //System.out.println("Course code is : " + courseName);
+
                         this.instructor.gradeStudents(student, curriculum.getCourse(courseName));
                     }
                     student.getTranscript().getSemesters().add(student.getStudentSemester());
@@ -185,7 +197,10 @@ public class RegistrationSystem {
                 this.parser.parseCourseObjects(this.curriculum,this.instructor);
             }
         }
-
+        for (Student student : this.studentManager.getStudentList()){
+            student.setStudentSemester(new StudentSemester(student.getTerm()));
+            student.setLogs(new ArrayList<>());
+        }
     }
 
     public void setCurriculum(Curriculum curriculum) {

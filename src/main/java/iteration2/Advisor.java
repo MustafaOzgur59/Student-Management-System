@@ -1,9 +1,13 @@
 package iteration2;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Advisor extends FacultyMember {
 
-    public Advisor(String name, String id) {
-        super(name, id);
+    @JsonCreator
+    public Advisor(@JsonProperty("name") String name) {
+        super(name, "advisor");
     }
 
 
@@ -42,6 +46,13 @@ public class Advisor extends FacultyMember {
             return false;
         }
 
+        // if no course sessions overlap with this course's sessions
+        System.out.println("Current course : " + course.getName());
+        if(checkCourseCollision(student,course,curriculum)){
+            student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
+            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
+        }
+
         //if no prerequisite is need for the course.
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
             student.getLogs().add("Added course : " + course.getName() + " to Student : " + student.getName() + " because of no prerequisites");
@@ -63,21 +74,30 @@ public class Advisor extends FacultyMember {
                     }
                 }
             }
+            if (passedPrerequisiteCount == course.getPrerequisiteTo().size()){
+                student.getLogs().add("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
+                java.lang.System.out.println("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
+                student.getEnrolledCourses().add(course.getName());
+                student.getStudentSemester().setTakenCredit(student.getStudentSemester().getTakenCredit() + course.getCredit());
+                course.getEnrolledStudents().add(student.getId());
+                return true;
+            }
+            else{
+                student.getLogs().add("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
+                java.lang.System.out.println("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
+                return false;
+            }
         }
+    }
 
-        if (passedPrerequisiteCount == course.getPrerequisiteTo().size()){
-            student.getLogs().add("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
-            java.lang.System.out.println("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
-            student.getEnrolledCourses().add(course.getName());
-            student.getStudentSemester().setTakenCredit(student.getStudentSemester().getTakenCredit() + course.getCredit());
-            course.getEnrolledStudents().add(student.getId());
-            return true;
+    public boolean checkCourseCollision(Student student,Course course,Curriculum curriculum){
+        for (String courseName : student.getEnrolledCourses()){
+            Course stdCourse = curriculum.getCourse(courseName);
+             if(course.checkCollision(stdCourse)){
+                 return true;
+             }
         }
-        else{
-            student.getLogs().add("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
-            java.lang.System.out.println("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
-            return false;
-        }
+        return false;
     }
 }
 

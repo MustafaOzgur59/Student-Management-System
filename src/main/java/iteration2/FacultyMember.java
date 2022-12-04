@@ -1,13 +1,14 @@
 package iteration2;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import iteration2.Course;
 import iteration2.Student;
 
 public abstract class FacultyMember {
 	
 	
-
+	@JsonProperty("name")
 	private String name ;
 	private String id ;
 

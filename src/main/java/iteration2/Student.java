@@ -24,7 +24,7 @@ public class Student {
     @JsonProperty("transcript")
     private Transcript transcript = new Transcript();
 
-    private Advisor advisor = new Advisor("dummy","124");
+    private Advisor advisor;
 
     @JsonProperty("logs")
     private ArrayList<String> logs=new ArrayList<>();
