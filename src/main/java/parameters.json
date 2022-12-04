@@ -1,7 +1,7 @@
 {
   "semester": 1,
   "passRatio": 65,
-  "studentPerSemester": 7,
-  "maxCoursePerSemester": 8,
+  "studentPerSemester": 3,
+  "maxCoursePerSemester": 5,
   "maxCreditPerSemester": 40
 }
