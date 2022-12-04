@@ -1,39 +1,38 @@
 [
   {
-    "Prof. Dr. Haluk Rahmi TOPCUOGLU"
+   "name":"Prof. Dr. Haluk Rahmi TOPCUOGLU"
   },
   {
-    "Prof.Dr.Cigdem Eroglu ERDEM"
+    "name":"Prof.Dr.Cigdem Eroglu ERDEM"
   },
   {
-    "Prof. Dr. Ali Fuat ALKAYA"
+    "name":"Prof. Dr. Ali Fuat ALKAYA"
   },
   {
-    "Doc. Dr. Murat Can GANIZ"
+    "name":"Doc. Dr. Murat Can GANIZ"
   },
   {
-    "Doc. Dr. Mujdat SOYTURK"
+    "name":"Doc. Dr. Mujdat SOYTURK"
   },
   {
-    "Doc. Dr. Borahan TUMER"
+    "name":"Doc. Dr. Borahan TUMER"
   },
   {
-    "Doc. Dr. Mustafa AGAOGLU"
+    "name":"Doc. Dr. Mustafa AGAOGLU"
   },
   {
-    "Dr. Ogr. Uyesi Betul Demiroz BOZ"
+    "name":"Dr. Ogr. Uyesi Betul Demiroz BOZ"
   },
   {
-    "Dr. Ogr. Uyesi Fatma Corut ERGIN"
+    "name":"Dr. Ogr. Uyesi Fatma Corut ERGIN"
   },
   {
-    "Doc. Dr. Omer KORCAK"
+    "name":"Doc. Dr. Omer KORCAK"
   },
   {
-    "Dr. Ogr. Uyesi Ali Haydar OZER"
+    "name":"Dr. Ogr. Uyesi Ali Haydar OZER"
   },
   {
-    "Dr. Ogr. Uyesi Sanem Arslan"
+    "name":"Dr. Ogr. Uyesi Sanem Arslan"
   }
-
 ]
