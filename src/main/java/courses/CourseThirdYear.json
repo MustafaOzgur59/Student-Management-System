@@ -171,7 +171,7 @@
     "term": 2,
     "year": 3,
     "credit": 2,
-    "quota": ,
+    "quota": 120,
     "course sessions": [
       {
         "day": "",
@@ -338,7 +338,7 @@
       }
     ],
     "prerequisiteTo": [
-      "MATH2256",
+      "MATH2256"
     ]
   }
   
