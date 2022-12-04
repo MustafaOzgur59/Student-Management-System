@@ -1,43 +1,45 @@
 [
   {
-  "name": "Computer Programming I",
-  "code": "CSE1241",
-  "term": 1,
-  "year": 1,
-  "credit": 6,
-  "quota": 150,
-  "course sessions": [
-    {
-      "day": "Monday",
-      "hour": "10:30-11:20,11:30-12:20"
-    },
-    {
-      "day": "Thursday",
-      "hour": "15:00-16:50"
-    }
-  ],
-  "lab sessions": [
-    {
-      "day": "Friday",
-      "hour": "14:00-14:50,15:00-15:50"
-    },
-    {
-      "day": "Tuesday",
-      "hour": "10:30-11:20,11:30-12:20"
-    },
-    {
-      "day": "Thursday",
-      "hour": "10:30-11:20,11:30-12:20"
-    }
-  ],
-  "prerequisiteTo": [
-    
-  ]
-},
+    "name": "Computer Programming I",
+    "code": "CSE1241",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 6,
+    "quota": 150,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "15:00-16:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Friday",
+        "hour": "14:00-14:50,15:00-15:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "10:30-11:20,11:30-12:20"
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
 
   {
     "name": "Ataturk’s Principles and the History of Turkish Renovation I ",
     "code": "ATA121",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 2,
@@ -56,13 +58,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Introduction to Computer Engineering",
     "code": "CSE1200",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 4,
@@ -84,13 +87,14 @@
       }
     ],
     "prerequisiteTo": [
-     
+
     ]
   },
 
   {
     "name": "CALCULUS I",
     "code": "MATH1001",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 6,
@@ -112,13 +116,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Introduction to Modern Biology",
     "code": "MBG1201",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 5,
@@ -140,13 +145,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Physics I",
     "code": "PHYS1101",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 4,
@@ -168,13 +174,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Physics Lab I",
     "code": "PHYS1103",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 2,
@@ -193,13 +200,14 @@
       }
     ],
     "prerequisiteTo": [
-     
+
     ]
   },
 
   {
     "name": "Türk Dili I",
     "code": "TRD121",
+    "type": "MD",
     "term": 1,
     "year": 1,
     "credit": 2,
@@ -218,13 +226,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Ataturk’s Principles and the History of Turkish Renovation II ",
     "code": "ATA121",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 2,
@@ -243,12 +252,13 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
   {
     "name": "Computer Programming II",
     "code": "CSE1242",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 6,
@@ -284,6 +294,7 @@
   {
     "name": "Non-Technical Elective - 1",
     "code": "CSE-NTE1",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 3,
@@ -302,12 +313,13 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
   {
     "name": "Calculus II",
     "code": "MATH1002",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 6,
@@ -329,7 +341,7 @@
       }
     ],
     "prerequisiteTo": [
-      
+
 
     ]
   },
@@ -337,6 +349,7 @@
   {
     "name": "Linear Algebra for Computer Engineering",
     "code": "MATH2256",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 5,
@@ -359,13 +372,14 @@
     ],
     "prerequisiteTo": [
       "IE3235"
-      
+
 
     ]
   },
   {
     "name": "Physics II",
     "code": "PHYS1102",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 4,
@@ -389,6 +403,7 @@
   {
     "name": "Physics Lab II",
     "code": "PHYS1104",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 2,
@@ -406,12 +421,13 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
   {
     "name": "Türk Dili II ",
     "code": "TRD122 ",
+    "type": "MD",
     "term": 2,
     "year": 1,
     "credit": 2,
@@ -429,7 +445,7 @@
       }
     ],
     "prerequisiteTo": [
-     
+
     ]
   }
 ]

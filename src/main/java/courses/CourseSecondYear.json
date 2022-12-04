@@ -2,6 +2,7 @@
   {
     "name": "Discrete Computational Structures",
     "code": "CSE2023",
+    "type": "MD",
     "term": 1,
     "year": 2,
     "credit": 6,
@@ -23,15 +24,16 @@
       }
     ],
     "prerequisiteTo": [
-     
+
     ]
   },
 
   {
     "name": "Data Structures",
     "code": "CSE2225 ",
+    "type": "MD",
     "term": 1,
-    "year":2,
+    "year": 2,
     "credit": 7,
     "quota": 196,
     "course sessions": [
@@ -52,14 +54,15 @@
     ],
     "prerequisiteTo": [
       "CSE1242"
-      
-      
+
+
     ]
   },
 
   {
     "name": "Engineering Economy",
     "code": "ECON2004 ",
+    "type": "MD",
     "term": 1,
     "year": 2,
     "credit": 4,
@@ -77,13 +80,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Electric Circuits",
     "code": "EE2031",
+    "type": "MD",
     "term": 1,
     "year": 2,
     "credit": 5,
@@ -112,6 +116,7 @@
   {
     "name": "Differential Equations",
     "code": "MATH2055 ",
+    "type": "MD",
     "term": 1,
     "year": 2,
     "credit": 4,
@@ -133,13 +138,14 @@
       }
     ],
     "prerequisiteTo": [
-     
+
     ]
   },
 
   {
     "name": "Numerical Methods",
     "code": "MATH2059 ",
+    "type": "MD",
     "term": 1,
     "year": 2,
     "credit": 4,
@@ -168,6 +174,7 @@
   {
     "name": "Analysis of Algorithms",
     "code": "CSE2246",
+    "type": "MD",
     "term": 2,
     "year": 2,
     "credit": 6,
@@ -197,6 +204,7 @@
   {
     "name": "Systems Programming",
     "code": "CSE2138",
+    "type": "MD",
     "term": 2,
     "year": 2,
     "credit": 7,
@@ -223,13 +231,14 @@
       }
     ],
     "prerequisiteTo": [
-      
+
     ]
   },
 
   {
     "name": "Principles of Programming Languages",
     "code": "CSE2260 ",
+    "type": "MD",
     "term": 2,
     "year": 2,
     "credit": 6,
@@ -258,6 +267,7 @@
   {
     "name": "Electronics",
     "code": "EE2032",
+    "type": "MD",
     "term": 2,
     "year": 2,
     "credit": 5,
@@ -281,6 +291,7 @@
   {
     "name": "Prob. and Stat. for Computer Engineering",
     "code": "STAT2253",
+    "type": "MD",
     "term": 2,
     "year": 2,
     "credit": 5,
@@ -304,7 +315,7 @@
     ],
     "prerequisiteTo": [
       "IE3081"
-      
+
     ]
   }
   

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CSE3063F22P1_GRP4" target="17" />
+      <module name="CSE3063F22P1_GRP4" target="10" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,399 @@
+[
+  {
+    "name": "Computer Networks",
+    "code": "CSE4074",
+    "type":"MD", 
+    "term": 1,
+    "year": 4,
+    "credit": 5,
+    "quota": 174,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "14:00-14:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "14:00-14:50,15:00-15:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Principles of Embedded Systems Design",
+    "code": "CSE4219",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 6,
+    "quota": 100,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "17:00-17:50,18:00-18:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE3038"
+
+    ]
+  },
+
+  {
+    "name": "Engineering Project I",
+    "code": "CSE4297",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 5,
+    "quota": 70,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "13:00-13:50"
+      },
+      {
+        "day": "Friday",
+        "hour": "10:30-11:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Work Safety I",
+    "code": "ISG121",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 2,
+    "quota": 217,
+    "course sessions": [
+      {
+        "day": "Friday",
+        "hour": "17:00-17:50,18:00-18:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Introduction to Machine Learning",
+    "code": "CSE4288",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 5,
+    "quota": 72,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "15:00-15:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "STAT2253",
+      "MATH2256"
+    ]
+  },
+
+  {
+    "name": "Technical Elective - 1",
+    "code": "TExxx",
+    "type": "TE",
+    "term": 1,
+    "year": 4,
+    "credit": 5,
+    "quota": 35,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "University Elective",
+    "code": "UE ",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 3,
+    "quota": 70,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Summer Practice II",
+    "code": "CSE4000",
+    "type": "MD",
+    "term": 1,
+    "year": 4,
+    "credit": 10,
+    "quota": 300,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Engineering Project II",
+    "code": "CSE4298",
+    "type": "MD",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 70,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "19:00-19:50,20:00-20:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE4297"
+    ]
+  },
+  {
+    "name": "Work Safety II",
+    "code": "ISG122",
+    "type": "MD",
+    "term": 2,
+    "year": 4,
+    "credit": 2,
+    "quota": 633,
+    "course sessions": [
+      {
+        "day": "Saturday",
+        "hour": "17:00-17:50,18:00-18:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+  {
+    "name": "Non-Technical Elective - 2",
+    "code": "NTExxx ",
+    "type": "MD",
+    "term": 2,
+    "year": 4,
+    "credit": 3,
+    "quota": 30,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+  {
+    "name": "Faculty Technical Electives",
+    "code": "FTExxx ",
+    "type": "MD",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 70,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+
+    ]
+  },
+
+  {
+    "name": "Technical Elective - 2",
+    "code": "TExxx",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 50,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+
+
+    ]
+  },
+  {
+    "name": "Technical Elective - 3",
+    "code": "TExxx",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 50,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+
+
+    ]
+  },
+  {
+    "name": "Technical Elective - 4",
+    "code": "TExxx",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 50,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+
+
+    ]
+  }
+]
+
+
