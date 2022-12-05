@@ -121,12 +121,13 @@ public class RegistrationSystem {
      * TODO
      *  return available courses for particular student
      */
-    // potential bug here
+    // potential bug here,somehow returns passed course of  the parameter student
     public ArrayList<Course> getAvailableCourses(Student student) {
         // 0-> 8  1->8 2->6 3->5
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
         boolean isFound = false;
+        // check for courses that student couldn't pass
         for(int i=0; i<student.getTranscript().getSemesters().size(); i++) {
             ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
             for (int j=0; j<courses[i].size();j++){
@@ -142,6 +143,7 @@ public class RegistrationSystem {
                 isFound=false;
             }
         }
+        // if studentSemesters size is 0 directly goes into this loop and adds all courses
         for (int i=student.getTranscript().getSemesters().size();i<8;i++){
             for (Course course: courses[i]){
                  availableCourses.add(course);
@@ -164,33 +166,28 @@ public class RegistrationSystem {
             }
         }
     }
-    // potential bug here
+
     public void prepareInitializedStudents() throws IOException {
         for (int i=1;i<=4;i++){
-            int maxTerm = 2 * i -1;
-            for (int k=1;k<maxTerm;k++){
+            int currentStudentTerm = 2 * i -1;
+            for (int k=1;k<currentStudentTerm;k++){
                 for (int j=0;j<this.systemParameter.getStudentPerSemester();j++){
                     Student student =this.studentManager.getStudentList()
                             .get( (i-1) * this.systemParameter.getStudentPerSemester() + j );
                     int termOfStudent = student.getTerm();
                     student.setTerm(k);
+                    student.setStudentSemester(new StudentSemester(k));
                     student.setEnrolledCourses(new ArrayList<String>());
                     ArrayList<Course> availableCourses = getAvailableCourses(student);
-                    for (Course course : availableCourses){
-                        System.out.println("Available course : " + course.getName());
-                    }
-                    student.setStudentSemester(new StudentSemester(k));
                     student.enroll(availableCourses,curriculum,systemParameter);
                     //grade student
                     for (String courseName: student.getEnrolledCourses()){
 
                         this.instructor.gradeStudents(student, curriculum.getCourse(courseName));
                     }
+                    student.getStudentSemester().calculateLetterGrade();
+                    student.getStudentSemester().calculateYano();
                     student.getTranscript().getSemesters().add(student.getStudentSemester());
-                    for (StudentSemester semester : student.getTranscript().getSemesters()){
-                        semester.calculateYano();
-                        semester.calculateLetterGrade();
-                    }
                     student.getTranscript().calculateGpa();
                     student.setTerm(termOfStudent);
                 }

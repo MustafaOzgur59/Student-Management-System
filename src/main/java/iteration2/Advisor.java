@@ -40,6 +40,7 @@ public class Advisor extends FacultyMember {
             return  false;
         }
         // if the student tries to take a course in the two upper semester return false
+        // term -1 den -1 i kaldır
         if((( (course.getYear()-1) * 2 + course.getTerm() - 1 ) - student.getTerm()) >= 2) {
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
             java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
@@ -47,10 +48,12 @@ public class Advisor extends FacultyMember {
         }
 
         // if no course sessions overlap with this course's sessions
+        // retu
         System.out.println("Current course : " + course.getName());
         if(checkCourseCollision(student,course,curriculum)){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
             java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
+            return false;
         }
 
         //if no prerequisite is need for the course.
