@@ -1,0 +1,123 @@
+{
+  "id" : "150120001",
+  "name" : "150120001",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : 1.94,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 2.04,
+        "takenCredit" : 21,
+        "completedCredit" : 21,
+        "note" : 43.0,
+        "letterGrades" : [
+          "CB",
+          "CC",
+          "FF",
+          "AA",
+          "DD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 0.0,
+            "letterGrade" : "FF"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 1.83,
+        "takenCredit" : 18,
+        "completedCredit" : 18,
+        "note" : 33.0,
+        "letterGrades" : [
+          "DC",
+          "CC",
+          "DD",
+          "BB",
+          "CB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "Introduction to Computer Engineering",
+    "CALCULUS I",
+    "Physics I",
+    "Physics Lab I",
+    "Türk Dili I"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 3,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Prof. Dr. Ali Fuat ALKAYA",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}
