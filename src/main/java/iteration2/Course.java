@@ -1,17 +1,14 @@
 package iteration2;
 
 import com.fasterxml.jackson.annotation.*;
-import iteration2.Instructor;
-import iteration2.Section;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
-import java.text.DateFormat;
-import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
-import java.util.zip.DataFormatException;
 
 @JsonTypeInfo(
         use = JsonTypeInfo.Id.NAME,
@@ -44,6 +41,8 @@ public class Course {
     private ArrayList<String> prerequisiteTo;
     private Instructor instructor;
     private ArrayList<String> enrolledStudents = new ArrayList<>();
+
+    final Logger logger = LogManager.getLogger(Course.class);
 
     public Course(String name, String code, Integer term, Integer year, Integer credit,
                   Integer quota, ArrayList<String> prerequisiteTo, ArrayList<Section> courseSessions, ArrayList<Section> labSessions) {
@@ -215,6 +214,8 @@ public class Course {
                                 }
                             } catch (ParseException exception){
                                 System.out.println("Invalid date format" + exception.getMessage());
+                                logger.error("Invalid date format" + exception.getMessage());
+
                             }
 
                         }

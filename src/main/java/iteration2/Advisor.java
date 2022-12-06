@@ -2,8 +2,11 @@ package iteration2;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Advisor extends FacultyMember {
+    private static final Logger logger = LogManager.getLogger(Advisor.class);
 
     @JsonCreator
     public Advisor(@JsonProperty("name") String name) {
@@ -22,28 +25,28 @@ public class Advisor extends FacultyMember {
         //check if student enrolled more than allowed amount of course
         if((student.getEnrolledCourses().size()>= systemParameters.getMaxCoursePerSemester())){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed course amount exceeded");
-            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed course amount exceeded");
+            logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed course amount exceeded");
             return  false;
         }
 
         //check if student exceeded allowable credit limit
         if((student.getStudentSemester().getTakenCredit()>= systemParameters.getMaxCreditPerSemester())){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed credit amount exceeded");
-            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed credit amount exceeded");
+            logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed credit amount exceeded");
             return  false;
         }
 
         //if course quota is full
         if (! (course.getQuota()>course.getEnrolledStudents().size())){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of course quota exceeded");
-            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of course quota exceeded");
+            logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of course quota exceeded");
             return  false;
         }
         // if the student tries to take a course in the two upper semester return false
         // term -1 den -1 i kaldır
         if((( (course.getYear()-1) * 2 + course.getTerm()) - student.getTerm()) >= 2) {
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
-            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
+            logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
             return false;
         }
 
@@ -52,14 +55,14 @@ public class Advisor extends FacultyMember {
         System.out.println("Current course : " + course.getName());
         if(checkCourseCollision(student,course,curriculum)){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
-            java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
+            logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
             return false;
         }
 
         //if no prerequisite is need for the course.
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
             student.getLogs().add("Added course : " + course.getName() + " to Student : " + student.getName() + " because of no prerequisites");
-            java.lang.System.out.println("Added course : " + course.getName() + "  Student : " + student.getName() + " because of no prerequisites");
+            logger.info("Added course : " + course.getName() + "  Student : " + student.getName() + " because of no prerequisites");
             student.getEnrolledCourses().add(course.getName());
             student.getStudentSemester().setTakenCredit(student.getStudentSemester().getTakenCredit() + course.getCredit());
             course.getEnrolledStudents().add(student.getId());
@@ -79,7 +82,7 @@ public class Advisor extends FacultyMember {
             }
             if (passedPrerequisiteCount == course.getPrerequisiteTo().size()){
                 student.getLogs().add("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
-                java.lang.System.out.println("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
+                logger.info("Added course:"+ course.getName() +" to Student : " + student.getName() +" because student passed every prerequiste");
                 student.getEnrolledCourses().add(course.getName());
                 student.getStudentSemester().setTakenCredit(student.getStudentSemester().getTakenCredit() + course.getCredit());
                 course.getEnrolledStudents().add(student.getId());
@@ -87,7 +90,7 @@ public class Advisor extends FacultyMember {
             }
             else{
                 student.getLogs().add("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
-                java.lang.System.out.println("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
+                logger.info("Cant add course: " +course.getName() + " to Student : " + student.getName() +" because student didnt pass a prerequisite");
                 return false;
             }
         }
