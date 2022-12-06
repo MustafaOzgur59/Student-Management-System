@@ -157,7 +157,7 @@
       },
       {
         "day": "Thursday",
-        "hour": "15:00,15:50"
+        "hour": "15:00-15:50"
       }
     ],
     "lab sessions": [

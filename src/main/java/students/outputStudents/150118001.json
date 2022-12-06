@@ -3,32 +3,30 @@
   "name" : "150118001",
   "term" : 7,
   "transcript" : {
-    "gpa" : 2.18,
+    "gpa" : 2.28,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 1.97,
-        "takenCredit" : 21,
-        "completedCredit" : 21,
-        "note" : 41.5,
+        "yano" : 2.35,
+        "takenCredit" : 25,
+        "completedCredit" : 25,
+        "note" : 59.0,
         "letterGrades" : [
-          "DC",
+          "DD",
           "CC",
-          "FD",
-          "CB",
+          "BB",
           "BA",
-          "DC",
-          "CC",
-          "FD",
           "CB",
-          "BA"
+          "CC",
+          "CB",
+          "BB"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           },
           {
             "credit" : 2,
@@ -39,222 +37,283 @@
           {
             "credit" : 4,
             "code" : "CSE1200",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
-          },
-          {
-            "credit" : 5,
-            "code" : "MBG1201",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 4,
             "code" : "PHYS1101",
             "grade" : 3.5,
             "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       },
       {
         "semesterNo" : 2,
-        "yano" : 2.09,
-        "takenCredit" : 20,
-        "completedCredit" : 20,
-        "note" : 42.0,
+        "yano" : 2.51,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 78.0,
         "letterGrades" : [
-          "DC",
-          "CB",
-          "DC",
-          "CB",
-          "CB",
-          "DC",
-          "CB",
-          "DC",
-          "CB",
-          "CB"
-        ],
-        "givenCourses" : [
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
-          }
-        ]
-      },
-      {
-        "semesterNo" : 3,
-        "yano" : 3.4,
-        "takenCredit" : 20,
-        "completedCredit" : 20,
-        "note" : 68.0,
-        "letterGrades" : [
-          "AA",
-          "BA",
           "BB",
           "DC",
-          "BA",
-          "AA",
-          "BA",
-          "BB",
+          "CC",
+          "CB",
           "DC",
+          "CC",
+          "CB",
           "BA"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
             "grade" : 3.0,
             "letterGrade" : "BB"
           },
           {
             "credit" : 2,
-            "code" : "TRD121",
+            "code" : "ATA122",
             "grade" : 1.5,
             "letterGrade" : "DC"
           },
           {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
             "credit" : 6,
-            "code" : "CSE1241",
+            "code" : "MATH1002",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
             "grade" : 3.5,
             "letterGrade" : "BA"
           }
         ]
       },
       {
-        "semesterNo" : 4,
-        "yano" : 2.8,
-        "takenCredit" : 20,
-        "completedCredit" : 20,
-        "note" : 56.0,
+        "semesterNo" : 3,
+        "yano" : 1.9,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 59.0,
         "letterGrades" : [
-          "BA",
-          "AA",
-          "AA",
-          "AA",
-          "FD",
-          "BA",
-          "AA",
-          "AA",
-          "AA",
-          "FD"
+          "CC",
+          "CC",
+          "DC",
+          "CC",
+          "CC",
+          "DC",
+          "CC"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "ATA122",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "PHYS1104",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 4,
+        "yano" : 1.52,
+        "takenCredit" : 23,
+        "completedCredit" : 23,
+        "note" : 35.0,
+        "letterGrades" : [
+          "DC",
+          "CC",
+          "BB",
+          "DC",
+          "DC",
+          "DD"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           }
         ]
       },
       {
         "semesterNo" : 5,
-        "yano" : 2.5,
-        "takenCredit" : 20,
-        "completedCredit" : 20,
-        "note" : 50.0,
+        "yano" : 2.1,
+        "takenCredit" : 28,
+        "completedCredit" : 28,
+        "note" : 59.0,
         "letterGrades" : [
-          "BB",
+          "DD",
+          "DC",
+          "CB",
           "AA",
-          "BA",
-          "FF",
+          "AA",
           "DC",
           "BB",
-          "AA",
-          "BA",
-          "FF",
           "DC"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
             "grade" : 3.0,
             "letterGrade" : "BB"
           },
           {
             "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
+            "code" : "MATH2055 ",
             "grade" : 1.5,
             "letterGrade" : "DC"
           }
@@ -262,28 +321,136 @@
       },
       {
         "semesterNo" : 6,
-        "yano" : 1.3,
-        "takenCredit" : 20,
-        "completedCredit" : 20,
-        "note" : 26.0,
+        "yano" : 2.32,
+        "takenCredit" : 28,
+        "completedCredit" : 28,
+        "note" : 65.0,
         "letterGrades" : [
-          "FD",
+          "CC",
+          "AA",
           "CB",
-          "BA",
           "BB",
-          "FF",
-          "FD",
           "CB",
-          "BA",
-          "BB",
-          "FF"
+          "CC",
+          "AA",
+          "DD"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 7,
+        "yano" : 2.44,
+        "takenCredit" : 0,
+        "completedCredit" : 166,
+        "note" : 406.5,
+        "letterGrades" : [
+          "DD",
+          "DC",
+          "CB",
+          "AA",
+          "DD",
+          "DC",
+          "CC",
+          "DC",
+          "CC",
+          "DC",
+          "CB",
+          "CB",
+          "CB",
+          "CB",
+          "CB",
+          "BB",
+          "DC",
+          "BB",
+          "CB",
+          "BB",
+          "CC",
+          "CB",
+          "AA",
+          "AA",
+          "CB",
+          "DC",
+          "AA",
+          "CC",
+          "DC",
+          "DC",
+          "BB",
+          "DD",
+          "DD",
+          "CC",
+          "CC",
+          "AA",
+          "BB",
+          "BB",
+          "BA",
+          "CB",
+          "DD",
+          "BA",
+          "CB",
+          "DC",
+          "CB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 4,
@@ -292,153 +459,10 @@
             "letterGrade" : "CB"
           },
           {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          }
-        ]
-      },
-      {
-        "semesterNo" : 7,
-        "yano" : 2.02,
-        "takenCredit" : 0,
-        "completedCredit" : 121,
-        "note" : 245.5,
-        "letterGrades" : [
-          "BA",
-          "AA",
-          "CC",
-          "CC",
-          "CC",
-          "FF",
-          "CC",
-          "DC",
-          "FF",
-          "DC",
-          "BB",
-          "BA",
-          "FF",
-          "DC",
-          "DC",
-          "DD",
-          "BA",
-          "BA",
-          "FD",
-          "FF",
-          "AA",
-          "CC",
-          "AA",
-          "DC",
-          "FF",
-          "CC",
-          "BA",
-          "DC",
-          "FD",
-          "AA"
-        ],
-        "givenCourses" : [
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 5,
-            "code" : "MBG1201",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
             "credit" : 4,
             "code" : "PHYS1101",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 2,
@@ -448,57 +472,21 @@
           },
           {
             "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
             "code" : "TRD121",
             "grade" : 1.5,
             "letterGrade" : "DC"
           },
           {
             "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "code" : "ATA122",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 6,
@@ -507,10 +495,124 @@
             "letterGrade" : "CC"
           },
           {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 6,
@@ -521,14 +623,92 @@
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           }
         ]
       }
@@ -536,139 +716,91 @@
   },
   "enrolledCourses" : [
     "Computer Programming I",
-    "Introduction to Computer Engineering",
-    "Physics Lab I",
-    "Türk Dili I",
-    "Computer Programming I"
+    "Ataturk’s Principles and the History of Turkish Renovation II ",
+    "Physics Lab II",
+    "Physics Lab II",
+    "Differential Equations",
+    "Computer Programming I",
+    "Physics Lab II",
+    "Differential Equations"
   ],
   "studentSemester" : {
     "semesterNo" : 7,
-    "yano" : 2.02,
+    "yano" : 2.44,
     "takenCredit" : 0,
-    "completedCredit" : 121,
-    "note" : 245.5,
+    "completedCredit" : 166,
+    "note" : 406.5,
     "letterGrades" : [
-      "BA",
+      "DD",
+      "DC",
+      "CB",
       "AA",
-      "CC",
-      "CC",
-      "CC",
-      "FF",
+      "DD",
+      "DC",
       "CC",
       "DC",
-      "FF",
+      "CC",
+      "DC",
+      "CB",
+      "CB",
+      "CB",
+      "CB",
+      "CB",
+      "BB",
       "DC",
       "BB",
+      "CB",
+      "BB",
+      "CC",
+      "CB",
+      "AA",
+      "AA",
+      "CB",
+      "DC",
+      "AA",
+      "CC",
+      "DC",
+      "DC",
+      "BB",
+      "DD",
+      "DD",
+      "CC",
+      "CC",
+      "AA",
+      "BB",
+      "BB",
       "BA",
-      "FF",
-      "DC",
-      "DC",
+      "CB",
       "DD",
       "BA",
-      "BA",
-      "FD",
-      "FF",
-      "AA",
-      "CC",
-      "AA",
+      "CB",
       "DC",
-      "FF",
-      "CC",
-      "BA",
-      "DC",
-      "FD",
-      "AA"
+      "CB"
     ],
     "givenCourses" : [
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE1241",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE1241",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE1241",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE1241",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE1241",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 1.0,
+        "letterGrade" : "DD"
       },
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 4,
-        "code" : "CSE1200",
         "grade" : 1.5,
         "letterGrade" : "DC"
       },
       {
         "credit" : 4,
         "code" : "CSE1200",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
-      },
-      {
-        "credit" : 4,
-        "code" : "CSE1200",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
-      },
-      {
-        "credit" : 4,
-        "code" : "CSE1200",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
-      },
-      {
-        "credit" : 4,
-        "code" : "CSE1200",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
-      },
-      {
-        "credit" : 4,
-        "code" : "CSE1200",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
-      },
-      {
-        "credit" : 5,
-        "code" : "MBG1201",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       },
       {
         "credit" : 4,
         "code" : "PHYS1101",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 2,
@@ -678,57 +810,21 @@
       },
       {
         "credit" : 2,
-        "code" : "PHYS1103",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
-      },
-      {
-        "credit" : 2,
-        "code" : "PHYS1103",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
-      },
-      {
-        "credit" : 2,
-        "code" : "PHYS1103",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
-      },
-      {
-        "credit" : 2,
-        "code" : "PHYS1103",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
-      },
-      {
-        "credit" : 2,
-        "code" : "TRD121",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
-      },
-      {
-        "credit" : 2,
-        "code" : "TRD121",
-        "grade" : 2.0,
-        "letterGrade" : "CC"
-      },
-      {
-        "credit" : 2,
-        "code" : "TRD121",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
-      },
-      {
-        "credit" : 2,
         "code" : "TRD121",
         "grade" : 1.5,
         "letterGrade" : "DC"
       },
       {
         "credit" : 2,
-        "code" : "TRD121",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "code" : "ATA122",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 6,
@@ -737,10 +833,124 @@
         "letterGrade" : "CC"
       },
       {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 6,
+        "code" : "MATH1002",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 2,
+        "code" : "TRD122 ",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE2023",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE2023",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 7,
+        "code" : "CSE2138",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE1241",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 7,
+        "code" : "CSE2138",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 6,
@@ -751,477 +961,114 @@
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 6,
+        "code" : "CSE1241",
+        "grade" : 3.5,
+        "letterGrade" : "BA"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA122",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 3.5,
+        "letterGrade" : "BA"
+      },
+      {
+        "credit" : 2,
+        "code" : "PHYS1104",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
       }
     ]
   },
   "advisor" : {
-    "name" : "Prof.Dr.Cigdem Eroglu ERDEM",
+    "name" : "Doc. Dr. Murat Can GANIZ",
     "id" : "advisor"
   },
   "logs" : [
     "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
+    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: CALCULUS I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Ataturk’s Principles and the History of Turkish Renovation II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Programming II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Calculus II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Linear Algebra for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Physics Lab II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Türk Dili II  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Discrete Computational Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Data Structures to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Economy to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electric Circuits to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Differential Equations to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Numerical Methods to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Analysis of Algorithms to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Systems Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Programming Languages to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Electronics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Database Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operating Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Object-Oriented Software Desg. to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Digital Logic Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Modeling and Disc. Simulation to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Software Engineering to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Formal Lang. & Auto. Theory to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Organization to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Int. to Signals and Systems to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Operations Research to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
@@ -1231,282 +1078,6 @@
     "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Computer Networks to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety I to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Machine Learning to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 1 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: University Elective to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Summer Practice II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Fundamentals of Data Mining to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Faculty Technical Electives to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 3 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Technical Elective - 4 to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Advanced Unix Programming to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Information Systems Security to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Compiler Design to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150118001 because of maximum allowed course amount exceeded",
-    "Cant add course: Introduction to Computational Genomics to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Engineering Project II to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Work Safety II to Student : 150118001 because of maximum allowed course amount exceeded",
     "Cant add course: Non-Technical Elective - 2 to Student : 150118001 because of maximum allowed course amount exceeded",

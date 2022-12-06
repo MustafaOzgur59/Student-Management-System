@@ -2,6 +2,9 @@ package iteration2;
 
 
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -18,6 +21,7 @@ public class RegistrationSystem {
 
     private SystemParameter systemParameter;
 
+    private static final Logger logger = LogManager.getLogger(RegistrationSystem.class);
 
     public RegistrationSystem() {
 
@@ -84,7 +88,7 @@ public class RegistrationSystem {
         this.parser.outputStudentObjectsWithProblems(
                 this.studentManager.getStudentList(),
                 "./src/main/java/students/outputStudents/");
-
+        logger.info("Deneme logu");
     }
 
 
@@ -111,6 +115,7 @@ public class RegistrationSystem {
             student.getTranscript().getSemesters().add(student.getStudentSemester());
             for (StudentSemester semester : student.getTranscript().getSemesters()){
                 semester.calculateYano();
+                semester.setLetterGrades(new ArrayList<>());
                 semester.calculateLetterGrade();
             }
             student.getTranscript().calculateGpa();
@@ -123,25 +128,45 @@ public class RegistrationSystem {
      */
     // potential bug here,somehow returns passed course of  the parameter student
     public ArrayList<Course> getAvailableCourses(Student student) {
-        // 0-> 8  1->8 2->6 3->5
+
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
-        boolean isFound = false;
+
         // check for courses that student couldn't pass
         for(int i=0; i<student.getTranscript().getSemesters().size(); i++) {
-            ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();
+            ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();// gets all the courses of the semester
+            for (GivenCourse givenCourse : givenCourses){
+                boolean isCourseAdded = false;
+                OUTERLOOP:
+                for (ArrayList<Course> semesterCourses: courses){
+                    for (Course semesterCourse : semesterCourses){
+                        if(givenCourse.getCourseCode().equals(semesterCourse.getCode())){
+                            if(givenCourse.getGrade() < 2){
+                                availableCourses.add(semesterCourse);
+                                break OUTERLOOP;
+                            }
+
+                        }
+                    }
+                }
+            }
+            /*
             for (int j=0; j<courses[i].size();j++){
+                // gets the passed courses of the semester
                 for (int k=0;k<givenCourses.size();k++){
-                    if(givenCourses.get(k).getCourseCode().equals(courses[i].get(j).getCode())){
+                    GivenCourse semesterCourse = givenCourses.get(k);
+                    Course course = courses[i].get(j);
+                    if(semesterCourse.getCourseCode().equals(course.getCode())){
                         isFound = true;
-                        if(givenCourses.get(k).getGrade() < 2)
-                            availableCourses.add(courses[i].get(j));
+                        if(semesterCourse.getGrade() < 2)
+                            availableCourses.add(course);
+                        break;
                     }
                 }
                 if (!isFound)
                     availableCourses.add(courses[i].get(j));
                 isFound=false;
-            }
+            } */
         }
         // if studentSemesters size is 0 directly goes into this loop and adds all courses
         for (int i=student.getTranscript().getSemesters().size();i<8;i++){
@@ -191,6 +216,7 @@ public class RegistrationSystem {
                     student.getTranscript().calculateGpa();
                     student.setTerm(termOfStudent);
                 }
+                this.curriculum = new Curriculum();
                 this.parser.parseCourseObjects(this.curriculum,this.instructor);
             }
         }

@@ -3,79 +3,42 @@
   "name" : "150120001",
   "term" : 3,
   "transcript" : {
-    "gpa" : 1.94,
+    "gpa" : 2.27,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 2.04,
-        "takenCredit" : 21,
-        "completedCredit" : 21,
-        "note" : 43.0,
+        "yano" : 2.48,
+        "takenCredit" : 25,
+        "completedCredit" : 25,
+        "note" : 62.0,
         "letterGrades" : [
-          "CB",
-          "CC",
-          "FF",
+          "BA",
+          "DD",
           "AA",
-          "DD"
+          "DD",
+          "CB",
+          "DC",
+          "CB",
+          "CC"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 2.5,
-            "letterGrade" : "CB"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
-          },
-          {
-            "credit" : 5,
-            "code" : "MBG1201",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "PHYS1101",
             "grade" : 1.0,
             "letterGrade" : "DD"
-          }
-        ]
-      },
-      {
-        "semesterNo" : 2,
-        "yano" : 1.83,
-        "takenCredit" : 18,
-        "completedCredit" : 18,
-        "note" : 33.0,
-        "letterGrades" : [
-          "DC",
-          "CC",
-          "DD",
-          "BB",
-          "CB"
-        ],
-        "givenCourses" : [
+          },
           {
             "credit" : 4,
             "code" : "CSE1200",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 6,
-            "code" : "MATH1001",
-            "grade" : 2.0,
-            "letterGrade" : "CC"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 4,
@@ -86,25 +49,107 @@
           {
             "credit" : 2,
             "code" : "PHYS1103",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 2.09,
+        "takenCredit" : 27,
+        "completedCredit" : 27,
+        "note" : 56.5,
+        "letterGrades" : [
+          "DD",
+          "CB",
+          "BB",
+          "DC",
+          "CB",
+          "DC",
+          "CC",
+          "CC"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
             "grade" : 3.0,
             "letterGrade" : "BB"
           },
           {
             "credit" : 2,
-            "code" : "TRD121",
+            "code" : "ATA122",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1242",
             "grade" : 2.5,
             "letterGrade" : "CB"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           }
         ]
       }
     ]
   },
   "enrolledCourses" : [
-    "Introduction to Computer Engineering",
-    "CALCULUS I",
+    "Ataturk’s Principles and the History of Turkish Renovation I ",
     "Physics I",
-    "Physics Lab I",
-    "Türk Dili I"
+    "Türk Dili I",
+    "Ataturk’s Principles and the History of Turkish Renovation II ",
+    "Computer Programming II",
+    "Non-Technical Elective - 1",
+    "Calculus II",
+    "Physics Lab II"
   ],
   "studentSemester" : {
     "semesterNo" : 3,
@@ -116,7 +161,7 @@
     "givenCourses" : [ ]
   },
   "advisor" : {
-    "name" : "Prof. Dr. Ali Fuat ALKAYA",
+    "name" : "Doc. Dr. Mujdat SOYTURK",
     "id" : "advisor"
   },
   "logs" : [ ]

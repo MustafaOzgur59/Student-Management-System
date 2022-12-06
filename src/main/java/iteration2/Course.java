@@ -208,7 +208,9 @@ public class Course {
                                 Date startDate = new SimpleDateFormat("HH:mm").parse(splitHours[0]);
                                 Date endDate = new SimpleDateFormat("HH:mm").parse(splitHours[1]);
                                 Date stdStartDate = new SimpleDateFormat("HH:mm").parse(studentSplitHours[0]);
-                                if (stdStartDate.after(startDate) && stdStartDate.before(endDate)){
+                                Date stdEndDate = new SimpleDateFormat("HH:mm").parse(studentSplitHours[1]);
+                                if ((stdStartDate.after(startDate) && stdStartDate.before(endDate))
+                                        ||  (startDate.after(stdStartDate) && startDate.before(stdEndDate)) ){
                                     return true;
                                 }
                             } catch (ParseException exception){

@@ -41,7 +41,7 @@ public class Advisor extends FacultyMember {
         }
         // if the student tries to take a course in the two upper semester return false
         // term -1 den -1 i kaldır
-        if((( (course.getYear()-1) * 2 + course.getTerm() - 1 ) - student.getTerm()) >= 2) {
+        if((( (course.getYear()-1) * 2 + course.getTerm()) - student.getTerm()) >= 2) {
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
             java.lang.System.out.println("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
             return false;
