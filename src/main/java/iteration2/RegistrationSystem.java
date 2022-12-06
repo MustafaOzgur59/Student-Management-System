@@ -69,16 +69,10 @@ public class RegistrationSystem {
         this.parser.parseAdvisors(this.studentManager);
         this.initializeStudents();
         this.prepareInitializedStudents();
-
-        /*
-         * TODO
-         *  -replace outputStudentObjects function to the end of the simulation
-         * */
-
-        //this.studentGenerator.generateStudents();
     }
 
     public void beginSimulation() throws IOException {
+        logger.info("Starting simulation");
         this.parser.outputStudentObjectsWithProblems(
                 this.studentManager.getStudentList(),
                 "./src/main/java/students/inputStudents/");
@@ -88,7 +82,7 @@ public class RegistrationSystem {
         this.parser.outputStudentObjectsWithProblems(
                 this.studentManager.getStudentList(),
                 "./src/main/java/students/outputStudents/");
-        logger.info("Deneme logu");
+        logger.info("Ending simulation");
     }
 
 
@@ -186,7 +180,9 @@ public class RegistrationSystem {
                 String entryPlace = j < 10 ? "00"+j : "0"+j ;
                 String studentNumber = departmentCode + entryYear + entryPlace;
                 Student student = new Student(studentNumber,studentNumber, term);
-                student.setAdvisor(studentManager.getAdvisorList().get(new Random().nextInt(studentManager.getAdvisorList().size())));
+                Advisor advisor = studentManager.getAdvisorList().get(new Random().nextInt(studentManager.getAdvisorList().size()));
+                student.setAdvisor(advisor);
+                logger.info("Added advisor" + advisor.getName() + " to student " + student.getName() );
                 studentManager.getStudentList().add(student);
             }
         }

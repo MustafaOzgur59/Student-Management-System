@@ -13,6 +13,8 @@ import iteration2.Course;
 import iteration2.Curriculum;
 import iteration2.Instructor;
 import iteration2.Student;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -20,6 +22,7 @@ import java.util.*;
 import java.lang.System;
 
 public class JsonParser {
+    private static final Logger logger = LogManager.getLogger(JsonParser.class);
     private final ObjectMapper mapper = new ObjectMapper();
     private final DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
     {
@@ -39,6 +42,7 @@ public class JsonParser {
             ArrayList<iteration2.Course> courseList = new ArrayList<>(Arrays.asList(courses));
             for (iteration2.Course course : courseList){
                 allCourses.add(course);
+                logger.info("Parsed course : " + course.getName());
             }
             inputStream.close();
 
@@ -56,6 +60,7 @@ public class JsonParser {
         FileInputStream inputStream = new FileInputStream(dirPath);
         String jsonString = new String(inputStream.readAllBytes());
         Advisor[] advisors = mapper.readValue(jsonString, Advisor[].class);
+        logger.info("Created advisors");
         inputStream.close();
         ArrayList<Advisor> advisorList = new ArrayList<>(Arrays.asList(advisors));
         manager.setAdvisorList(advisorList);
@@ -109,9 +114,9 @@ public class JsonParser {
     public SystemParameter parseParameters() throws IOException {
         FileInputStream parameterStream = new FileInputStream("./src/main/java/parameters.json");
         String parameterJsonString = new String(parameterStream.readAllBytes());
-        System.out.println("Json is : " + parameterJsonString);
         SystemParameter parameterObject = mapper.readValue(parameterJsonString, SystemParameter.class);
-        System.out.println(parameterObject.toString());
+        logger.info("Parsed system parameters : " + parameterObject.toString());
+
         return parameterObject;
     }
 }
