@@ -1,0 +1,159 @@
+{
+  "id" : "150120001",
+  "name" : "150120001",
+  "term" : 3,
+  "transcript" : {
+    "gpa" : 4.0,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 4.0,
+        "takenCredit" : 25,
+        "completedCredit" : 25,
+        "note" : 100.0,
+        "letterGrades" : [
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 4.0,
+        "takenCredit" : 37,
+        "completedCredit" : 37,
+        "note" : 148.0,
+        "letterGrades" : [
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1242",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [ ],
+  "studentSemester" : {
+    "semesterNo" : 3,
+    "yano" : 0.0,
+    "takenCredit" : 0,
+    "completedCredit" : 0,
+    "note" : 0.0,
+    "letterGrades" : [ ],
+    "givenCourses" : [ ]
+  },
+  "advisor" : {
+    "name" : "Prof. Dr. Ali Fuat ALKAYA",
+    "id" : "advisor"
+  },
+  "logs" : [ ]
+}

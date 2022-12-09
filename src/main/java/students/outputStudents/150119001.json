@@ -1,0 +1,292 @@
+{
+  "id" : "150119001",
+  "name" : "150119001",
+  "term" : 5,
+  "transcript" : {
+    "gpa" : 4.0,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 4.0,
+        "takenCredit" : 25,
+        "completedCredit" : 25,
+        "note" : 100.0,
+        "letterGrades" : [
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 2,
+        "yano" : 4.0,
+        "takenCredit" : 37,
+        "completedCredit" : 37,
+        "note" : 148.0,
+        "letterGrades" : [
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1242",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 3,
+        "yano" : 4.0,
+        "takenCredit" : 28,
+        "completedCredit" : 28,
+        "note" : 112.0,
+        "letterGrades" : [
+          "AA",
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 7,
+            "code" : "CSE2225 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2059 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2260 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 4,
+        "yano" : 4.0,
+        "takenCredit" : 5,
+        "completedCredit" : 5,
+        "note" : 20.0,
+        "letterGrades" : [
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 5,
+            "code" : "CSE3063",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 5,
+        "yano" : 4.0,
+        "takenCredit" : 5,
+        "completedCredit" : 5,
+        "note" : 20.0,
+        "letterGrades" : [
+          "AA"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 5,
+            "code" : "CSE3264",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          }
+        ]
+      }
+    ]
+  },
+  "enrolledCourses" : [
+    "Formal Lang. & Auto. Theory"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 5,
+    "yano" : 4.0,
+    "takenCredit" : 5,
+    "completedCredit" : 5,
+    "note" : 20.0,
+    "letterGrades" : [
+      "AA"
+    ],
+    "givenCourses" : [
+      {
+        "credit" : 5,
+        "code" : "CSE3264",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      }
+    ]
+  },
+  "advisor" : {
+    "name" : "Dr. Ogr. Uyesi Fatma Corut ERGIN",
+    "id" : "advisor"
+  },
+  "logs" : [
+    "Cant add course: Linear Algebra for Computer Engineering to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Physics II to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Electric Circuits to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Analysis of Algorithms to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Electronics to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Database Systems to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Operating Systems to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Digital Logic Design to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Modeling and Disc. Simulation to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Software Engineering to Student : 150119001 because student didnt pass a prerequisite",
+    "Added course:Formal Lang. & Auto. Theory to Student : 150119001 because student passed every prerequiste",
+    "Cant add course: Computer Organization to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Int. to Signals and Systems to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Operations Research to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Computer Networks to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Principles of Embedded Systems Design to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Engineering Project I to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Work Safety I to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Introduction to Machine Learning to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Technical Elective - 1 to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: University Elective to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Summer Practice II to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Fundamentals of Data Mining to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Engineering Project II to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Work Safety II to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Non-Technical Elective - 2 to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Faculty Technical Electives to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Technical Elective - 2 to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Technical Elective - 3 to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Technical Elective - 4 to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Advanced Unix Programming to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Information Systems: Analysis and Design to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Information Systems Security to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Compiler Design to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Introduction to Data Science and Analytics to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Introduction to Computational Genomics to Student : 150119001 because of semester difference of >= 2"
+  ]
+}
