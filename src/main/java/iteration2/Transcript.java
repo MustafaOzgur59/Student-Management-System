@@ -50,6 +50,38 @@ public class Transcript {
         this.semesters = semesters;
     }
 
+    public boolean containsCourse(String courseCode){
+        for (StudentSemester semester : semesters){
+            for (GivenCourse course : semester.getGivenCourses()){
+                if (course.getCourseCode().equals(courseCode)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    public GivenCourse getGivenCourse(String courseCode){
+        for (StudentSemester semester : semesters){
+            for (GivenCourse course : semester.getGivenCourses()){
+                if (course.getCourseCode().equals(courseCode)){
+                    return course;
+                }
+            }
+        }
+        return null;
+    }
+
+    public float getMaxGrade(String courseCode){
+        float maxGrade = 0;
+        for (StudentSemester semester : semesters){
+            for (GivenCourse course : semester.getGivenCourses()){
+                if (course.getCourseCode().equals(courseCode) && course.getGrade() > maxGrade){
+                    maxGrade = course.getGrade();
+                }
+            }
+        }
+        return maxGrade;
+    }
 
     @Override
     public String toString() {

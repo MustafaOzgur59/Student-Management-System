@@ -29,6 +29,7 @@ public class Advisor extends FacultyMember {
             return  false;
         }
 
+
         //check if student exceeded allowable credit limit
         if((student.getStudentSemester().getTakenCredit()>= systemParameters.getMaxCreditPerSemester())){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() +" because of maximum allowed credit amount exceeded");
@@ -43,7 +44,6 @@ public class Advisor extends FacultyMember {
             return  false;
         }
         // if the student tries to take a course in the two upper semester return false
-        // term -1 den -1 i kaldır
         if((( (course.getYear()-1) * 2 + course.getTerm()) - student.getTerm()) >= 2) {
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
             logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of semester difference of >= 2");
@@ -51,14 +51,11 @@ public class Advisor extends FacultyMember {
         }
 
         // if no course sessions overlap with this course's sessions
-        // retu
-        System.out.println("Current course : " + course.getName());
         if(checkCourseCollision(student,course,curriculum)){
             student.getLogs().add("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
             logger.info("Cant add course: " + course.getName() + " to Student : " + student.getName() + " because of course hour collisions");
             return false;
         }
-
         //if no prerequisite is need for the course.
         if(course.getPrerequisiteTo().size() == 0){//if no prerequisite course
             student.getLogs().add("Added course : " + course.getName() + " to Student : " + student.getName() + " because of no prerequisites");

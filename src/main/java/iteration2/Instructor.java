@@ -25,7 +25,7 @@ public class Instructor extends FacultyMember {
 		Random rand = new Random();
 		float int_random = (float)rand.nextInt(9)/2;
 		logger.info("Graded student "+ student.getName() + " for course : " + course.getName() + " grade is : " + int_random);
-		student.getStudentSemester().getGivenCourses().add(new GivenCourse(course.getCode(),int_random,course.getCredit()));
+		student.getStudentSemester().getGivenCourses().add(new GivenCourse(course.getCode(),4,course.getCredit()));
 	}
 
 	public ArrayList<iteration2.Course> getCoursesOfferedList() {

@@ -67,11 +67,11 @@ public class RegistrationSystem {
         this.systemParameter=this.parser.parseParameters();
         this.parser.parseCourseObjects(this.curriculum,this.instructor);
         this.parser.parseAdvisors(this.studentManager);
-        this.initializeStudents();
-        this.prepareInitializedStudents();
     }
 
     public void beginSimulation() throws IOException {
+        this.initializeStudents();
+        this.prepareInitializedStudents();
         logger.info("Starting simulation");
         this.parser.outputStudentObjectsWithProblems(
                 this.studentManager.getStudentList(),
@@ -92,6 +92,7 @@ public class RegistrationSystem {
             ArrayList<Course> availableCourses = getAvailableCourses(student);
             student.enroll(availableCourses,curriculum,systemParameter);
         }
+
     }
 
     public void gradeStudents(){
@@ -122,50 +123,19 @@ public class RegistrationSystem {
      */
     // potential bug here,somehow returns passed course of  the parameter student
     public ArrayList<Course> getAvailableCourses(Student student) {
-
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
-
-        // check for courses that student couldn't pass
-        for(int i=0; i<student.getTranscript().getSemesters().size(); i++) {
-            ArrayList<GivenCourse> givenCourses=student.getTranscript().getSemesters().get(i).getGivenCourses();// gets all the courses of the semester
-            for (GivenCourse givenCourse : givenCourses){
-                boolean isCourseAdded = false;
-                OUTERLOOP:
-                for (ArrayList<Course> semesterCourses: courses){
-                    for (Course semesterCourse : semesterCourses){
-                        if(givenCourse.getCourseCode().equals(semesterCourse.getCode())){
-                            if(givenCourse.getGrade() < 2){
-                                availableCourses.add(semesterCourse);
-                                break OUTERLOOP;
-                            }
-
-                        }
-                    }
-                }
-            }
-            /*
-            for (int j=0; j<courses[i].size();j++){
-                // gets the passed courses of the semester
-                for (int k=0;k<givenCourses.size();k++){
-                    GivenCourse semesterCourse = givenCourses.get(k);
-                    Course course = courses[i].get(j);
-                    if(semesterCourse.getCourseCode().equals(course.getCode())){
-                        isFound = true;
-                        if(semesterCourse.getGrade() < 2)
-                            availableCourses.add(course);
-                        break;
-                    }
-                }
-                if (!isFound)
-                    availableCourses.add(courses[i].get(j));
-                isFound=false;
-            } */
-        }
         // if studentSemesters size is 0 directly goes into this loop and adds all courses
-        for (int i=student.getTranscript().getSemesters().size();i<8;i++){
-            for (Course course: courses[i]){
-                 availableCourses.add(course);
+        for (ArrayList<Course> courseList : courses){
+            for (Course course : courseList){
+                if (student.getTranscript().containsCourse(course.getCode())){
+                    if(student.getTranscript().getMaxGrade(course.getCode()) < 2){
+                        availableCourses.add(course);
+                    }
+                }
+                else{
+                    availableCourses.add(course);
+                }
             }
         }
         return availableCourses;
@@ -195,7 +165,6 @@ public class RegistrationSystem {
                 for (int j=0;j<this.systemParameter.getStudentPerSemester();j++){
                     Student student =this.studentManager.getStudentList()
                             .get( (i-1) * this.systemParameter.getStudentPerSemester() + j );
-                    int termOfStudent = student.getTerm();
                     student.setTerm(k);
                     student.setStudentSemester(new StudentSemester(k));
                     student.setEnrolledCourses(new ArrayList<String>());
@@ -210,7 +179,7 @@ public class RegistrationSystem {
                     student.getStudentSemester().calculateYano();
                     student.getTranscript().getSemesters().add(student.getStudentSemester());
                     student.getTranscript().calculateGpa();
-                    student.setTerm(termOfStudent);
+                    student.setTerm(currentStudentTerm);
                 }
                 this.curriculum = new Curriculum();
                 this.parser.parseCourseObjects(this.curriculum,this.instructor);
@@ -218,8 +187,15 @@ public class RegistrationSystem {
         }
         for (Student student : this.studentManager.getStudentList()){
             student.setStudentSemester(new StudentSemester(student.getTerm()));
+            student.setEnrolledCourses(new ArrayList<>());
             student.setLogs(new ArrayList<>());
+            System.out.println("Student is : " + student.toString());
         }
+        this.curriculum = new Curriculum();
+        // TODO
+        // CREATE NEW INSTRUCTORS
+        this.instructor = new Instructor("dummy","12414");
+        this.parser.parseCourseObjects(this.curriculum,this.instructor);
     }
 
     public void setCurriculum(Curriculum curriculum) {

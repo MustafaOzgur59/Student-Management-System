@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Random;
 
 @JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
 @JsonPropertyOrder({"id","name","term","transcript",""})
@@ -132,7 +133,16 @@ public class Student {
 
     public void enroll(ArrayList<Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
-            advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
+            System.out.println("Course is : " + availableCourse.toString());
+            /*if (availableCourse instanceof TechnicalElective){
+                System.out.println("SELECTING TE");
+                Random random = new Random();
+                Course course = curriculum.getTE_COURSES().get(random.nextInt(curriculum.getTE_COURSES().size()));
+                advisor.enrollStudent(course, this, curriculum,systemParameters);
+            }
+            else{*/
+                advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
+            //}
         }
     }
 

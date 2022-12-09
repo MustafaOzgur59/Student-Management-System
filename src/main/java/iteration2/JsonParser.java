@@ -48,7 +48,12 @@ public class JsonParser {
 
         }
         for (Course c : allCourses){
-            curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
+            /*if (c instanceof TechnicalElective && !c.getCode().equals("TExxx")){
+                curriculum.getTE_COURSES().add(c);
+            }
+            else{*/
+                curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
+            //}
             instructor.getCoursesOfferedList().add(c);
             c.setInstructor(instructor);
         }
