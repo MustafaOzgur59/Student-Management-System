@@ -9,7 +9,7 @@ public class StudentTest {
     JsonParser parser = new JsonParser();
     Curriculum curriculum=new Curriculum();
     SystemParameter parameter;
-    Instructor instructor = new Instructor("David Guetta", "1233345");
+    Instructor[] instructors = {new Instructor("David Guetta", "1233345")};
     Student student;
     Advisor advisor = new Advisor("advisor");
     Course course = new Course("course1","c1",1,1,6,100
@@ -27,7 +27,7 @@ public class StudentTest {
 
     @Before
     public void initialize() throws IOException {
-        parser.parseCourseObjects(curriculum,instructor);
+        parser.parseCourseObjects(curriculum,instructors);
         parameter = parser.parseParameters();
         student = new Student("Sanji","1501210017",1,new Transcript());
         student.setAdvisor(advisor);
@@ -51,7 +51,7 @@ public class StudentTest {
         ArrayList<Course> courses = new ArrayList<>();
         courses.add(course);
         student.enroll(courses,curriculum,parameter);
-        instructor.gradeStudents(student,course);
+        instructors[0].gradeStudents(student,course);
         student.getTranscript().getSemesters().add(student.getStudentSemester());
         assertNotEquals(-1,student.getTranscript().getSemesters().get(0).getGivenCourses().get(0).getGrade());
         assertNotEquals(5,student.getTranscript().getSemesters().get(0).getGivenCourses().get(0).getGrade());

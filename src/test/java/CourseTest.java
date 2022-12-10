@@ -10,13 +10,14 @@ import java.io.IOException;
 public class CourseTest {
     private Curriculum curriculum;
     private JsonParser parser;
+    private Instructor[] instructors = { new Instructor("instructor","123214")};
     @Before
     public void initialize(){
         parser = new JsonParser();
         curriculum = new Curriculum();
-        Instructor instructor = new Instructor("instructor","123214");
+        instructors[0] = new Instructor("instructor","123214");
         try {
-            parser.parseCourseObjects(curriculum,instructor);
+            parser.parseCourseObjects(curriculum,instructors);
         } catch (IOException e) {
             e.printStackTrace();
         }

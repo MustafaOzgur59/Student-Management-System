@@ -7,19 +7,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class AdvisorTest {
-    private Advisor advisor = new Advisor("advisor");
+    private Advisor[] advisors = {new Advisor("advisor")};
     private Student student;
     private Curriculum curriculum = new Curriculum();
     private JsonParser parser = new JsonParser();
-    private Instructor instructor = new Instructor("instructor","12124");
     private SystemParameter parameters = new SystemParameter(1,70,10,10,40);
 
 
     @Before
     public void initialize() throws IOException {
         student = new Student("Sanji","1501210017",1,new Transcript());
-        student.setAdvisor(advisor);
-        parser.parseCourseObjects(curriculum,instructor);
+        student.setAdvisor(advisors[0]);
+        parser.parseCourseObjects(curriculum,advisors);
         parameters.setMaxCoursePerSemester(10);
     }
 
