@@ -10,12 +10,9 @@ import java.util.Objects;
 import java.util.Random;
 
 @JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
-@JsonPropertyOrder({"id","name","term","transcript",""})
-public class Student {
-    @JsonProperty("id")
-    private String id;
-    @JsonProperty("name")
-    private String name;
+@JsonPropertyOrder({"id","name","term","transcript","logs"})
+public class Student extends Person {
+
     @JsonProperty("term")
     private Integer term;
 
@@ -31,8 +28,7 @@ public class Student {
     private ArrayList<String> logs=new ArrayList<>();
 
     public Student(String id, String name, Integer term) {
-        this.id = id;
-        this.name = name;
+        super(id,name);
         this.term = term;
         studentSemester = new StudentSemester(term);
     }
@@ -43,8 +39,7 @@ public class Student {
             @JsonProperty("name") String name,
             @JsonProperty("term") Integer term,
             @JsonProperty("transcript") Transcript transcript) {
-        this.id = id;
-        this.name = name;
+        super(id,name);
         this.term = term;
         this.transcript=transcript;
         this.enrolledCourses = new ArrayList<>();
@@ -52,22 +47,6 @@ public class Student {
     }
 
     public Student() {
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Integer getTerm() {
@@ -123,12 +102,24 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return Objects.equals(id, student.id) && Objects.equals(name, student.name) && Objects.equals(term, student.term);
+        return Objects.equals(term, student.term) && Objects.equals(enrolledCourses, student.enrolledCourses) && Objects.equals(studentSemester, student.studentSemester) && Objects.equals(transcript, student.transcript) && Objects.equals(advisor, student.advisor) && Objects.equals(logs, student.logs);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, term);
+        return Objects.hash(term, enrolledCourses, studentSemester, transcript, advisor, logs);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "term=" + term +
+                ", enrolledCourses=" + enrolledCourses +
+                ", studentSemester=" + studentSemester +
+                ", transcript=" + transcript +
+                ", advisor=" + advisor +
+                ", logs=" + logs +
+                "} " + super.toString();
     }
 
     public void enroll(ArrayList<Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
@@ -146,17 +137,5 @@ public class Student {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", term=" + term +
-                ", enrolledCourses=" + enrolledCourses +
-                ", studentSemester=" + studentSemester +
-                ", transcript=" + transcript +
-                ", advisor=" + advisor +
-                ", logs=" + logs +
-                '}';
-    }
+
 }

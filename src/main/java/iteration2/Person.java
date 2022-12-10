@@ -1,9 +1,13 @@
 package iteration2;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Person {
 
-    private String name ;
-    private String id ;
+    @JsonProperty("id")
+    private String id;
+    @JsonProperty("name")
+    private String name;
 
     public String getName() {
         return name;
