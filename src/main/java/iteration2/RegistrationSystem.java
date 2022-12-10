@@ -11,7 +11,7 @@ import java.util.Random;
 
 
 public class RegistrationSystem {
-    private StudentManager studentManager = new StudentManager();
+    private Department department = new Department();
 
     private JsonParser parser = new JsonParser();
 
@@ -27,12 +27,12 @@ public class RegistrationSystem {
 
     }
 
-    public StudentManager getStudentManager() {
-        return studentManager;
+    public Department getStudentManager() {
+        return department;
     }
 
-    public void setStudentManager(StudentManager studentManager) {
-        this.studentManager = studentManager;
+    public void setStudentManager(Department department) {
+        this.department = department;
     }
 
     public JsonParser getParser() {
@@ -65,8 +65,9 @@ public class RegistrationSystem {
 
     public void readJsonFiles() throws IOException {
         this.systemParameter=this.parser.parseParameters();
-        this.parser.parseCourseObjects(this.curriculum,this.instructor);
-        this.parser.parseAdvisors(this.studentManager);
+        this.parser.parseAdvisors(this.department);
+        Instructor [] instructors = this.department.getAdvisorList().toArray(new Instructor[0]);
+        this.parser.parseCourseObjects(this.curriculum, instructors );
     }
 
     public void beginSimulation() throws IOException {
@@ -74,13 +75,13 @@ public class RegistrationSystem {
         this.prepareInitializedStudents();
         logger.info("Starting simulation");
         this.parser.outputStudentObjectsWithProblems(
-                this.studentManager.getStudentList(),
+                this.department.getStudentList(),
                 "./src/main/java/students/inputStudents/");
         enrollStudents();
         gradeStudents();
         calculateTranscript();
         this.parser.outputStudentObjectsWithProblems(
-                this.studentManager.getStudentList(),
+                this.department.getStudentList(),
                 "./src/main/java/students/outputStudents/");
         logger.info("Ending simulation");
     }
@@ -88,25 +89,34 @@ public class RegistrationSystem {
 
     public void enrollStudents(){
         // courseleri enroll eder
-        for (Student student : studentManager.getStudentList()){
+        for (Student student : department.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
             student.enroll(availableCourses,curriculum,systemParameter);
         }
-
     }
 
     public void gradeStudents(){
-        // course alan bütün öğrencileri gradeler
-        for (Course course : this.instructor.getCoursesOfferedList()){
-            for (String studentId : course.getEnrolledStudents()){
-                this.instructor.gradeStudents(studentManager.getStudent(studentId),course);
+        for (Instructor advisor : this.department.getAdvisorList().toArray(new Instructor[0])){
+            for (Course course : advisor.getCoursesOfferedList()){
+                for (String studentId : course.getEnrolledStudents()){
+                    advisor.gradeStudents(department.getStudent(studentId),course);
+
+                }
             }
         }
+        /*
+        // course alan bÃ¼tÃ¼n Ã¶ÄŸrencileri gradeler
+        for (Course course : this.instructor.getCoursesOfferedList()){
+            for (String studentId : course.getEnrolledStudents()){
+                this.instructor.gradeStudents(department.getStudent(studentId),course);
+            }
+        }
+        */
     }
 
     public void calculateTranscript(){
-        // dönem sonu semesterlerin yanosunu hesapla sonra transciprt gpa hesapla ve ekle
-        for (Student student : studentManager.getStudentList()){
+        // dÃ¶nem sonu semesterlerin yanosunu hesapla sonra transciprt gpa hesapla ve ekle
+        for (Student student : department.getStudentList()){
             student.getTranscript().getSemesters().add(student.getStudentSemester());
             for (StudentSemester semester : student.getTranscript().getSemesters()){
                 semester.calculateYano();
@@ -150,10 +160,10 @@ public class RegistrationSystem {
                 String entryPlace = j < 10 ? "00"+j : "0"+j ;
                 String studentNumber = departmentCode + entryYear + entryPlace;
                 Student student = new Student(studentNumber,studentNumber, term);
-                Advisor advisor = studentManager.getAdvisorList().get(new Random().nextInt(studentManager.getAdvisorList().size()));
+                Advisor advisor = department.getAdvisorList().get(new Random().nextInt(department.getAdvisorList().size()));
                 student.setAdvisor(advisor);
                 logger.info("Added advisor" + advisor.getName() + " to student " + student.getName() );
-                studentManager.getStudentList().add(student);
+                department.getStudentList().add(student);
             }
         }
     }
@@ -163,7 +173,7 @@ public class RegistrationSystem {
             int currentStudentTerm = 2 * i -1;
             for (int k=1;k<currentStudentTerm;k++){
                 for (int j=0;j<this.systemParameter.getStudentPerSemester();j++){
-                    Student student =this.studentManager.getStudentList()
+                    Student student =this.department.getStudentList()
                             .get( (i-1) * this.systemParameter.getStudentPerSemester() + j );
                     student.setTerm(k);
                     student.setStudentSemester(new StudentSemester(k));
@@ -171,21 +181,24 @@ public class RegistrationSystem {
                     ArrayList<Course> availableCourses = getAvailableCourses(student);
                     student.enroll(availableCourses,curriculum,systemParameter);
                     //grade student
-                    for (String courseName: student.getEnrolledCourses()){
+                    this.gradeStudents();
 
-                        this.instructor.gradeStudents(student, curriculum.getCourse(courseName));
-                    }
                     student.getStudentSemester().calculateLetterGrade();
                     student.getStudentSemester().calculateYano();
                     student.getTranscript().getSemesters().add(student.getStudentSemester());
                     student.getTranscript().calculateGpa();
                     student.setTerm(currentStudentTerm);
+
+                    // resetting curriculum
+                    this.curriculum = new Curriculum();
+                    Instructor[] instructors = this.parser.parseAdvisors(this.department).toArray(new Instructor[0]);
+                    this.parser.parseCourseObjects(this.curriculum,instructors);
                 }
                 this.curriculum = new Curriculum();
-                this.parser.parseCourseObjects(this.curriculum,this.instructor);
+                this.parser.parseCourseObjects(this.curriculum,this.department.getAdvisorList().toArray(new Advisor[0]));
             }
         }
-        for (Student student : this.studentManager.getStudentList()){
+        for (Student student : this.department.getStudentList()){
             student.setStudentSemester(new StudentSemester(student.getTerm()));
             student.setEnrolledCourses(new ArrayList<>());
             student.setLogs(new ArrayList<>());
@@ -194,8 +207,8 @@ public class RegistrationSystem {
         this.curriculum = new Curriculum();
         // TODO
         // CREATE NEW INSTRUCTORS
-        this.instructor = new Instructor("dummy","12414");
-        this.parser.parseCourseObjects(this.curriculum,this.instructor);
+        Instructor[] instructors = this.parser.parseAdvisors(this.department).toArray(new Instructor[0]);
+        this.parser.parseCourseObjects(this.curriculum,instructors);
     }
 
     public void setCurriculum(Curriculum curriculum) {
