@@ -1,21 +1,10 @@
 package iteration2;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultIndenter;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import iteration2.*;
-import iteration2.Course;
-import iteration2.Curriculum;
-import iteration2.Instructor;
-import iteration2.Student;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
 
 import java.io.*;
 import java.util.*;
@@ -30,7 +19,7 @@ public class JsonParser {
         mapper.setDefaultPrettyPrinter(prettyPrinter);
     }
 
-    public ArrayList<iteration2.Course> parseCourseObjects(Curriculum curriculum, Instructor instructor) throws IOException {
+    public ArrayList<iteration2.Course> parseCourseObjects(Curriculum curriculum, Instructor[] instructors) throws IOException {
         // Old implementation  --> Files.readAllBytes(Path.of(path));
         ArrayList<iteration2.Course> allCourses = new ArrayList<>();
         File dirPath = new File("./src/main/java/courses");
@@ -54,13 +43,15 @@ public class JsonParser {
             else{*/
                 curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
             //}
-            instructor.getCoursesOfferedList().add(c);
-            c.setInstructor(instructor);
+            Random random = new Random();
+            int rand = random.nextInt(instructors.length);
+            instructors[rand].getCoursesOfferedList().add(c);
+            c.setInstructor(instructors[rand]);
         }
         return  allCourses;
     }
 
-    public ArrayList<Advisor> parseAdvisors(StudentManager manager) throws IOException {
+    public ArrayList<Advisor> parseAdvisors(Department manager) throws IOException {
         File dirPath = new File("./src/main/java/Advisors.json");
         FileInputStream inputStream = new FileInputStream(dirPath);
         String jsonString = new String(inputStream.readAllBytes());
@@ -72,7 +63,7 @@ public class JsonParser {
         return advisorList;
     }
 
-    public ArrayList<iteration2.Student> parseStudents(StudentManager manager) throws IOException {
+    public ArrayList<iteration2.Student> parseStudents(Department manager) throws IOException {
         ArrayList<iteration2.Student> studentList = new ArrayList<>();
         File dirPath = new File("./src/main/java/students/inputStudents");
         File[] studentFiles = dirPath.listFiles();
@@ -88,21 +79,6 @@ public class JsonParser {
         return  studentList;
     }
 
-
-    /*TODO
-        -Parse the resulting outputs from the student objects into json files
-    */
-    public void outputStudentObjects(List<iteration2.Student> studentList) throws IOException {
-        File dirPath = new File("./src/main/java/students/outputStudents");
-        for (iteration2.Student s : studentList){
-            String jsonString = mapper.writeValueAsString(s);
-            File studentJsonFile = new File("./src/main/java/students/outputStudents/" + s.getId() + ".json");
-            studentJsonFile.createNewFile();
-            PrintWriter writer = new PrintWriter(studentJsonFile);
-            writer.write(jsonString);
-            writer.close();
-        }
-    }
 
     public void outputStudentObjectsWithProblems(List<iteration2.Student> studentList,String path) throws IOException {
         File dirPath = new File(path);
