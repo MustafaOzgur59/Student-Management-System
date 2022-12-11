@@ -11,7 +11,7 @@ public class AdvisorTest {
     private Student student;
     private Curriculum curriculum = new Curriculum();
     private JsonParser parser = new JsonParser();
-    private SystemParameter parameters = new SystemParameter(1,70,10,10,40);
+    private SystemParameter parameters = new SystemParameter(1,10,10,40);
 
 
     @Before

@@ -1,14 +1,83 @@
 {
   "id" : "150121001",
   "name" : "150121001",
-  "term" : 1,
+  "term" : 2,
   "transcript" : {
-    "gpa" : null,
-    "semesters" : [ ]
+    "gpa" : 3.0,
+    "semesters" : [
+      {
+        "semesterNo" : 1,
+        "yano" : 3.0,
+        "takenCredit" : 25,
+        "completedCredit" : 25,
+        "note" : 75.0,
+        "letterGrades" : [
+          "BB",
+          "BB",
+          "CB",
+          "BA",
+          "BB",
+          "BB",
+          "AA",
+          "BB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          }
+        ]
+      }
+    ]
   },
+  "logs" : [ ],
   "enrolledCourses" : [ ],
   "studentSemester" : {
-    "semesterNo" : 1,
+    "semesterNo" : 2,
     "yano" : 0.0,
     "takenCredit" : 0,
     "completedCredit" : 0,
@@ -17,8 +86,7 @@
     "givenCourses" : [ ]
   },
   "advisor" : {
-    "name" : "Doc. Dr. Omer KORCAK",
-    "id" : "advisor"
-  },
-  "logs" : [ ]
+    "name" : "advisor",
+    "id" : "Prof.Dr.Cigdem Eroglu ERDEM"
+  }
 }

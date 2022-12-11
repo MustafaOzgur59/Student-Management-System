@@ -124,16 +124,14 @@ public class Student extends Person {
 
     public void enroll(ArrayList<Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
-            System.out.println("Course is : " + availableCourse.toString());
-            /*if (availableCourse instanceof TechnicalElective){
-                System.out.println("SELECTING TE");
+            if (availableCourse instanceof TechnicalElective){
                 Random random = new Random();
                 Course course = curriculum.getTE_COURSES().get(random.nextInt(curriculum.getTE_COURSES().size()));
                 advisor.enrollStudent(course, this, curriculum,systemParameters);
             }
-            else{*/
+            else{
                 advisor.enrollStudent(availableCourse, this, curriculum,systemParameters);
-            //}
+            }
         }
     }
 

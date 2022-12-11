@@ -9,12 +9,10 @@ import java.util.List;
 
 public class Department {
     private List<iteration2.Student> studentList;
-    private List<iteration2.Course> coursesList;
     private ArrayList<Advisor> advisorList; // Instructor List
 
     public Department() {
         this.studentList = new ArrayList<>();
-        this.coursesList = new ArrayList<>();
     }
 
     public boolean addStudent(iteration2.Student student, iteration2.Course course) {
@@ -37,14 +35,6 @@ public class Department {
     }
     public void setStudentList(List<iteration2.Student> studentList) {
         this.studentList = studentList;
-    }
-
-    public List<iteration2.Course> getCoursesList() {
-        return coursesList;
-    }
-
-    public void setCoursesList(List<Course> coursesList) {
-        this.coursesList = coursesList;
     }
 
     public ArrayList<Advisor> getAdvisorList() {

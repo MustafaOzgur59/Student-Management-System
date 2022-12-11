@@ -195,9 +195,6 @@ public class Course {
                 // if the two sections are in the same day
                 if (stdCourseSection.getDay().equals(courseSection.getDay())){
                     String[] courseHours = courseSection.getHours().split(","); // 1 hour range 2 or 3
-                    for (String hourRange: courseHours){
-                        System.out.println("Course section range : " + hourRange);
-                    }
                     String[] stdCourseHours = stdCourseSection.getHours().split(",");// 1 hour range  3 or 3
                     for (String courseHour: courseHours){
                         String[] splitHours = courseHour.split("-"); // 2 hours
@@ -213,11 +210,8 @@ public class Course {
                                     return true;
                                 }
                             } catch (ParseException exception){
-                                System.out.println("Invalid date format" + exception.getMessage());
                                 logger.error("Invalid date format" + exception.getMessage());
-
                             }
-
                         }
                     }
                 }

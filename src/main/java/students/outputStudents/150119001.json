@@ -1,252 +1,336 @@
 {
   "id" : "150119001",
   "name" : "150119001",
-  "term" : 5,
+  "term" : 6,
   "transcript" : {
-    "gpa" : 4.0,
+    "gpa" : 2.35,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 4.0,
+        "yano" : 2.38,
         "takenCredit" : 25,
         "completedCredit" : 25,
-        "note" : 100.0,
+        "note" : 59.5,
         "letterGrades" : [
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA"
+          "DC",
+          "BB",
+          "CB",
+          "DC",
+          "BA",
+          "FD",
+          "CB",
+          "DD"
         ],
         "givenCourses" : [
           {
-            "credit" : 6,
-            "code" : "CSE1241",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
             "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "ATA122",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 4,
             "code" : "CSE1200",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "PHYS1101",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "ATA122",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE1241",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           }
         ]
       },
       {
         "semesterNo" : 2,
-        "yano" : 4.0,
-        "takenCredit" : 37,
-        "completedCredit" : 37,
-        "note" : 148.0,
+        "yano" : 2.5,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 77.5,
         "letterGrades" : [
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA"
+          "DD",
+          "BB",
+          "CB",
+          "CC",
+          "BA",
+          "CB",
+          "CC",
+          "BA"
         ],
         "givenCourses" : [
           {
-            "credit" : 6,
-            "code" : "MATH1001",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 5,
             "code" : "MBG1201",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1001",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
             "credit" : 6,
             "code" : "CSE1242",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 6,
             "code" : "MATH1002",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1104",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "TRD122 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE2023",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "ECON2004 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           }
         ]
       },
       {
         "semesterNo" : 3,
-        "yano" : 4.0,
-        "takenCredit" : 28,
-        "completedCredit" : 28,
-        "note" : 112.0,
+        "yano" : 2.22,
+        "takenCredit" : 31,
+        "completedCredit" : 31,
+        "note" : 69.0,
         "letterGrades" : [
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA"
+          "BB",
+          "BA",
+          "FD",
+          "DD",
+          "CC",
+          "DC",
+          "BA",
+          "CC"
         ],
         "givenCourses" : [
           {
-            "credit" : 7,
-            "code" : "CSE2225 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 4,
             "code" : "MATH2055 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           },
           {
             "credit" : 4,
             "code" : "MATH2059 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 7,
-            "code" : "CSE2138",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE2260 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "CSE2225 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           }
         ]
       },
       {
         "semesterNo" : 4,
-        "yano" : 4.0,
-        "takenCredit" : 5,
-        "completedCredit" : 5,
-        "note" : 20.0,
+        "yano" : 2.55,
+        "takenCredit" : 26,
+        "completedCredit" : 26,
+        "note" : 66.5,
         "letterGrades" : [
-          "AA"
+          "CB",
+          "BB",
+          "CC",
+          "BA",
+          "BA",
+          "CC"
         ],
         "givenCourses" : [
           {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2260 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "TRD122 ",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
             "credit" : 5,
             "code" : "CSE3063",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           }
         ]
       },
       {
         "semesterNo" : 5,
-        "yano" : 4.0,
+        "yano" : 0.5,
         "takenCredit" : 5,
         "completedCredit" : 5,
-        "note" : 20.0,
+        "note" : 2.5,
         "letterGrades" : [
-          "AA"
+          "FD"
         ],
         "givenCourses" : [
           {
             "credit" : 5,
             "code" : "CSE3264",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 6,
+        "yano" : 2.45,
+        "takenCredit" : 30,
+        "completedCredit" : 30,
+        "note" : 73.5,
+        "letterGrades" : [
+          "DD",
+          "CC",
+          "CB",
+          "CC",
+          "BA",
+          "BB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 5,
+            "code" : "CSE3264",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
+          },
+          {
+            "credit" : 5,
+            "code" : "CSE4297",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 3,
+            "code" : "UE ",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 5,
+            "code" : "CSE4074",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 10,
+            "code" : "CSE4000",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "ISG121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       }
     ]
-  },
-  "enrolledCourses" : [
-    "Formal Lang. & Auto. Theory"
-  ],
-  "studentSemester" : {
-    "semesterNo" : 5,
-    "yano" : 4.0,
-    "takenCredit" : 5,
-    "completedCredit" : 5,
-    "note" : 20.0,
-    "letterGrades" : [
-      "AA"
-    ],
-    "givenCourses" : [
-      {
-        "credit" : 5,
-        "code" : "CSE3264",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
-      }
-    ]
-  },
-  "advisor" : {
-    "name" : "Dr. Ogr. Uyesi Fatma Corut ERGIN",
-    "id" : "advisor"
   },
   "logs" : [
     "Cant add course: Linear Algebra for Computer Engineering to Student : 150119001 because student didnt pass a prerequisite",
@@ -265,28 +349,85 @@
     "Cant add course: Computer Organization to Student : 150119001 because student didnt pass a prerequisite",
     "Cant add course: Int. to Signals and Systems to Student : 150119001 because student didnt pass a prerequisite",
     "Cant add course: Operations Research to Student : 150119001 because student didnt pass a prerequisite",
-    "Cant add course: Computer Networks to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Principles of Embedded Systems Design to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Engineering Project I to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Work Safety I to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Introduction to Machine Learning to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Technical Elective - 1 to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: University Elective to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Summer Practice II to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Fundamentals of Data Mining to Student : 150119001 because of semester difference of >= 2",
+    "Added course : Computer Networks to Student : 150119001 because of no prerequisites",
+    "Cant add course: Principles of Embedded Systems Design to Student : 150119001 because student didnt pass a prerequisite",
+    "Added course : Engineering Project I to Student : 150119001 because of no prerequisites",
+    "Added course : Work Safety I to Student : 150119001 because of no prerequisites",
+    "Cant add course: Introduction to Machine Learning to Student : 150119001 because student didnt pass a prerequisite",
+    "Cant add course: Introduction to Computational Genomics to Student : 150119001 because of semester difference of >= 2",
+    "Added course : University Elective to Student : 150119001 because of no prerequisites",
+    "Added course : Summer Practice II to Student : 150119001 because of no prerequisites",
     "Cant add course: Engineering Project II to Student : 150119001 because of semester difference of >= 2",
     "Cant add course: Work Safety II to Student : 150119001 because of semester difference of >= 2",
     "Cant add course: Non-Technical Elective - 2 to Student : 150119001 because of semester difference of >= 2",
     "Cant add course: Faculty Technical Electives to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Technical Elective - 2 to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Technical Elective - 3 to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Technical Elective - 4 to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150119001 because of semester difference of >= 2",
     "Cant add course: Advanced Unix Programming to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Information Systems: Analysis and Design to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Information Systems Security to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Compiler Design to Student : 150119001 because of semester difference of >= 2",
-    "Cant add course: Introduction to Data Science and Analytics to Student : 150119001 because of semester difference of >= 2",
+    "Cant add course: Introduction to Robotics and Control Theory  to Student : 150119001 because of semester difference of >= 2",
     "Cant add course: Introduction to Computational Genomics to Student : 150119001 because of semester difference of >= 2"
-  ]
+  ],
+  "enrolledCourses" : [
+    "Formal Lang. & Auto. Theory",
+    "Computer Networks",
+    "Engineering Project I",
+    "Work Safety I",
+    "University Elective",
+    "Summer Practice II"
+  ],
+  "studentSemester" : {
+    "semesterNo" : 6,
+    "yano" : 2.45,
+    "takenCredit" : 30,
+    "completedCredit" : 30,
+    "note" : 73.5,
+    "letterGrades" : [
+      "DD",
+      "CC",
+      "CB",
+      "CC",
+      "BA",
+      "BB"
+    ],
+    "givenCourses" : [
+      {
+        "credit" : 5,
+        "code" : "CSE3264",
+        "grade" : 1.0,
+        "letterGrade" : "DD"
+      },
+      {
+        "credit" : 5,
+        "code" : "CSE4297",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 3,
+        "code" : "UE ",
+        "grade" : 2.5,
+        "letterGrade" : "CB"
+      },
+      {
+        "credit" : 5,
+        "code" : "CSE4074",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 10,
+        "code" : "CSE4000",
+        "grade" : 3.5,
+        "letterGrade" : "BA"
+      },
+      {
+        "credit" : 2,
+        "code" : "ISG121",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      }
+    ]
+  },
+  "advisor" : {
+    "name" : "advisor",
+    "id" : "Doc. Dr. Mujdat SOYTURK"
+  }
 }

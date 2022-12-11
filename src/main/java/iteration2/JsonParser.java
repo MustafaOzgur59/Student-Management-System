@@ -37,12 +37,12 @@ public class JsonParser {
 
         }
         for (Course c : allCourses){
-            /*if (c instanceof TechnicalElective && !c.getCode().equals("TExxx")){
+            if (c instanceof TechnicalElective && !c.getCode().equals("TExxx")){
                 curriculum.getTE_COURSES().add(c);
             }
-            else{*/
+            else{
                 curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
-            //}
+            }
             Random random = new Random();
             int rand = random.nextInt(instructors.length);
             instructors[rand].getCoursesOfferedList().add(c);
@@ -80,7 +80,7 @@ public class JsonParser {
     }
 
 
-    public void outputStudentObjectsWithProblems(List<iteration2.Student> studentList,String path) throws IOException {
+    public void outputStudentObjects(List<iteration2.Student> studentList,String path) throws IOException {
         File dirPath = new File(path);
         for (Student s : studentList){
             String jsonString = mapper.writer(prettyPrinter).writeValueAsString(s);

@@ -74,13 +74,13 @@ public class RegistrationSystem {
         this.initializeStudents();
         this.prepareInitializedStudents();
         logger.info("Starting simulation");
-        this.parser.outputStudentObjectsWithProblems(
+        this.parser.outputStudentObjects(
                 this.department.getStudentList(),
                 "./src/main/java/students/inputStudents/");
         enrollStudents();
         gradeStudents();
         calculateTranscript();
-        this.parser.outputStudentObjectsWithProblems(
+        this.parser.outputStudentObjects(
                 this.department.getStudentList(),
                 "./src/main/java/students/outputStudents/");
         logger.info("Ending simulation");
@@ -88,7 +88,7 @@ public class RegistrationSystem {
 
 
     public void enrollStudents(){
-        // courseleri enroll eder
+
         for (Student student : department.getStudentList()){
             ArrayList<Course> availableCourses = getAvailableCourses(student);
             student.enroll(availableCourses,curriculum,systemParameter);
@@ -104,18 +104,9 @@ public class RegistrationSystem {
                 }
             }
         }
-        /*
-        // course alan bÃ¼tÃ¼n Ã¶ÄŸrencileri gradeler
-        for (Course course : this.instructor.getCoursesOfferedList()){
-            for (String studentId : course.getEnrolledStudents()){
-                this.instructor.gradeStudents(department.getStudent(studentId),course);
-            }
-        }
-        */
     }
 
     public void calculateTranscript(){
-        // dÃ¶nem sonu semesterlerin yanosunu hesapla sonra transciprt gpa hesapla ve ekle
         for (Student student : department.getStudentList()){
             student.getTranscript().getSemesters().add(student.getStudentSemester());
             for (StudentSemester semester : student.getTranscript().getSemesters()){
@@ -127,15 +118,9 @@ public class RegistrationSystem {
         }
     }
 
-    /*
-     * TODO
-     *  return available courses for particular student
-     */
-    // potential bug here,somehow returns passed course of  the parameter student
     public ArrayList<Course> getAvailableCourses(Student student) {
         ArrayList<Course>[] courses = getCurriculum().getCOURSES();
         ArrayList<Course> availableCourses = new ArrayList<>();
-        // if studentSemesters size is 0 directly goes into this loop and adds all courses
         for (ArrayList<Course> courseList : courses){
             for (Course course : courseList){
                 if (student.getTranscript().containsCourse(course.getCode())){
@@ -153,7 +138,7 @@ public class RegistrationSystem {
 
     public void initializeStudents(){
         for (int i=1;i<=4;i++){
-            int term = 2 * (i-1) + 1;
+            int term = 2 * (i-1) + this.systemParameter.getSemester();
             String departmentCode= "1501";
             String entryYear = Integer.toString(22 - i);
             for (int j=1;j<=this.systemParameter.getStudentPerSemester();j++){
@@ -170,7 +155,7 @@ public class RegistrationSystem {
 
     public void prepareInitializedStudents() throws IOException {
         for (int i=1;i<=4;i++){
-            int currentStudentTerm = 2 * i -1;
+            int currentStudentTerm = 2 * (i -1) + this.systemParameter.getSemester();
             for (int k=1;k<currentStudentTerm;k++){
                 for (int j=0;j<this.systemParameter.getStudentPerSemester();j++){
                     Student student =this.department.getStudentList()

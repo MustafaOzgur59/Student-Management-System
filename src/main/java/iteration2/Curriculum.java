@@ -30,6 +30,11 @@ public class Curriculum {
                 }
             }
         }
+        for (Course course : TE_COURSES){
+            if (course.getName().equals(courseName)){
+                return course;
+            }
+        }
         return null;
     }
 

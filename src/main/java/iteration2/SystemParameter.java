@@ -18,12 +18,10 @@ public class SystemParameter {
     @JsonCreator
     public SystemParameter(
             @JsonProperty("semester") int semester,
-            @JsonProperty("passRatio") int passRatio,
             @JsonProperty("studentPerSemester")int studentPerSemester,
             @JsonProperty("maxCoursePerSemester")int maxCoursePerSemester,
             @JsonProperty("maxCreditPerSemester")int maxCreditPerSemester) {
         this.semester = semester;
-        this.passRatio = passRatio;
         this.studentPerSemester= studentPerSemester;
         this.maxCoursePerSemester=maxCoursePerSemester;
         this.maxCreditPerSemester=maxCreditPerSemester;
@@ -35,14 +33,6 @@ public class SystemParameter {
 
     public void setSemester(int semester) {
         this.semester = semester;
-    }
-
-    public int getPassRatio() {
-        return passRatio;
-    }
-
-    public void setPassRatio(int passRatio) {
-        this.passRatio = passRatio;
     }
 
     public int getStudentPerSemester() {

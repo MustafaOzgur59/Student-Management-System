@@ -1,27 +1,45 @@
 {
   "id" : "150120001",
   "name" : "150120001",
-  "term" : 3,
+  "term" : 4,
   "transcript" : {
-    "gpa" : 4.0,
+    "gpa" : 2.88,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 4.0,
+        "yano" : 2.52,
         "takenCredit" : 25,
         "completedCredit" : 25,
-        "note" : 100.0,
+        "note" : 63.0,
         "letterGrades" : [
+          "CB",
+          "CB",
+          "FD",
           "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA"
+          "DD",
+          "CC",
+          "BA",
+          "BB"
         ],
         "givenCourses" : [
+          {
+            "credit" : 2,
+            "code" : "ATA122",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "CSE1200",
+            "grade" : 2.5,
+            "letterGrade" : "CB"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
           {
             "credit" : 6,
             "code" : "CSE1241",
@@ -30,94 +48,58 @@
           },
           {
             "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "CSE1200",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "PHYS1101",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "PHYS1103",
+            "grade" : 1.0,
+            "letterGrade" : "DD"
           },
           {
             "credit" : 2,
-            "code" : "PHYS1103",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "code" : "ATA121",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 2,
             "code" : "TRD121",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "ATA122",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       },
       {
         "semesterNo" : 2,
-        "yano" : 4.0,
-        "takenCredit" : 37,
-        "completedCredit" : 37,
-        "note" : 148.0,
+        "yano" : 3.04,
+        "takenCredit" : 33,
+        "completedCredit" : 33,
+        "note" : 100.5,
         "letterGrades" : [
+          "CB",
+          "FD",
           "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
-          "AA",
+          "BA",
+          "BA",
+          "BA",
+          "BB",
           "AA"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "MATH1001",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 2.5,
+            "letterGrade" : "CB"
           },
           {
-            "credit" : 5,
-            "code" : "MBG1201",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE1242",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 6,
-            "code" : "MATH1002",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 2,
-            "code" : "PHYS1104",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 2,
@@ -126,24 +108,110 @@
             "letterGrade" : "AA"
           },
           {
+            "credit" : 2,
+            "code" : "PHYS1103",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 5,
+            "code" : "MBG1201",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
             "credit" : 6,
-            "code" : "CSE2023",
+            "code" : "CSE1242",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 2,
+            "code" : "PHYS1104",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 6,
+            "code" : "MATH1002",
             "grade" : 4.0,
             "letterGrade" : "AA"
+          }
+        ]
+      },
+      {
+        "semesterNo" : 3,
+        "yano" : 2.98,
+        "takenCredit" : 42,
+        "completedCredit" : 42,
+        "note" : 125.5,
+        "letterGrades" : [
+          "BB",
+          "FD",
+          "BB",
+          "BB",
+          "BA",
+          "BA",
+          "BA",
+          "BB"
+        ],
+        "givenCourses" : [
+          {
+            "credit" : 7,
+            "code" : "CSE2225 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2059 ",
+            "grade" : 0.5,
+            "letterGrade" : "FD"
+          },
+          {
+            "credit" : 4,
+            "code" : "PHYS1101",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 7,
+            "code" : "CSE2138",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2260 ",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
+          },
+          {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           }
         ]
       }
     ]
   },
+  "logs" : [ ],
   "enrolledCourses" : [ ],
   "studentSemester" : {
-    "semesterNo" : 3,
+    "semesterNo" : 4,
     "yano" : 0.0,
     "takenCredit" : 0,
     "completedCredit" : 0,
@@ -152,8 +220,7 @@
     "givenCourses" : [ ]
   },
   "advisor" : {
-    "name" : "Prof. Dr. Ali Fuat ALKAYA",
-    "id" : "advisor"
-  },
-  "logs" : [ ]
+    "name" : "advisor",
+    "id" : "Prof.Dr.Cigdem Eroglu ERDEM"
+  }
 }
