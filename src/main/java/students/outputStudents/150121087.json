@@ -3,7 +3,7 @@
   "name" : "Thomas Shelby",
   "term" : 3,
   "transcript" : {
-    "gpa" : 1.97,
+    "gpa" : 2.24,
     "semesters" : [
       {
         "semesterNo" : 1,
@@ -141,75 +141,75 @@
       },
       {
         "semesterNo" : 3,
-        "yano" : 1.58,
+        "yano" : 2.27,
         "takenCredit" : 0,
         "completedCredit" : 40,
-        "note" : 63.5,
+        "note" : 91.0,
         "letterGrades" : [
-          "FD",
-          "CC",
-          "DD",
-          "DC",
-          "DD",
-          "FD",
-          "AA",
           "FF",
-          "BB"
+          "BB",
+          "BB",
+          "CC",
+          "FF",
+          "DC",
+          "CC",
+          "AA",
+          "AA"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 0.0,
+            "letterGrade" : "FF"
           },
           {
             "credit" : 6,
             "code" : "MATH1001",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 2,
+            "code" : "ATA121",
+            "grade" : 3.0,
+            "letterGrade" : "BB"
+          },
+          {
+            "credit" : 3,
+            "code" : "CSE-NTE1",
             "grade" : 2.0,
             "letterGrade" : "CC"
           },
           {
             "credit" : 2,
-            "code" : "ATA121",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
-          },
-          {
-            "credit" : 3,
-            "code" : "CSE-NTE1",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
-          },
-          {
-            "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
-          },
-          {
-            "credit" : 6,
-            "code" : "CSE2023",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
-          },
-          {
-            "credit" : 4,
-            "code" : "ECON2004 ",
-            "grade" : 4.0,
-            "letterGrade" : "AA"
-          },
-          {
-            "credit" : 4,
-            "code" : "MATH2055 ",
             "grade" : 0.0,
             "letterGrade" : "FF"
           },
           {
+            "credit" : 6,
+            "code" : "CSE2023",
+            "grade" : 1.5,
+            "letterGrade" : "DC"
+          },
+          {
+            "credit" : 4,
+            "code" : "ECON2004 ",
+            "grade" : 2.0,
+            "letterGrade" : "CC"
+          },
+          {
+            "credit" : 4,
+            "code" : "MATH2055 ",
+            "grade" : 4.0,
+            "letterGrade" : "AA"
+          },
+          {
             "credit" : 7,
             "code" : "CSE2138",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           }
         ]
       }
@@ -228,75 +228,75 @@
   ],
   "studentSemester" : {
     "semesterNo" : 3,
-    "yano" : 1.58,
+    "yano" : 2.27,
     "takenCredit" : 0,
     "completedCredit" : 40,
-    "note" : 63.5,
+    "note" : 91.0,
     "letterGrades" : [
-      "FD",
-      "CC",
-      "DD",
-      "DC",
-      "DD",
-      "FD",
-      "AA",
       "FF",
-      "BB"
+      "BB",
+      "BB",
+      "CC",
+      "FF",
+      "DC",
+      "CC",
+      "AA",
+      "AA"
     ],
     "givenCourses" : [
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 0.0,
+        "letterGrade" : "FF"
       },
       {
         "credit" : 6,
         "code" : "MATH1001",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 2,
+        "code" : "ATA121",
+        "grade" : 3.0,
+        "letterGrade" : "BB"
+      },
+      {
+        "credit" : 3,
+        "code" : "CSE-NTE1",
         "grade" : 2.0,
         "letterGrade" : "CC"
       },
       {
         "credit" : 2,
-        "code" : "ATA121",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
-      },
-      {
-        "credit" : 3,
-        "code" : "CSE-NTE1",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
-      },
-      {
-        "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
-      },
-      {
-        "credit" : 6,
-        "code" : "CSE2023",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
-      },
-      {
-        "credit" : 4,
-        "code" : "ECON2004 ",
-        "grade" : 4.0,
-        "letterGrade" : "AA"
-      },
-      {
-        "credit" : 4,
-        "code" : "MATH2055 ",
         "grade" : 0.0,
         "letterGrade" : "FF"
       },
       {
+        "credit" : 6,
+        "code" : "CSE2023",
+        "grade" : 1.5,
+        "letterGrade" : "DC"
+      },
+      {
+        "credit" : 4,
+        "code" : "ECON2004 ",
+        "grade" : 2.0,
+        "letterGrade" : "CC"
+      },
+      {
+        "credit" : 4,
+        "code" : "MATH2055 ",
+        "grade" : 4.0,
+        "letterGrade" : "AA"
+      },
+      {
         "credit" : 7,
         "code" : "CSE2138",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       }
     ]
   },

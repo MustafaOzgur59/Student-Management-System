@@ -3,38 +3,38 @@
   "name" : "Jordan Belfort",
   "term" : 1,
   "transcript" : {
-    "gpa" : 1.24,
+    "gpa" : 2.08,
     "semesters" : [
       {
         "semesterNo" : 1,
-        "yano" : 1.24,
+        "yano" : 2.09,
         "takenCredit" : 0,
         "completedCredit" : 60,
-        "note" : 74.5,
+        "note" : 125.5,
         "letterGrades" : [
-          "FD",
+          "FF",
           "DD",
           "FF",
-          "FD",
-          "DD",
-          "BB",
-          "BB",
-          "BA",
-          "DD",
-          "BA",
-          "DD",
-          "FD",
-          "FD",
-          "FF",
+          "AA",
           "DC",
+          "BA",
+          "BB",
+          "BA",
+          "FD",
+          "AA",
+          "BB",
+          "CC",
+          "AA",
+          "CC",
+          "FF",
           "CB"
         ],
         "givenCourses" : [
           {
             "credit" : 6,
             "code" : "CSE1241",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 0.0,
+            "letterGrade" : "FF"
           },
           {
             "credit" : 2,
@@ -51,20 +51,20 @@
           {
             "credit" : 6,
             "code" : "MATH1001",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 5,
             "code" : "MBG1201",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 1.5,
+            "letterGrade" : "DC"
           },
           {
             "credit" : 4,
             "code" : "PHYS1101",
-            "grade" : 3.0,
-            "letterGrade" : "BB"
+            "grade" : 3.5,
+            "letterGrade" : "BA"
           },
           {
             "credit" : 2,
@@ -81,44 +81,44 @@
           {
             "credit" : 2,
             "code" : "ATA121",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 0.5,
+            "letterGrade" : "FD"
           },
           {
             "credit" : 3,
             "code" : "CSE-NTE1",
-            "grade" : 3.5,
-            "letterGrade" : "BA"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 6,
             "code" : "MATH1002",
-            "grade" : 1.0,
-            "letterGrade" : "DD"
+            "grade" : 3.0,
+            "letterGrade" : "BB"
           },
           {
             "credit" : 2,
             "code" : "PHYS1104",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 2,
             "code" : "TRD122 ",
-            "grade" : 0.5,
-            "letterGrade" : "FD"
+            "grade" : 4.0,
+            "letterGrade" : "AA"
           },
           {
             "credit" : 6,
             "code" : "CSE2023",
-            "grade" : 0.0,
-            "letterGrade" : "FF"
+            "grade" : 2.0,
+            "letterGrade" : "CC"
           },
           {
             "credit" : 4,
             "code" : "ECON2004 ",
-            "grade" : 1.5,
-            "letterGrade" : "DC"
+            "grade" : 0.0,
+            "letterGrade" : "FF"
           },
           {
             "credit" : 4,
@@ -150,34 +150,34 @@
   ],
   "studentSemester" : {
     "semesterNo" : 1,
-    "yano" : 1.24,
+    "yano" : 2.09,
     "takenCredit" : 0,
     "completedCredit" : 60,
-    "note" : 74.5,
+    "note" : 125.5,
     "letterGrades" : [
-      "FD",
+      "FF",
       "DD",
       "FF",
-      "FD",
-      "DD",
-      "BB",
-      "BB",
-      "BA",
-      "DD",
-      "BA",
-      "DD",
-      "FD",
-      "FD",
-      "FF",
+      "AA",
       "DC",
+      "BA",
+      "BB",
+      "BA",
+      "FD",
+      "AA",
+      "BB",
+      "CC",
+      "AA",
+      "CC",
+      "FF",
       "CB"
     ],
     "givenCourses" : [
       {
         "credit" : 6,
         "code" : "CSE1241",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 0.0,
+        "letterGrade" : "FF"
       },
       {
         "credit" : 2,
@@ -194,20 +194,20 @@
       {
         "credit" : 6,
         "code" : "MATH1001",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 5,
         "code" : "MBG1201",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 1.5,
+        "letterGrade" : "DC"
       },
       {
         "credit" : 4,
         "code" : "PHYS1101",
-        "grade" : 3.0,
-        "letterGrade" : "BB"
+        "grade" : 3.5,
+        "letterGrade" : "BA"
       },
       {
         "credit" : 2,
@@ -224,44 +224,44 @@
       {
         "credit" : 2,
         "code" : "ATA121",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 0.5,
+        "letterGrade" : "FD"
       },
       {
         "credit" : 3,
         "code" : "CSE-NTE1",
-        "grade" : 3.5,
-        "letterGrade" : "BA"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 6,
         "code" : "MATH1002",
-        "grade" : 1.0,
-        "letterGrade" : "DD"
+        "grade" : 3.0,
+        "letterGrade" : "BB"
       },
       {
         "credit" : 2,
         "code" : "PHYS1104",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 2,
         "code" : "TRD122 ",
-        "grade" : 0.5,
-        "letterGrade" : "FD"
+        "grade" : 4.0,
+        "letterGrade" : "AA"
       },
       {
         "credit" : 6,
         "code" : "CSE2023",
-        "grade" : 0.0,
-        "letterGrade" : "FF"
+        "grade" : 2.0,
+        "letterGrade" : "CC"
       },
       {
         "credit" : 4,
         "code" : "ECON2004 ",
-        "grade" : 1.5,
-        "letterGrade" : "DC"
+        "grade" : 0.0,
+        "letterGrade" : "FF"
       },
       {
         "credit" : 4,
