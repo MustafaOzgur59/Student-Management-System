@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import java.util.Random;
 import java.util.ArrayList;
 
-@JsonIgnoreProperties({"coursesOfferedList"})
+
 public class Instructor extends FacultyMember {
 	final Logger logger = LogManager.getLogger(Instructor.class);
 

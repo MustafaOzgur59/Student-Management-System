@@ -3,9 +3,7 @@ package iteration2;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Section {
-    @JsonProperty("day")
     private String day;
-    @JsonProperty("hour")
     private String hours;
 
     public Section(String day, String hours) {

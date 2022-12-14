@@ -4,23 +4,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SystemParameter {
-    @JsonProperty("semester")
+
     private int semester;
-    @JsonProperty("passRatio")
-    private int passRatio;
-    @JsonProperty("studentPerSemester")
     private int studentPerSemester;
-    @JsonProperty("maxCoursePerSemester")
     private int maxCoursePerSemester;
-    @JsonProperty("maxCreditPerSemester")
     private int maxCreditPerSemester;
 
-    @JsonCreator
-    public SystemParameter(
-            @JsonProperty("semester") int semester,
-            @JsonProperty("studentPerSemester")int studentPerSemester,
-            @JsonProperty("maxCoursePerSemester")int maxCoursePerSemester,
-            @JsonProperty("maxCreditPerSemester")int maxCreditPerSemester) {
+    public SystemParameter(){
+
+    }
+
+    public SystemParameter(int semester, int studentPerSemester, int maxCoursePerSemester, int maxCreditPerSemester) {
         this.semester = semester;
         this.studentPerSemester= studentPerSemester;
         this.maxCoursePerSemester=maxCoursePerSemester;
@@ -63,7 +57,6 @@ public class SystemParameter {
     public String toString() {
         return "SystemParameter{" +
                 "semester=" + semester +
-                ", passRatio=" + passRatio +
                 ", studentPerSemester=" + studentPerSemester +
                 ", maxCoursePerSemester=" + maxCoursePerSemester +
                 ", maxCreditPerSemester=" + maxCreditPerSemester +

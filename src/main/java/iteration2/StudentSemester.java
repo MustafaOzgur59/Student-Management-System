@@ -11,20 +11,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-@JsonIgnoreProperties(value={"letterGrades","courses"},allowGetters = true)
-@JsonPropertyOrder({"semesterNo","yano","takenCredit","completedCredit","note","givenCredit"})
 public class StudentSemester {
-    @JsonProperty("semesterNo")
     private int semesterNo;
-    @JsonProperty("yano")
     private float yano;
-    @JsonProperty("takenCredit")
     private int takenCredit;
-    @JsonProperty("completedCredit")
     private int completedCredit;
-    @JsonProperty("note")
     private float note;
-    @JsonProperty("givenCourses")
+
     ArrayList<iteration2.GivenCourse> givenCourses;
     List<String> letterGrades;
 

@@ -9,22 +9,13 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
-@JsonIgnoreProperties(value={"enrolledCourses","studentSemester","advisor"},allowGetters = true)
-@JsonPropertyOrder({"id","name","term","transcript","logs"})
+
 public class Student extends Person {
-
-    @JsonProperty("term")
     private Integer term;
-
     private ArrayList<String> enrolledCourses=new ArrayList<>();
-
     private StudentSemester studentSemester;
-    @JsonProperty("transcript")
     private Transcript transcript = new Transcript();
-
     private Advisor advisor;
-
-    @JsonProperty("logs")
     private ArrayList<String> logs=new ArrayList<>();
 
     public Student(String id, String name, Integer term) {
@@ -124,7 +115,7 @@ public class Student extends Person {
 
     public void enroll(ArrayList<Course> availableCourses, Curriculum curriculum, SystemParameter systemParameters){
         for (Course availableCourse : availableCourses) {
-            if (availableCourse instanceof TechnicalElective){
+            if (availableCourse.getCode().equals("TExxx")){
                 Random random = new Random();
                 Course course = curriculum.getTE_COURSES().get(random.nextInt(curriculum.getTE_COURSES().size()));
                 advisor.enrollStudent(course, this, curriculum,systemParameters);

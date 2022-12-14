@@ -10,38 +10,20 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
-@JsonTypeInfo(
-        use = JsonTypeInfo.Id.NAME,
-        include = JsonTypeInfo.As.PROPERTY,
-        property = "type")
-@JsonSubTypes({
-        @JsonSubTypes.Type(value = MandatoryCourse.class, name = "MD"),
-        @JsonSubTypes.Type(value = TechnicalElective.class, name = "TE")
-})
-@JsonIgnoreProperties(value={"enrolledStudents","instructor"},allowGetters = true)
-@JsonPropertyOrder({"name","code","term","year","credit","quota","course sessions","lab sessions", "prerequisiteTo"})
+
 public class Course {
-    @JsonProperty("name")
+
     private String name;
-    @JsonProperty("code")
     private String code;
-    @JsonProperty("term")
     private Integer term;
-    @JsonProperty("year")
     private Integer year;
-    @JsonProperty("credit")
     private Integer credit;
-    @JsonProperty("quota")
     private Integer quota;
-    @JsonProperty("course sessions")
     private ArrayList<Section> courseSessions;
-    @JsonProperty("lab sessions")
     private ArrayList<Section> labSessions;
-    @JsonProperty("prerequisiteTo")
     private ArrayList<String> prerequisiteTo;
     private Instructor instructor;
     private ArrayList<String> enrolledStudents = new ArrayList<>();
-
     final Logger logger = LogManager.getLogger(Course.class);
 
     public Course(String name, String code, Integer term, Integer year, Integer credit,
@@ -57,21 +39,10 @@ public class Course {
         this.labSessions = labSessions;
     }
 
-    public Course(){
+    public Course() {
 
     }
 
- /*   public Course(JSONObject jsonObject) {
-        this.name = jsonObject.getString("name");
-        this.code = jsonObject.getString("code");
-        this.term = jsonObject.getInt("term");
-        this.year = jsonObject.getInt("year");
-        this.credit = jsonObject.getInt("credit");
-        this.quota = jsonObject.getInt("quota");
-        this.prerequisiteTo = Arrays.asList(jsonObject.getJSONArray("prerequisiteTo"));
-        this.courseSessions = courseSessions;
-        this.labSessions = labSessions;
-    }*/
 
     public ArrayList<String> getEnrolledStudents() {
         return enrolledStudents;
@@ -189,16 +160,16 @@ public class Course {
                 '}';
     }
 
-    public boolean checkCollision(Course studentCourse){
-        for (Section courseSection : this.getCourseSessions()){
-            for (Section stdCourseSection : studentCourse.getCourseSessions()){
+    public boolean checkCollision(Course studentCourse) {
+        for (Section courseSection : this.getCourseSessions()) {
+            for (Section stdCourseSection : studentCourse.getCourseSessions()) {
                 // if the two sections are in the same day
-                if (stdCourseSection.getDay().equals(courseSection.getDay())){
+                if (stdCourseSection.getDay().equals(courseSection.getDay())) {
                     String[] courseHours = courseSection.getHours().split(","); // 1 hour range 2 or 3
                     String[] stdCourseHours = stdCourseSection.getHours().split(",");// 1 hour range  3 or 3
-                    for (String courseHour: courseHours){
+                    for (String courseHour : courseHours) {
                         String[] splitHours = courseHour.split("-"); // 2 hours
-                        for (String studentCourseHour : stdCourseHours){
+                        for (String studentCourseHour : stdCourseHours) {
                             String[] studentSplitHours = studentCourseHour.split("-"); // 2 hour
                             try {
                                 Date startDate = new SimpleDateFormat("HH:mm").parse(splitHours[0]);
@@ -206,10 +177,10 @@ public class Course {
                                 Date stdStartDate = new SimpleDateFormat("HH:mm").parse(studentSplitHours[0]);
                                 Date stdEndDate = new SimpleDateFormat("HH:mm").parse(studentSplitHours[1]);
                                 if ((stdStartDate.after(startDate) && stdStartDate.before(endDate))
-                                        ||  (startDate.after(stdStartDate) && startDate.before(stdEndDate)) ){
+                                        || (startDate.after(stdStartDate) && startDate.before(stdEndDate))) {
                                     return true;
                                 }
-                            } catch (ParseException exception){
+                            } catch (ParseException exception) {
                                 logger.error("Invalid date format" + exception.getMessage());
                             }
                         }

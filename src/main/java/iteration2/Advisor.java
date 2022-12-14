@@ -8,8 +8,7 @@ import org.apache.log4j.Logger;
 public class Advisor extends Instructor {
     private static final Logger logger = LogManager.getLogger(Advisor.class);
 
-    @JsonCreator
-    public Advisor(@JsonProperty("name") String name) {
+    public Advisor(String name) {
         super(name, "advisor");
     }
 
