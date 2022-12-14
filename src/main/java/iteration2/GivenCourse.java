@@ -4,11 +4,11 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class GivenCourse {
-    @JsonProperty("code")
+
     private String courseCode;
-    @JsonProperty("grade")
+
     private float grade;
-    @JsonProperty("letterGrade")
+
     private String letterGrade;
 
     private Integer credit;
