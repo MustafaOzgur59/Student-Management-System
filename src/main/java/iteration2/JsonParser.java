@@ -2,87 +2,119 @@ package iteration2;
 
 import com.fasterxml.jackson.core.util.DefaultIndenter;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.util.*;
-import java.lang.System;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class JsonParser {
     private static final Logger logger = LogManager.getLogger(JsonParser.class);
     private final ObjectMapper mapper = new ObjectMapper();
     private final DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
+
     {
         this.prettyPrinter.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
         mapper.setDefaultPrettyPrinter(prettyPrinter);
     }
 
-    public ArrayList<iteration2.Course> parseCourseObjects(Curriculum curriculum, Instructor[] instructors) throws IOException {
-        // Old implementation  --> Files.readAllBytes(Path.of(path));
-        ArrayList<iteration2.Course> allCourses = new ArrayList<>();
+    public ArrayList<Course> parseCourseObjects(Curriculum curriculum, Instructor[] instructors) throws IOException {
+        ArrayList<Course> allCourses = new ArrayList<>();
         File dirPath = new File("./src/main/java/courses");
         File[] courseFiles = dirPath.listFiles();
-        for (File f : courseFiles){
-            FileInputStream inputStream = new FileInputStream(f);
-            String jsonString = new String(inputStream.readAllBytes());
-            iteration2.Course[] courses = mapper.readValue(jsonString, iteration2.Course[].class);
-            ArrayList<iteration2.Course> courseList = new ArrayList<>(Arrays.asList(courses));
-            for (iteration2.Course course : courseList){
+        for (File f : courseFiles) {
+            JsonNode jsonNode = mapper.readTree(f);
+            for (JsonNode courseNode : jsonNode) {
+                Course course;
+                ArrayNode prerequisiteArray = (ArrayNode) courseNode.get("prerequisiteTo");
+                ArrayNode courseSectionArray = (ArrayNode) courseNode.get("course sessions");
+                ArrayNode labSectionArray = (ArrayNode) courseNode.get("lab sessions");
+                ArrayList<String> prerequisiteList = new ArrayList<>();
+                ArrayList<Section> courseSectionList = new ArrayList<>();
+                ArrayList<Section> labSectionList = new ArrayList<>();
+                for (JsonNode prerequisite : prerequisiteArray) {
+                    prerequisiteList.add(prerequisite.asText());
+                }
+                for (JsonNode courseSection : courseSectionArray) {
+                    courseSectionList.add(new Section(courseSection.get("day").asText(), courseSection.get("hour").asText()));
+                }
+                for (JsonNode labSection : labSectionArray) {
+                    labSectionList.add(new Section(labSection.get("day").asText(), labSection.get("hour").asText()));
+                }
+                if (courseNode.get("type").asText().equals("MD") || courseNode.get("code").asText().equals("TExxx")) {
+                    course = new MandatoryCourse(
+                            courseNode.get("name").asText(),
+                            courseNode.get("code").asText(),
+                            courseNode.get("term").asInt(),
+                            courseNode.get("year").asInt(),
+                            courseNode.get("credit").asInt(),
+                            courseNode.get("quota").asInt(),
+                            prerequisiteList,
+                            courseSectionList,
+                            labSectionList
+                    );
+                } else {
+                    course = new TechnicalElective(
+                            courseNode.get("name").asText(),
+                            courseNode.get("code").asText(),
+                            courseNode.get("term").asInt(),
+                            courseNode.get("year").asInt(),
+                            courseNode.get("credit").asInt(),
+                            courseNode.get("quota").asInt(),
+                            prerequisiteList,
+                            courseSectionList,
+                            labSectionList
+                    );
+                }
                 allCourses.add(course);
-                logger.info("Parsed course : " + course.getName());
+                logger.info("Parsed course : " + course);
             }
-            inputStream.close();
-
         }
-        for (Course c : allCourses){
-            if (c instanceof TechnicalElective && !c.getCode().equals("TExxx")){
+        for (Course c : allCourses) {
+            if (c instanceof TechnicalElective && !c.getCode().equals("TExxx")) {
                 curriculum.getTE_COURSES().add(c);
-            }
-            else{
-                curriculum.getCOURSES()[(c.getYear()-1) * 2 + c.getTerm() - 1].add(c);
+            } else {
+                curriculum.getCOURSES()[(c.getYear() - 1) * 2 + c.getTerm() - 1].add(c);
             }
             Random random = new Random();
             int rand = random.nextInt(instructors.length);
             instructors[rand].getCoursesOfferedList().add(c);
             c.setInstructor(instructors[rand]);
         }
-        return  allCourses;
+        return allCourses;
     }
 
     public ArrayList<Advisor> parseAdvisors(Department manager) throws IOException {
-        File dirPath = new File("./src/main/java/Advisors.json");
-        FileInputStream inputStream = new FileInputStream(dirPath);
-        String jsonString = new String(inputStream.readAllBytes());
-        Advisor[] advisors = mapper.readValue(jsonString, Advisor[].class);
-        logger.info("Created advisors");
-        inputStream.close();
-        ArrayList<Advisor> advisorList = new ArrayList<>(Arrays.asList(advisors));
-        manager.setAdvisorList(advisorList);
-        return advisorList;
-    }
-
-    public ArrayList<iteration2.Student> parseStudents(Department manager) throws IOException {
-        ArrayList<iteration2.Student> studentList = new ArrayList<>();
-        File dirPath = new File("./src/main/java/students/inputStudents");
-        File[] studentFiles = dirPath.listFiles();
-        assert studentFiles != null;
-        for (File f : studentFiles){
-            FileInputStream inputStream = new FileInputStream(f);
-            String jsonString = new String(inputStream.readAllBytes());
-            iteration2.Student student = mapper.readValue(jsonString, iteration2.Student.class);
-            manager.getStudentList().add(student);
+        try {
+            ArrayList<Advisor> advisorList = new ArrayList<>();
+            File dirPath = new File("./src/main/java/Advisors.json");
+            FileInputStream inputStream = new FileInputStream(dirPath);
+            JsonNode advisorArray = mapper.readTree(dirPath);
+            for (JsonNode jsonNode : advisorArray){
+                Advisor advisor = new Advisor(jsonNode.get("name").asText());
+                advisorList.add(advisor);
+            }
             inputStream.close();
-            System.out.println(student.toString());
+            manager.setAdvisorList(advisorList);
+            logger.info("Parsed advisors");
+            return advisorList;
+        } catch (FileNotFoundException ex){
+            ex.printStackTrace();
+            return null;
         }
-        return  studentList;
     }
 
-
-    public void outputStudentObjects(List<iteration2.Student> studentList,String path) throws IOException {
-        File dirPath = new File(path);
-        for (Student s : studentList){
+    public void outputStudentObjects(List<Student> studentList, String path) throws IOException {
+        SimpleModule module = new SimpleModule();
+        module.addSerializer(Student.class, new StudentSerializer());
+        mapper.registerModule(module);
+        for (Student s : studentList) {
             String jsonString = mapper.writer(prettyPrinter).writeValueAsString(s);
             File studentJsonFile = new File(path + s.getId() + ".json");
             studentJsonFile.createNewFile();
