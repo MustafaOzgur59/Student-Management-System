@@ -1,0 +1,453 @@
+[
+  {
+    "name": "Computer Programming I",
+    "code": "CSE1241",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 6,
+    "quota": 150,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "15:00-16:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Friday",
+        "hour": "14:00-14:50,15:00-15:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "10:30-11:20,11:30-12:20"
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Ataturk’s Principles and the History of Turkish Renovation I ",
+    "code": "ATA121",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 2,
+    "quota": 60,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "17:00-17:50,18:00-18:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Introduction to Computer Engineering",
+    "code": "CSE1200",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 4,
+    "quota": 110,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "13:00-13:50"
+      },
+      {
+        "day": "Friday",
+        "hour": "10:30-11:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "CALCULUS I",
+    "code": "MATH1001",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 6,
+    "quota": 164,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "09:00-09:50,10:00-10:50"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "09:00-09:50,10:00-10:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Introduction to Modern Biology",
+    "code": "MBG1201",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 5,
+    "quota": 76,
+    "course sessions": [
+      {
+        "day": "Friday",
+        "hour": "11:00-11:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "09:00-09:50,10:00-10:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Physics I",
+    "code": "PHYS1101",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 4,
+    "quota": 200,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "15:00-15:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "14:00-14:50,15:00-15:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Physics Lab I",
+    "code": "PHYS1103",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 2,
+    "quota": 150,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "17:00-17:50,18:00-18:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Türk Dili I",
+    "code": "TRD121",
+    "type": "MD",
+    "term": 1,
+    "year": 1,
+    "credit": 2,
+    "quota": 850,
+    "course sessions": [
+      {
+        "day": "Saturday",
+        "hour": "13:00-13:50,14:00-14:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Ataturk’s Principles and the History of Turkish Renovation II ",
+    "code": "ATA122",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 2,
+    "quota": 1100,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "13:00-13:50,14:00-14:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+  {
+    "name": "Computer Programming II",
+    "code": "CSE1242",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 6,
+    "quota": 150,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "11:00-11:50,12:00-12:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "11:00-11:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Friday",
+        "hour": "14:00-14:50,15:00-15:50"
+      },
+      {
+        "day": "Frıday",
+        "hour": "10:00-10:50,11:00-11:50"
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE1241"
+    ]
+  },
+  {
+    "name": "Non-Technical Elective - 1",
+    "code": "CSE-NTE1",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 3,
+    "quota": 30,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+  {
+    "name": "Calculus II",
+    "code": "MATH1002",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 6,
+    "quota": 250,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "10:00-10:50,11:00-11:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "09:00-09:50,10:00-10:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+
+    ]
+  },
+
+  {
+    "name": "Linear Algebra for Computer Engineering",
+    "code": "MATH2256",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 5,
+    "quota": 150,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "10:00-10:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "10:00-10:50,11:00-11:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "IE3235"
+
+
+    ]
+  },
+  {
+    "name": "Physics II",
+    "code": "PHYS1102",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 4,
+    "quota": 120,
+    "course sessions": [
+      {
+        "day": "Thursday",
+        "hour": "14:00-14:50,15:00-15:50,16:00-16:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "EE2031"
+    ]
+  },
+  {
+    "name": "Physics Lab II",
+    "code": "PHYS1104",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 2,
+    "quota": 170,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "14:00-14:50,15:00-15:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+  {
+    "name": "Türk Dili II ",
+    "code": "TRD122 ",
+    "type": "MD",
+    "term": 2,
+    "year": 1,
+    "credit": 2,
+    "quota": 485,
+    "course sessions": [
+      {
+        "day": "Saturday",
+        "hour": "09:00-09:50,10:00-10:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  }
+]
+
+

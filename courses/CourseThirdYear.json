@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Database Systems",
+    "code": "CSE3055",
+    "type": "MD",
+    "term": 1,
+    "year": 3,
+    "credit": 7,
+    "quota": 128,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "11:30-12:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "13:00-13:50,14:00-14:50"
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE2225"
+    ]
+  },
+
+  {
+    "name": "Operating Systems",
+    "code": "CSE3033",
+    "type": "MD",
+    "term": 1,
+    "year":3,
+    "credit": 7,
+    "quota": 140,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "11:30-12:20"
+      },
+      {
+        "day": "Friday",
+        "hour": "10:30-11:20,11:30-12:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Monday",
+        "hour": "13:00-13:50,14:00-14:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "13:00-13:50,14:00-14:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "15:00-15:50,16:00-16:50"
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE2225"
+    ]
+  },
+
+  {
+    "name": "Object-Oriented Software Desg.",
+    "code": "CSE3063",
+    "type": "MD",
+    "term": 1,
+    "year": 3,
+    "credit": 5,
+    "quota": 167,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "09:30-10:20,10:30-11:20"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "09:30-10:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE1242"
+    ]
+  },
+
+  {
+    "name": "Digital Logic Design",
+    "code": "CSE3215",
+    "type": "MD",
+    "term": 1,
+    "year": 3,
+    "credit": 6,
+    "quota": 132,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "09:30-10:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "Monday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "13:00-13:50,14:00-14:50"
+      }
+    ],
+    "prerequisiteTo": [
+      ""
+    ]
+  },
+
+  {
+    "name": "Modeling and Disc. Simulation",
+    "code": "IE3081",
+    "type": "MD",
+    "term": 1,
+    "year": 3,
+    "credit": 4,
+    "quota": 148,
+    "course sessions": [
+      {
+        "day": "Thursday",
+        "hour": "09:30-10:20,10:30-11:20"
+      },
+      {
+        "day": "Friday",
+        "hour": "09:30-10:20"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "STAT2253"
+    ]
+  },
+
+  {
+    "name": "Tech. Comm. & Entrepreneurship",
+    "code": "COM2202",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 2,
+    "quota": 120,
+    "course sessions": [
+      {
+        "day": "",
+        "hour": ""
+      },
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      ""
+    ]
+  },
+
+  {
+    "name": "Software Engineering",  
+    "code": "CSE3044",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 7,
+    "quota": 198,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "11:30-12:20"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "10:30-11:20,11:30-12:20"
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE3055"
+    ]
+  },
+
+  {
+    "name": "Formal Lang. & Auto. Theory",
+    "code": "CSE3264",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 5,
+    "quota": 196,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "13:00-13:50,14:00-14:50"
+      },
+      {
+        "day": "Frıday",
+        "hour": "09:30-10:20"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE2023"
+    ]
+  },
+
+  {
+    "name": "Computer Organization",
+    "code": "CSE3038",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 7,
+    "quota": 175,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "09:30-10:20"
+      },
+      {
+        "day": "Thursday",
+        "hour": "09:30-10:20,10:30-11:20"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "Friday",
+        "hour": "10:30-11:20,11:30-12:20"
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE2138","CSE3215"
+    ]
+  },
+  {
+    "name": "Int. to Signals and Systems",
+    "code": "CSE3048",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 5,
+    "quota": 233,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "13:00-13:50"
+      }
+      
+    ],
+    "lab sessions": [
+      
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "MATH2055"
+    ]
+  },
+  {
+    "name": "Operations Research", 
+    "code": "IE3235",
+    "type": "MD",
+    "term": 2,
+    "year": 3,
+    "credit": 4,
+    "quota": 205,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "09:30-10:20,10:30-11:20"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "09:30-10:20"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "MATH2256"
+    ]
+  }
+  
+  
+]

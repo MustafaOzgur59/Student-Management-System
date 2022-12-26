@@ -1,0 +1,241 @@
+[
+  {
+    "name": "Introduction to Robotics and Control Theory ",
+    "code": "CSE4026",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 24,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "17:00-17:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "16:00-16:50,17:00-17:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Advanced Unix Programming",
+    "code": "CSE4034",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 35,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "09:00-09:50,"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "13:00-13:50,14:00-14:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE3033"
+
+    ]
+  },
+
+  {
+    "name": "Information Systems: Analysis and Design",
+    "code": "CSE4053",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 41,
+    "course sessions": [
+      {
+        "day": "Wednesday",
+        "hour": "15:00-15:50,16:00-16:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "11:00-11:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Information Systems Security",
+    "code": "CSE4057 ",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 48,
+    "course sessions": [
+      {
+        "day": "Thursday",
+        "hour": "14:00-14:50,15:00-15:50"
+      },
+      {
+        "day": "Friday",
+        "hour": "16:00-16:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Compiler Design",
+    "code": "CSE061",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 46,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "13:00-13:50,14:00-14:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "15:00-15:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+      "CSE3264"
+    ]
+  },
+
+  {
+    "name": "Introduction to Data Science and Analytics",
+    "code": "CSE4062",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 44,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "11:00-11:50"
+      },
+      {
+        "day": "Wednesday",
+        "hour": "10:00-10:50,11:00-11:50"
+      }
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Fundamentals of Data Mining",
+    "code": "CSE4063",
+    "type": "TE",
+    "term": 1,
+    "year": 4,
+    "credit": 5,
+    "quota": 45,
+    "course sessions": [
+      {
+        "day": "Tuesday",
+        "hour": "12:00-12:50"
+      },
+      {
+        "day": "Thursday",
+        "hour": "12:00-12:50,13:00-13:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  },
+
+  {
+    "name": "Introduction to Computational Genomics",
+    "code": "CSE4065",
+    "type": "TE",
+    "term": 2,
+    "year": 4,
+    "credit": 5,
+    "quota": 57,
+    "course sessions": [
+      {
+        "day": "Monday",
+        "hour": "14:00-14:50,15:00-15:50"
+      },
+      {
+        "day": "Tuesday",
+        "hour": "13:00-13:50"
+      }
+
+    ],
+    "lab sessions": [
+      {
+        "day": "",
+        "hour": ""
+      }
+    ],
+    "prerequisiteTo": [
+
+    ]
+  }
+    
+  
+]
+
+
