@@ -1,6 +1,8 @@
 import os
 import json
-from TechnicalElective import  TechnicalElective
+
+from Section import Section
+from TechnicalElective import TechnicalElective
 from MandatoryCourse import MandatoryCourse
 
 
@@ -23,11 +25,19 @@ class JsonParser:
                 if courseDict["type"] == "MD":
                     courses.append(self.createMandatoryCourse(courseDict))
                 elif courseDict["type"] == "TE":
-                    course = self.createTechnicalElectiveCourse(courseDict)
                     courses.append(self.createTechnicalElectiveCourse(courseDict))
         return courses
 
     def createMandatoryCourse(self, courseDict) -> MandatoryCourse:
+        courseSectionList = []
+        labSectionList = []
+        for index, sectionDict in enumerate(courseDict["course sessions"]):
+            section = Section(sectionDict["day"], sectionDict["hour"])
+            courseSectionList.append(section)
+
+        for index, sectionDict in enumerate(courseDict["lab sessions"]):
+            section = Section(sectionDict["day"], sectionDict["hour"])
+            labSectionList.append(section)
         return MandatoryCourse(
             courseDict["name"],
             courseDict["code"],
@@ -36,11 +46,20 @@ class JsonParser:
             courseDict["credit"],
             courseDict["quota"],
             courseDict["prerequisiteTo"],
-            courseDict["course sessions"],
-            courseDict["lab sessions"],
+            courseSectionList,
+            labSectionList
         )
 
     def createTechnicalElectiveCourse(self, courseDict) -> TechnicalElective:
+        courseSectionList = []
+        labSectionList = []
+        for index, sectionDict in enumerate(courseDict["course sessions"]):
+            section = Section(sectionDict["day"], sectionDict["hour"])
+            courseSectionList.append(section)
+
+        for index, sectionDict in enumerate(courseDict["lab sessions"]):
+            section = Section(sectionDict["day"], sectionDict["hour"])
+            labSectionList.append(section)
         return TechnicalElective(
             courseDict["name"],
             courseDict["code"],
@@ -49,6 +68,6 @@ class JsonParser:
             courseDict["credit"],
             courseDict["quota"],
             courseDict["prerequisiteTo"],
-            courseDict["course sessions"],
-            courseDict["lab sessions"],
+            courseSectionList,
+            labSectionList
         )
