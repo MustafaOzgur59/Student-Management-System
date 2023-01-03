@@ -1,8 +1,9 @@
 import random
-from iteration3 import Course
-from iteration3 import GivenCourse
-from iteration3 import Student
 from typing import List
+
+from CSE3063F22P1_GRP4.Course import Course
+from CSE3063F22P1_GRP4.GivenCourse import GivenCourse
+
 
 class Instructor:
     def __init__(self, name: str, id: str):
@@ -14,11 +15,3 @@ class Instructor:
         int_random = max(random.uniform(0, 4.5), min(random.uniform(0, 4.5), random.uniform(0, 4.5)))
         print(f"Graded student {student.name} for course {course.name} grade is: {int_random}")
         student.student_semester.given_courses.append(GivenCourse(course.code, int_random, course.credit))
-
-    @property
-    def courses_offered_list(self) -> List[Course]:
-        return self.courses_offered_list
-
-    @courses_offered_list.setter
-    def courses_offered_list(self, courses_offered_list: List[Course]):
-        self.courses_offered_list = courses_offered_list
