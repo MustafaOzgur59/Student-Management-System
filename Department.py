@@ -1,8 +1,7 @@
 from typing import List
-from iteration3 import Student
-from iteration3 import Advisor
-from iteration3 import Course
-
+from Student import Student
+from Course import Course
+from Advisor import Advisor
 class Department:
     def __init__(self):
         self.student_list = []
