@@ -1,7 +1,5 @@
 from typing import List
-from iteration3 import Course
-
-
+from Course import Course
 class Curriculum:
     def __init__(self):
         self.te_courses = []
