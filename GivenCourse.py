@@ -12,7 +12,7 @@ class GivenCourse:
     def setLetterGrade(self, letterGrade):
         self.letterGrade = letterGrade
 
-    def calculateLetterGrade(self):
+    def calculate_letter_grade(self):
         if self.grade == 0:
             self.letterGrade = "FF"
         elif self.grade == 0.5:
