@@ -1,9 +1,18 @@
 import os
 import json
+import random
+import jsonpickle
+from typing import List
 
+from CSE3063F22P1_GRP4.Student import Student
 from Section import Section
 from TechnicalElective import TechnicalElective
 from MandatoryCourse import MandatoryCourse
+from SystemParameter import SystemParameter
+from Department import Department
+from Advisor import Advisor
+from Instructor import Instructor
+from Curriculum import Curriculum
 
 
 class JsonParser:
@@ -11,7 +20,7 @@ class JsonParser:
     def __init__(self):
         pass
 
-    def parseCourses(self) -> list:
+    def parseCourses(self, curriculum: Curriculum, instructors: List[Instructor]) -> list:
         courseFiles = []
         courses = []
         for (dirpath, dirnames, filenames) in os.walk("courses"):
@@ -26,6 +35,16 @@ class JsonParser:
                     courses.append(self.createMandatoryCourse(courseDict))
                 elif courseDict["type"] == "TE":
                     courses.append(self.createTechnicalElectiveCourse(courseDict))
+        for i in range(len(courses)):
+            randomInt = random.randint(0, len(instructors) - 1)
+            courses[i].instructor = instructors[randomInt]
+            instructors[randomInt].courses_offered_list.append(courses[i])
+            if isinstance(courses[i], TechnicalElective) and courses[i].code != "TExxx":
+                curriculum.te_courses.append(courses[i])
+            else:
+                semesterOfTheCourse = (courses[i].year - 1) * 2 + courses[i].term - 1
+                curriculum.courses[semesterOfTheCourse].append(courses[i])
+
         return courses
 
     def createMandatoryCourse(self, courseDict) -> MandatoryCourse:
@@ -71,3 +90,37 @@ class JsonParser:
             courseSectionList,
             labSectionList
         )
+
+    def parseParameters(self) -> SystemParameter:
+        try:
+            jsonFile = open("parameters.json")
+        except FileNotFoundError:
+            print("parameter json file not found")
+        else:
+            parametersJson = json.load(jsonFile)
+            print(parametersJson)
+            return SystemParameter(parametersJson["semester"]
+                                   , parametersJson["studentPerSemester"]
+                                   , parametersJson["maxCoursePerSemester"]
+                                   , parametersJson["maxCreditPerSemester"])
+
+    def parseAdvisors(self, department: Department):
+        try:
+            advisorsFile = open("Advisors.json")
+        except FileNotFoundError:
+            print("Advisors.json file not found")
+        else:
+            advisorsList = json.load(advisorsFile)
+            for index, advisorDict in enumerate(advisorsList):
+                department.get_advisor_list().append(Advisor(advisorDict["name"]))
+
+    def outputStudentObjects(self,students:List[Student],filePath):
+        jsonpickle.set_encoder_options('json', sort_keys=False, indent=4)
+        try:
+            for student in students:
+                outputFile = open(filePath + "/" + student.id + ".json","w")
+                jsonString = jsonpickle.encode(student)
+                print(jsonString)
+                outputFile.write(jsonString)
+        except FileNotFoundError:
+            print(f"{filePath} not found")

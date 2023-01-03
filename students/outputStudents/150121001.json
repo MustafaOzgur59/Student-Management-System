@@ -1,0 +1,193 @@
+{
+    "py/object": "CSE3063F22P1_GRP4.Student.Student",
+    "_name": "150121001",
+    "_id": "150121001",
+    "_term": 2,
+    "_enrolled_courses": [],
+    "_student_semester": {
+        "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+        "semester_no": 2,
+        "yano": 0,
+        "taken_credit": 0,
+        "completed_credit": 0,
+        "note": 0,
+        "given_courses": [],
+        "letter_grades": []
+    },
+    "_transcript": {
+        "py/object": "Transcript.Transcript",
+        "gpa": 2.1,
+        "semesters": [
+            {
+                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+                "semester_no": 1,
+                "yano": 2.1,
+                "taken_credit": 31,
+                "completed_credit": 31,
+                "note": 65.15580535430723,
+                "given_courses": [
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1200",
+                        "grade": 3.168108250458899,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1241",
+                        "grade": 1.3627692238497373,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MBG1201",
+                        "grade": 2.7160335069548855,
+                        "credit": 5,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ATA121",
+                        "grade": 2.855933830999332,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH1001",
+                        "grade": 0.921056819343824,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1103",
+                        "grade": 2.747947580714116,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "TRD121",
+                        "grade": 2.393345248331553,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1101",
+                        "grade": 2.3014488096114585,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    }
+                ],
+                "letter_grades": []
+            },
+            {
+                "py/id": 2
+            }
+        ],
+        "cumulative_credit": 31
+    },
+    "_advisor": {
+        "py/object": "Advisor.Advisor",
+        "name": "Dr. Ogr. Uyesi Fatma Corut ERGIN",
+        "id": "advisor",
+        "courses_offered_list": [
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Linear Algebra for Computer Engineering",
+                "code": "MATH2256",
+                "term": 2,
+                "year": 1,
+                "credit": 5,
+                "quota": 150,
+                "prerequisiteTo": [
+                    "IE3235"
+                ],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Monday",
+                        "hours": "10:00-10:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "10:00-10:50,11:00-11:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 18
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "University Elective",
+                "code": "UE ",
+                "term": 1,
+                "year": 4,
+                "credit": 3,
+                "quota": 70,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 18
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "TechnicalElective.TechnicalElective",
+                "name": "Technical Elective - 3",
+                "code": "TExxx",
+                "term": 2,
+                "year": 4,
+                "credit": 5,
+                "quota": 50,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 18
+                },
+                "enrolledStudents": []
+            }
+        ]
+    },
+    "_logs": []
+}

@@ -1,12 +1,13 @@
 
 from typing import List
 from random import Random
-import Curriculum
-import Course
-import SystemParameter
-import StudentSemester
-import Transcript
-import Advisor
+
+from CSE3063F22P1_GRP4 import Advisor
+from Curriculum import Curriculum
+from Course import Course
+from SystemParameter import SystemParameter
+from StudentSemester import StudentSemester
+from Transcript import Transcript
 from Person import Person
 
 
@@ -91,7 +92,7 @@ class Student(Person):
         for available_course in available_courses:
             if available_course.code == "TExxx":
                 random = Random()
-                course = curriculum.TE_COURSES[random.randint(0, len(curriculum.TE_COURSES))]
+                course = curriculum.te_courses[random.randint(0, len(curriculum.te_courses)-1)]
                 self.advisor.enroll_student(course, self, curriculum, system_parameters)
             else:
                 self.advisor.enroll_student(available_course, self, curriculum, system_parameters)

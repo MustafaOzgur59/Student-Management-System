@@ -1,0 +1,500 @@
+{
+    "py/object": "CSE3063F22P1_GRP4.Student.Student",
+    "_name": "150120004",
+    "_id": "150120004",
+    "_term": 4,
+    "_enrolled_courses": [],
+    "_student_semester": {
+        "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+        "semester_no": 4,
+        "yano": null,
+        "taken_credit": 0,
+        "completed_credit": 0,
+        "note": 0,
+        "given_courses": [],
+        "letter_grades": []
+    },
+    "_transcript": {
+        "py/object": "Transcript.Transcript",
+        "gpa": 2.54,
+        "semesters": [
+            {
+                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+                "semester_no": 1,
+                "yano": 2.31,
+                "taken_credit": 31,
+                "completed_credit": 31,
+                "note": 71.89034928817901,
+                "given_courses": [
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1200",
+                        "grade": 4.2359301098407185,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH1001",
+                        "grade": 1.6676027628731767,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1241",
+                        "grade": 2.350208070805182,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ATA121",
+                        "grade": 1.9162516574222583,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MBG1201",
+                        "grade": 2.3367191718807487,
+                        "credit": 5,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "TRD121",
+                        "grade": 2.411722501230471,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1103",
+                        "grade": 3.0998739071692816,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1101",
+                        "grade": 1.0751179639245536,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    }
+                ],
+                "letter_grades": []
+            },
+            {
+                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+                "semester_no": 2,
+                "yano": 2.92,
+                "taken_credit": 31,
+                "completed_credit": 31,
+                "note": 90.6275311101171,
+                "given_courses": [
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1101",
+                        "grade": 2.3800373906377628,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1242",
+                        "grade": 2.6346903007788267,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE-NTE1",
+                        "grade": 4.0706331596326555,
+                        "credit": 3,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ATA122",
+                        "grade": 1.3849237128190839,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH1001",
+                        "grade": 4.202417878967978,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ATA121",
+                        "grade": 2.4356177616283063,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH1002",
+                        "grade": 2.789449724940501,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1104",
+                        "grade": 1.7475258458247414,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    }
+                ],
+                "letter_grades": []
+            },
+            {
+                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
+                "semester_no": 3,
+                "yano": 2.43,
+                "taken_credit": 34,
+                "completed_credit": 34,
+                "note": 82.69816472805122,
+                "given_courses": [
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE2225 ",
+                        "grade": 3.2629010570940746,
+                        "credit": 7,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE2023",
+                        "grade": 2.974168995005751,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ECON2004 ",
+                        "grade": 2.677910545393046,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "PHYS1104",
+                        "grade": 3.502818977025648,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "TRD122 ",
+                        "grade": 2.12010528387992,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE2138",
+                        "grade": 0.7925700687370749,
+                        "credit": 7,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "ATA122",
+                        "grade": 2.6567638289676068,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH2055 ",
+                        "grade": 2.2984586289700344,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    }
+                ],
+                "letter_grades": []
+            }
+        ],
+        "cumulative_credit": 96
+    },
+    "_advisor": {
+        "py/object": "Advisor.Advisor",
+        "name": "Doc. Dr. Borahan TUMER",
+        "id": "advisor",
+        "courses_offered_list": [
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Introduction to Modern Biology",
+                "code": "MBG1201",
+                "term": 1,
+                "year": 1,
+                "credit": 5,
+                "quota": 76,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Friday",
+                        "hours": "11:00-11:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "09:00-09:50,10:00-10:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": [
+                    "150121001"
+                ]
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Work Safety II",
+                "code": "ISG122",
+                "term": 2,
+                "year": 4,
+                "credit": 2,
+                "quota": 633,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Saturday",
+                        "hours": "17:00-17:50,18:00-18:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "TechnicalElective.TechnicalElective",
+                "name": "Technical Elective - 2",
+                "code": "TExxx",
+                "term": 2,
+                "year": 4,
+                "credit": 5,
+                "quota": 50,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Analysis of Algorithms",
+                "code": "CSE2246",
+                "term": 2,
+                "year": 2,
+                "credit": 6,
+                "quota": 216,
+                "prerequisiteTo": [
+                    "CSE2246"
+                ],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "14:00-14:50,15:00-15:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Friday",
+                        "hours": "15:00-15:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Monday",
+                        "hours": "15:00-15:50,16:00-16:50"
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Systems Programming",
+                "code": "CSE2138",
+                "term": 2,
+                "year": 2,
+                "credit": 7,
+                "quota": 183,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Tuesday",
+                        "hours": "13:00-13:50,14:00-14:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Friday",
+                        "hours": "14:00-14:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "09:30-10:20,10:30-11:20"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Wednesday",
+                        "hours": "09:30-10:20,10:30-11:20"
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Electronics",
+                "code": "EE2032",
+                "term": 2,
+                "year": 2,
+                "credit": 5,
+                "quota": 80,
+                "prerequisiteTo": [
+                    "EE2031"
+                ],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Monday",
+                        "hours": "13:00-13:50,14:00-14:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Friday",
+                        "hours": "09:30-10:20,10:30-11:20"
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "MandatoryCourse.MandatoryCourse",
+                "name": "Database Systems",
+                "code": "CSE3055",
+                "term": 1,
+                "year": 3,
+                "credit": 7,
+                "quota": 128,
+                "prerequisiteTo": [
+                    "CSE2225"
+                ],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Wednesday",
+                        "hours": "10:30-11:20,11:30-12:20"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "11:30-12:20"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Tuesday",
+                        "hours": "15:00-15:50,16:00-16:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Wednesday",
+                        "hours": "13:00-13:50,14:00-14:50"
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            },
+            {
+                "py/object": "TechnicalElective.TechnicalElective",
+                "name": "Fundamentals of Data Mining",
+                "code": "CSE4063",
+                "term": 1,
+                "year": 4,
+                "credit": 5,
+                "quota": 45,
+                "prerequisiteTo": [],
+                "courseSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Tuesday",
+                        "hours": "12:00-12:50"
+                    },
+                    {
+                        "py/object": "Section.Section",
+                        "day": "Thursday",
+                        "hours": "12:00-12:50,13:00-13:50"
+                    }
+                ],
+                "labSessions": [
+                    {
+                        "py/object": "Section.Section",
+                        "day": "",
+                        "hours": ""
+                    }
+                ],
+                "instructor": {
+                    "py/id": 40
+                },
+                "enrolledStudents": []
+            }
+        ]
+    },
+    "_logs": []
+}
