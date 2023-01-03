@@ -1,27 +1,29 @@
 import logging
 
-from iteration3 import Course
-from iteration3 import Student
-from iteration3 import Curriculum
-from iteration3 import SystemParameter
+from CSE3063F22P1_GRP4 import Course, Student, SystemParameter, Curriculum
+from CSE3063F22P1_GRP4.Instructor import Instructor
 
 logger = logging.getLogger(__name__)
+
 
 class Advisor(Instructor):
     def __init__(self, name: str):
         super().__init__(name, "advisor")
 
-    def enroll_student(self, course: Course, student: Student, curriculum: Curriculum, system_parameters: SystemParameter) -> bool:
+    def enroll_student(self, course: Course, student: Student, curriculum: Curriculum,
+                       system_parameters: SystemParameter) -> bool:
         # check if student enrolled more than allowed amount of course
-        if self.check_amount_of_course(course, student, len(student.enrolled_courses), system_parameters.max_course_per_semester):
+        if self.check_amount_of_course(course, student, len(student.enrolled_courses),
+                                       system_parameters.max_course_per_semester):
             return False
 
         # check if student exceeded allowable credit limit
-        if self.check_credit_limit(course, student, student.student_semester.taken_credit, system_parameters.max_credit_per_semester):
+        if self.check_credit_limit(course, student, student.student_semester.taken_credit,
+                                   system_parameters.max_credit_per_semester):
             return False
 
         # if course quota is full
-        if self.check_quota(course, student, course.quota, len(course.enrolled_students)):
+        if self.check_quota(course, student, course.quota, len(course.enrolledStudents)):
             return False
 
         # if the student tries to take a course in the two upper semester return false
@@ -45,50 +47,71 @@ class Advisor(Instructor):
         for course_name in student.enrolled_courses:
             std_course = curriculum.get_course(course_name)
             if course.check_collision(std_course):
-                student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
-                logger.info(f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
+                student.logs.append(
+                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
+                logger.info(
+                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
                 return True
         return False
 
     def check_amount_of_course(self, course: Course, student: Student, size: int, max: int) -> bool:
         if size >= max:
-            student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed course amount exceeded")
-            logger.info(f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed course amount exceeded")
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed course amount exceeded")
+            logger.info(
+                f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed course amount exceeded")
             return True
         return False
 
     def check_credit_limit(self, course: Course, student: Student, taken_credit: int, max: int) -> bool:
         if taken_credit >= max:
-            student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed credit amount exceeded")
-            logger.info(f"Cant
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed credit amount exceeded")
+            logger.info(
+                f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed credit amount exceeded")
             return True
         return False
+
     def check_quota(self, course: Course, student: Student, quota: int, std_num: int) -> bool:
         if quota <= std_num:
-            student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
             logger.info(f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
             return True
         return False
 
     def check_if_upper(self, course: Course, student: Student, year: int, term: int, std_term: int) -> bool:
-        if year < std_term:
-            student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
-            logger.info(f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
-            return True
-        elif year == std_term and term < 3:
-            student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
-            logger.info(f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+        if (year - 1) * 2 + term - std_term >= 2:
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+            logger.info(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
             return True
         return False
 
     def has_prerequisite(self, course: Course, student: Student) -> bool:
-        return course.prerequisites == []
+        if course.prerequisiteTo == []:
+            student.enrolled_courses.append(course.name)
+            student.student_semester.taken_credit = student.student_semester.taken_credit + course.credit
+            course.enrolledStudents.append(student.id)
+            return True
+        return False
 
     def check_prerequisite(self, course: Course, student: Student) -> bool:
-        for prereq in course.prerequisites:
-            if prereq not in student.enrolled_courses:
-                student.logs.append(f"Cant add course: {course.name} to Student : {student.name} because of missing prerequisite course: {prereq}")
-                logger.info(f"Cant add course: {course.name} to Student : {student.name} because of missing prerequisite course: {prereq}")
-                return False
-        return True
+        passedPrerequisiteCount = 0
+        for prerequisiteCode in course.prerequisiteTo:
+            for student_semester in student.transcript.semesters:
+                for givenCourse in student_semester.given_courses:
+                    if givenCourse.courseCode == prerequisiteCode:
+                        passedPrerequisiteCount += 1
 
+        if passedPrerequisiteCount == len(course.prerequisiteTo):
+            student.enrolled_courses.append(course.name)
+            student.student_semester.taken_credit = student.student_semester.taken_credit + course.credit
+            course.enrolledStudents.append(student.id)
+            return True
+        else:
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+            logger.info(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")

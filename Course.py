@@ -1,7 +1,6 @@
-
 class Course:
 
-    def __init__(self ,name ,code ,term ,year ,credit ,quota ,prerequisiteTo ,courseSessions ,labSessions):
+    def __init__(self, name, code, term, year, credit, quota, prerequisiteTo, courseSessions, labSessions):
         self.name = name
         self.code = code
         self.term = term
@@ -11,6 +10,8 @@ class Course:
         self.prerequisiteTo = prerequisiteTo
         self.courseSessions = courseSessions
         self.labSessions = labSessions
+        self.instructor = ""
+        self.enrolledStudents = []
 
     def __str__(self) -> str:
         return f"\nname : {self.name} \n " \
@@ -23,3 +24,6 @@ class Course:
                f"courseSessions : {self.courseSessions} \n" \
                f"labSessions : {self.labSessions} \n"
 
+    #TODO course hour collision check
+    def check_collision(self,std_course):
+        return False
