@@ -9,13 +9,16 @@ class StudentSemester:
         self.letter_grades = []
 
     def calculate_yano(self):
-        self.calculate_credit()
+        self.calculate_cumulative_credit()
         self.note = 0
         for course in self.given_courses:
             self.note += course.credit * course.grade
-        self.yano = int((self.note / self.completed_credit) * 100) / 100.0
+        if self.completed_credit == 0:
+            self.yano = 0
+        else:
+            self.yano = int((self.note / self.completed_credit) * 100) / 100.0
 
-    def calculate_credit(self):
+    def calculate_cumulative_credit(self):
         self.completed_credit = 0
         for course in self.given_courses:
             self.completed_credit += course.credit
