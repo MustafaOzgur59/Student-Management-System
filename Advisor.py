@@ -1,7 +1,10 @@
 import logging
 
-from CSE3063F22P1_GRP4 import Course, Student, SystemParameter, Curriculum
-from CSE3063F22P1_GRP4.Instructor import Instructor
+import Course
+import Curriculum
+import Student
+import SystemParameter
+from Instructor import Instructor
 
 logger = logging.getLogger(__name__)
 

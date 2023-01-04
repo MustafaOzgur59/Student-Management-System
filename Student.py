@@ -2,7 +2,7 @@
 from typing import List
 from random import Random
 
-from CSE3063F22P1_GRP4 import Advisor
+from Advisor import Advisor
 from Curriculum import Curriculum
 from Course import Course
 from SystemParameter import SystemParameter

@@ -4,7 +4,7 @@ import random
 import jsonpickle
 from typing import List
 
-from CSE3063F22P1_GRP4.Student import Student
+from Student import Student
 from Section import Section
 from TechnicalElective import TechnicalElective
 from MandatoryCourse import MandatoryCourse

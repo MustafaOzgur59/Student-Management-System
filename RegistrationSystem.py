@@ -1,7 +1,8 @@
 import random
 
-from CSE3063F22P1_GRP4.Student import Student
-from CSE3063F22P1_GRP4.StudentSemester import StudentSemester
+from Student import Student
+from StudentSemester import StudentSemester
+from StudentSemester import StudentSemester
 from Curriculum import Curriculum
 from JsonParser import JsonParser
 from Department import Department

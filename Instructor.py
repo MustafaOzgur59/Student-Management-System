@@ -1,8 +1,8 @@
 import random
 from typing import List
 
-from CSE3063F22P1_GRP4.Course import Course
-from CSE3063F22P1_GRP4.GivenCourse import GivenCourse
+from Course import Course
+from GivenCourse import GivenCourse
 
 
 class Instructor:

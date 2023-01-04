@@ -1,6 +1,6 @@
 from typing import List
 
-from CSE3063F22P1_GRP4.StudentSemester import StudentSemester
+from StudentSemester import StudentSemester
 
 
 class Transcript:
