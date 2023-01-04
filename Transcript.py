@@ -24,7 +24,7 @@ class Transcript:
     def get_gpa(self):
         return self.gpa
 
-    def set_gpa(self, gpa):
+    def set_gpa(self, gpa:float):
         self.gpa = gpa
 
     def get_semesters(self) -> List[StudentSemester]:
@@ -33,21 +33,21 @@ class Transcript:
     def set_semesters(self, semesters):
         self.semesters = semesters
 
-    def contains_course(self, course_code):
+    def contains_course(self, course_code:str):
         for semester in self.semesters:
             for course in semester.given_courses:
                 if course.courseCode == course_code:
                     return True
         return False
 
-    def get_given_course(self, course_code):
+    def get_given_course(self, course_code:str):
         for semester in self.semesters:
             for course in semester.get_given_courses():
                 if course.get_course_code() == course_code:
                     return course
         return None
 
-    def get_max_grade(self, course_code):
+    def get_max_grade(self, course_code:str):
         max_grade = 0
         for semester in self.semesters:
             for course in semester.given_courses:

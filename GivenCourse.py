@@ -1,6 +1,6 @@
 class GivenCourse:
 
-    def __init__(self, courseCode, grade, credit):
+    def __init__(self, courseCode:str, grade:float, credit:int):
         self.courseCode = courseCode
         self.grade = grade
         self.credit = credit

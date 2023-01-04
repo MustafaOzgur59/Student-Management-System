@@ -1,5 +1,5 @@
 class StudentSemester:
-    def __init__(self, semester_no):
+    def __init__(self, semester_no:int):
         self.semester_no = semester_no
         self.yano = None
         self.taken_credit = 0
