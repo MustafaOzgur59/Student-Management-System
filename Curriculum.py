@@ -22,13 +22,16 @@ class Curriculum:
         self._te_courses = te_courses
 
     def get_course(self, course_name: str) -> Course:
-        for courses in self.courses:
-            for c in courses:
-                if c.name == course_name:
-                    return c
-        for course in self.te_courses:
-            if course.name == course_name:
-                return course
+        try:
+            for courses in self.courses:
+                for c in courses:
+                    if c.name == course_name:
+                        return c
+            for course in self.te_courses:
+                if course.name == course_name:
+                    return course
+        except AttributeError:
+            print("Error: course not found")
         return None
 
     def get_course_by_code(self, course_code: str) -> Course:

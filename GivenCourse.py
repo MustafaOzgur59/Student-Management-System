@@ -13,21 +13,25 @@ class GivenCourse:
         self.letterGrade = letterGrade
 
     def calculate_letter_grade(self):
-        if self.grade == 0:
-            self.letterGrade = "FF"
-        elif self.grade == 0.5:
-            self.letterGrade = "FD"
-        elif self.grade == 1:
-            self.letterGrade = "DD"
-        elif self.grade == 1.5:
-            self.letterGrade = "DC"
-        elif self.grade == 2:
-            self.letterGrade = "CC"
-        elif self.grade == 2.5:
-            self.letterGrade = "CB"
-        elif self.grade == 3:
-            self.letterGrade = "BB"
-        elif self.grade == 3.5:
-            self.letterGrade = "BA"
-        else:
-            self.letterGrade = "AA"
+        try:
+            if self.grade == 0:
+                self.letterGrade = "FF"
+            elif self.grade == 0.5:
+                self.letterGrade = "FD"
+            elif self.grade == 1:
+                self.letterGrade = "DD"
+            elif self.grade == 1.5:
+                self.letterGrade = "DC"
+            elif self.grade == 2:
+                self.letterGrade = "CC"
+            elif self.grade == 2.5:
+                self.letterGrade = "CB"
+            elif self.grade == 3:
+                self.letterGrade = "BB"
+            elif self.grade == 3.5:
+                self.letterGrade = "BA"
+            else:
+                self.letterGrade = "AA"
+        except TypeError:
+            print("Error: grade must be a number")
+

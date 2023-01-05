@@ -33,7 +33,11 @@ class Department:
         self.advisor_list = advisor_list
 
     def get_student(self, student_id: str) -> Student:
-        for student in self.student_list:
-            if student.id == student_id:
-                return student
+        try:
+            for student in self.student_list:
+                if student.id == student_id:
+                    return student
+        except AttributeError:
+            print("Error: student not found")
         return None
+
