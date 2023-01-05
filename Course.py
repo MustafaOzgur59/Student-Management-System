@@ -27,3 +27,7 @@ class Course:
     #TODO course hour collision check
     def check_collision(self,std_course) -> bool:
         return False
+
+    def addStudent(self, student, curriculum, system_parameters, advisor):
+        pass
+

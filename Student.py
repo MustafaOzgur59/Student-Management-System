@@ -1,4 +1,3 @@
-
 from typing import List
 from random import Random
 
@@ -90,9 +89,16 @@ class Student(Person):
 
     def enroll(self, available_courses: List[Course], curriculum: Curriculum, system_parameters: SystemParameter):
         for available_course in available_courses:
-            if available_course.code == "TExxx":
-                random = Random()
-                course = curriculum.te_courses[random.randint(0, len(curriculum.te_courses)-1)]
-                self.advisor.enroll_student(course, self, curriculum, system_parameters)
-            else:
-                self.advisor.enroll_student(available_course, self, curriculum, system_parameters)
+            available_course.addStudent(self, curriculum, system_parameters, self.advisor)
+
+    def __getstate__(self):
+        state = self.__dict__.copy()
+        try:
+            class_name = '_' + self.__class__.__name__ + '__'
+            new_items = {key: value for key, value in state.items() if class_name not in key}
+            #new_items.pop("_advisor")
+            new_items["_advisor"] = self.advisor.name
+            return new_items
+        except KeyError:
+            pass
+        return state
