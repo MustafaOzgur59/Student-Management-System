@@ -3,6 +3,8 @@ import json
 import random
 import jsonpickle
 from typing import List
+import logging
+import sys
 
 from Student import Student
 from Section import Section
@@ -18,7 +20,14 @@ from Curriculum import Curriculum
 class JsonParser:
 
     def __init__(self):
-        pass
+        logging.basicConfig(filename="logs.log",
+                            filemode='a',
+                            format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                            datefmt='%H:%M:%S',
+                            level=logging.INFO,
+                            )
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+
 
     def parseCourses(self, curriculum: Curriculum, instructors: List[Instructor]) -> list:
         courseFiles = []
@@ -31,6 +40,7 @@ class JsonParser:
             jsonFile = open(courseFiles[i])
             courseJson = json.load(jsonFile)
             for index, courseDict in enumerate(courseJson):
+                logging.info(f"Parsed course {courseDict['name']}")
                 if courseDict["type"] == "MD":
                     courses.append(self.createMandatoryCourse(courseDict))
                 elif courseDict["type"] == "TE":
@@ -38,6 +48,7 @@ class JsonParser:
         for i in range(len(courses)):
             randomInt = random.randint(0, len(instructors) - 1)
             courses[i].instructor = instructors[randomInt]
+            logging.info(f"Added instructor {instructors[randomInt].name} to {courses[i].name}")
             instructors[randomInt].courses_offered_list.append(courses[i])
             if isinstance(courses[i], TechnicalElective) and courses[i].code != "TExxx":
                 curriculum.te_courses.append(courses[i])
@@ -98,7 +109,7 @@ class JsonParser:
             print("parameter json file not found")
         else:
             parametersJson = json.load(jsonFile)
-            print(parametersJson)
+            logging.info("Parsed parameters")
             return SystemParameter(parametersJson["semester"]
                                    , parametersJson["studentPerSemester"]
                                    , parametersJson["maxCoursePerSemester"]
@@ -111,6 +122,7 @@ class JsonParser:
             print("Advisors.json file not found")
         else:
             advisorsList = json.load(advisorsFile)
+            logging.info(f"Parsed advisors")
             for index, advisorDict in enumerate(advisorsList):
                 department.get_advisor_list().append(Advisor(advisorDict["name"]))
 
@@ -119,8 +131,10 @@ class JsonParser:
         try:
             for student in students:
                 outputFile = open(filePath + "/" + student.id + ".json","w")
-                jsonString = jsonpickle.encode(student)
-                print(jsonString)
+                jsonString = jsonpickle.encode(student,unpicklable=False)
+                logging.info(f"Output student {student.name} as json")
                 outputFile.write(jsonString)
         except FileNotFoundError:
             print(f"{filePath} not found")
+
+

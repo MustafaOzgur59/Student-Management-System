@@ -26,6 +26,7 @@ class StudentSemester:
     def calculate_letter_grade(self):
         for course in self.given_courses:
             course.calculate_letter_grade()
+            # 1.33
             if course.grade == 0:
                 self.letter_grades.append("FF")
             elif course.grade == 0.5:

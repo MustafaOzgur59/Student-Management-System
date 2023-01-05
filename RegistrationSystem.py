@@ -1,3 +1,4 @@
+import logging
 import random
 
 from Student import Student
@@ -24,13 +25,14 @@ class RegistrationSystem:
     def beginSimulation(self):
         self.initializeStudents()
         self.prepareInitializedStudents()
-        print("Simulation starting")
+        logging.info("Simulation starting")
         self.jsonParser.outputStudentObjects(self.department.get_student_list(), "./students/inputStudents")
         self.enrollStudents()
         self.gradeStudents()
         self.calculateTranscript()
-        self.jsonParser.outputStudentObjects(self.department.get_student_list(), "C:/Users/Mustafa/Desktop/iteson/CSE3063F22P1_GRP4/students/outputStudents")
-        print("Simulation ending")
+        self.jsonParser.outputStudentObjects(self.department.get_student_list(),
+                                             "./students/outputStudents")
+        logging.info("Simulation ending")
 
     def enrollStudents(self):
         for student in self.department.student_list:
@@ -120,3 +122,4 @@ class RegistrationSystem:
         self.curriculum = Curriculum()
         self.department.advisor_list = []
         self.jsonParser.parseAdvisors(self.department)
+        self.jsonParser.parseCourses(self.curriculum, self.department.get_advisor_list())
