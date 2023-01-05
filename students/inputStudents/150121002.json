@@ -1,11 +1,9 @@
 {
-    "py/object": "CSE3063F22P1_GRP4.Student.Student",
     "_name": "150121002",
     "_id": "150121002",
     "_term": 2,
     "_enrolled_courses": [],
     "_student_semester": {
-        "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
         "semester_no": 2,
         "yano": null,
         "taken_credit": 0,
@@ -15,181 +13,78 @@
         "letter_grades": []
     },
     "_transcript": {
-        "py/object": "Transcript.Transcript",
-        "gpa": 3.07,
+        "gpa": 1.87,
         "semesters": [
             {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
                 "semester_no": 1,
-                "yano": 3.07,
+                "yano": 1.87,
                 "taken_credit": 31,
                 "completed_credit": 31,
-                "note": 95.35734194716788,
+                "note": 58.0,
                 "given_courses": [
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ATA121",
-                        "grade": 4.1460623299210395,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
                         "courseCode": "MBG1201",
-                        "grade": 2.505346246330527,
+                        "grade": 0.0,
                         "credit": 5,
-                        "letterGrade": "AA"
+                        "letterGrade": "FF"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1241",
-                        "grade": 3.225569197051571,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1101",
-                        "grade": 2.7021124979443085,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH1001",
-                        "grade": 3.0481256950489493,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "TRD121",
-                        "grade": 4.199078731180578,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1200",
-                        "grade": 2.7162457733649097,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
                         "courseCode": "PHYS1103",
-                        "grade": 3.4123630777360003,
+                        "grade": 3.0,
                         "credit": 2,
-                        "letterGrade": "AA"
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "TRD121",
+                        "grade": 3.0,
+                        "credit": 2,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE1241",
+                        "grade": 3.0,
+                        "credit": 6,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "MATH1001",
+                        "grade": 1.0,
+                        "credit": 6,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 3.0,
+                        "credit": 2,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 2.0,
+                        "credit": 4,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "PHYS1101",
+                        "grade": 2.0,
+                        "credit": 4,
+                        "letterGrade": "CC"
                     }
                 ],
-                "letter_grades": []
+                "letter_grades": [
+                    "FF",
+                    "BB",
+                    "BB",
+                    "BB",
+                    "DD",
+                    "BB",
+                    "CC",
+                    "CC"
+                ]
             }
         ],
         "cumulative_credit": 31
     },
-    "_advisor": {
-        "py/object": "Advisor.Advisor",
-        "name": "Prof. Dr. Haluk Rahmi TOPCUOGLU",
-        "id": "advisor",
-        "courses_offered_list": [
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Non-Technical Elective - 1",
-                "code": "CSE-NTE1",
-                "term": 2,
-                "year": 1,
-                "credit": 3,
-                "quota": 30,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Calculus II",
-                "code": "MATH1002",
-                "term": 2,
-                "year": 1,
-                "credit": 6,
-                "quota": 250,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Wednesday",
-                        "hours": "10:00-10:50,11:00-11:50"
-                    },
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "09:00-09:50,10:00-10:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Electric Circuits",
-                "code": "EE2031",
-                "term": 1,
-                "year": 2,
-                "credit": 5,
-                "quota": 143,
-                "prerequisiteTo": [
-                    "PHY1102"
-                ],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "13:00-13:50,14:00-14:50"
-                    },
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Thursday",
-                        "hours": "14:00-14:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            }
-        ]
-    },
+    "_advisor": "Doc. Dr. Borahan TUMER",
     "_logs": []
 }

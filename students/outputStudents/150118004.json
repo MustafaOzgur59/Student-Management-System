@@ -1,634 +1,450 @@
 {
-    "py/object": "CSE3063F22P1_GRP4.Student.Student",
     "_name": "150118004",
     "_id": "150118004",
     "_term": 8,
-    "_enrolled_courses": [],
+    "_enrolled_courses": [
+        "Engineering Project II"
+    ],
     "_student_semester": {
-        "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
         "semester_no": 8,
-        "yano": 0,
-        "taken_credit": 0,
-        "completed_credit": 0,
-        "note": 0,
-        "given_courses": [],
-        "letter_grades": []
-    },
-    "_transcript": {
-        "py/object": "Transcript.Transcript",
-        "gpa": 2.86,
-        "semesters": [
+        "yano": 3.0,
+        "taken_credit": 5,
+        "completed_credit": 5,
+        "note": 15.0,
+        "given_courses": [
             {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 1,
-                "yano": 2.66,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 82.55849304053626,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "TRD121",
-                        "grade": 0.9288571960008167,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1241",
-                        "grade": 4.156546778859273,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1103",
-                        "grade": 2.9332680434659366,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ATA121",
-                        "grade": 0.8360775148172246,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MBG1201",
-                        "grade": 3.6462964907032043,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH1001",
-                        "grade": 3.4010517720579005,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1101",
-                        "grade": 1.702715716590545,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1200",
-                        "grade": 0.6935377266467665,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 2,
-                "yano": 2.54,
-                "taken_credit": 29,
-                "completed_credit": 29,
-                "note": 73.73325962165406,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ATA121",
-                        "grade": 2.992824876325466,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1242",
-                        "grade": 0.9014042589866933,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1101",
-                        "grade": 3.759025054184749,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ATA122",
-                        "grade": 4.099488643989931,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH1002",
-                        "grade": 3.157472886828405,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "TRD121",
-                        "grade": 1.5867545812060384,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1200",
-                        "grade": 2.126265863403487,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE-NTE1",
-                        "grade": 2.8268989577892163,
-                        "credit": 3,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 3,
-                "yano": 2.87,
-                "taken_credit": 33,
-                "completed_credit": 33,
-                "note": 94.73329921139295,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1104",
-                        "grade": 4.2178290523748405,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE2023",
-                        "grade": 4.262950201076234,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "TRD121",
-                        "grade": 3.684382155613847,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1242",
-                        "grade": 1.6762424291703062,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE2225 ",
-                        "grade": 3.9077656612614238,
-                        "credit": 7,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ECON2004 ",
-                        "grade": 0.691990494938736,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "TRD122 ",
-                        "grade": 3.4094062817392516,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH2055 ",
-                        "grade": 1.5881467104682316,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 4,
-                "yano": 3.12,
-                "taken_credit": 25,
-                "completed_credit": 25,
-                "note": 78.10257494407705,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH2055 ",
-                        "grade": 4.07331772681036,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH2059 ",
-                        "grade": 2.4177818338206203,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE2138",
-                        "grade": 1.6729905358274397,
-                        "credit": 7,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1242",
-                        "grade": 3.9849036333436456,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ECON2004 ",
-                        "grade": 4.129455287674795,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 5,
-                "yano": 2.36,
-                "taken_credit": 12,
-                "completed_credit": 12,
-                "note": 28.422391083698262,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE2138",
-                        "grade": 3.166158374958525,
-                        "credit": 7,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE3264",
-                        "grade": 1.2518564917977175,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 6,
-                "yano": 3.31,
-                "taken_credit": 37,
-                "completed_credit": 37,
-                "note": 122.65555078962079,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "UE ",
-                        "grade": 3.176862958107711,
-                        "credit": 3,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4000",
-                        "grade": 2.86596038818499,
-                        "credit": 10,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE3264",
-                        "grade": 3.4715117581040658,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4074",
-                        "grade": 4.126074463934701,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4297",
-                        "grade": 3.5438287485643314,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ISG121",
-                        "grade": 3.313796770841712,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE3038",
-                        "grade": 3.161527091249835,
-                        "credit": 7,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
-                "semester_no": 7,
-                "yano": 2.8,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 86.97617606015199,
-                "given_courses": [
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "ISG122",
-                        "grade": 3.241685328465021,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "FTExxx ",
-                        "grade": 2.429370065874011,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4298",
-                        "grade": 3.6670501529054103,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "NTExxx ",
-                        "grade": 3.339876516139756,
-                        "credit": 3,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4219",
-                        "grade": 0.7356860492087558,
-                        "credit": 6,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4053",
-                        "grade": 2.8652514447413258,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE4062",
-                        "grade": 4.250140248389281,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": []
-            },
-            {
-                "py/id": 2
+                "courseCode": "CSE4298",
+                "grade": 3.0,
+                "credit": 5,
+                "letterGrade": "BB"
             }
         ],
-        "cumulative_credit": 198
+        "letter_grades": [
+            "BB"
+        ]
     },
-    "_advisor": {
-        "py/object": "Advisor.Advisor",
-        "name": "Doc. Dr. Mujdat SOYTURK",
-        "id": "advisor",
-        "courses_offered_list": [
+    "_transcript": {
+        "gpa": 2.49,
+        "semesters": [
             {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Computer Programming I",
-                "code": "CSE1241",
-                "term": 1,
-                "year": 1,
-                "credit": 6,
-                "quota": 150,
-                "prerequisiteTo": [],
-                "courseSessions": [
+                "semester_no": 1,
+                "yano": 2.03,
+                "taken_credit": 31,
+                "completed_credit": 31,
+                "note": 63.0,
+                "given_courses": [
                     {
-                        "py/object": "Section.Section",
-                        "day": "Monday",
-                        "hours": "10:30-11:20,11:30-12:20"
+                        "courseCode": "MATH1001",
+                        "grade": 1.5,
+                        "credit": 6,
+                        "letterGrade": "DC"
                     },
                     {
-                        "py/object": "Section.Section",
-                        "day": "Thursday",
-                        "hours": "15:00-16:50"
+                        "courseCode": "ATA121",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 2.5,
+                        "credit": 4,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "MBG1201",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "PHYS1101",
+                        "grade": 3.0,
+                        "credit": 4,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "CSE1241",
+                        "grade": 1.0,
+                        "credit": 6,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "TRD121",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
                     }
                 ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Friday",
-                        "hours": "14:00-14:50,15:00-15:50"
-                    },
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "10:30-11:20,11:30-12:20"
-                    },
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Thursday",
-                        "hours": "10:30-11:20,11:30-12:20"
-                    }
-                ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": [
-                    "150121001"
+                "letter_grades": [
+                    "DC",
+                    "DC",
+                    "CB",
+                    "BB",
+                    "BB",
+                    "DC",
+                    "DD",
+                    "CB"
                 ]
             },
             {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Computer Programming II",
-                "code": "CSE1242",
-                "term": 2,
-                "year": 1,
-                "credit": 6,
-                "quota": 150,
-                "prerequisiteTo": [
-                    "CSE1241"
-                ],
-                "courseSessions": [
+                "semester_no": 2,
+                "yano": 2.81,
+                "taken_credit": 33,
+                "completed_credit": 33,
+                "note": 93.0,
+                "given_courses": [
                     {
-                        "py/object": "Section.Section",
-                        "day": "Monday",
-                        "hours": "11:00-11:50,12:00-12:50"
+                        "courseCode": "CSE-NTE1",
+                        "grade": 3.0,
+                        "credit": 3,
+                        "letterGrade": "BB"
                     },
                     {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "11:00-11:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Wednesday",
-                        "hours": "15:00-15:50,16:00-16:50"
+                        "courseCode": "ATA122",
+                        "grade": 3.5,
+                        "credit": 2,
+                        "letterGrade": "BA"
                     },
                     {
-                        "py/object": "Section.Section",
-                        "day": "Friday",
-                        "hours": "14:00-14:50,15:00-15:50"
+                        "courseCode": "CSE1241",
+                        "grade": 3.5,
+                        "credit": 6,
+                        "letterGrade": "BA"
                     },
                     {
-                        "py/object": "Section.Section",
-                        "day": "Fr\u00c4\u00b1day",
-                        "hours": "10:00-10:50,11:00-11:50"
-                    }
-                ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Physics Lab II",
-                "code": "PHYS1104",
-                "term": 2,
-                "year": 1,
-                "credit": 2,
-                "quota": 170,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Monday",
-                        "hours": "14:00-14:50,15:00-15:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Non-Technical Elective - 2",
-                "code": "NTExxx ",
-                "term": 2,
-                "year": 4,
-                "credit": 3,
-                "quota": 30,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Engineering Economy",
-                "code": "ECON2004 ",
-                "term": 1,
-                "year": 2,
-                "credit": 4,
-                "quota": 168,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "18:00-18:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "TechnicalElective.TechnicalElective",
-                "name": "Introduction to Data Science and Analytics",
-                "code": "CSE4062",
-                "term": 2,
-                "year": 4,
-                "credit": 5,
-                "quota": 44,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Tuesday",
-                        "hours": "11:00-11:50"
+                        "courseCode": "CSE1242",
+                        "grade": 1.5,
+                        "credit": 6,
+                        "letterGrade": "DC"
                     },
                     {
-                        "py/object": "Section.Section",
-                        "day": "Wednesday",
-                        "hours": "10:00-10:50,11:00-11:50"
-                    }
-                ],
-                "labSessions": [
+                        "courseCode": "MATH1002",
+                        "grade": 2.5,
+                        "credit": 6,
+                        "letterGrade": "CB"
+                    },
                     {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
+                        "courseCode": "MATH1001",
+                        "grade": 4.0,
+                        "credit": 6,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 3.0,
+                        "credit": 2,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 1.0,
+                        "credit": 2,
+                        "letterGrade": "DD"
                     }
                 ],
-                "instructor": {
-                    "py/id": 73
-                },
-                "enrolledStudents": []
+                "letter_grades": [
+                    "BB",
+                    "BA",
+                    "BA",
+                    "DC",
+                    "CB",
+                    "AA",
+                    "BB",
+                    "DD"
+                ]
+            },
+            {
+                "semester_no": 3,
+                "yano": 2.63,
+                "taken_credit": 34,
+                "completed_credit": 34,
+                "note": 89.5,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE2138",
+                        "grade": 3.0,
+                        "credit": 7,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "PHYS1104",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 3.0,
+                        "credit": 2,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "ECON2004 ",
+                        "grade": 3.0,
+                        "credit": 4,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE2023",
+                        "grade": 3.5,
+                        "credit": 6,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "CSE2225 ",
+                        "grade": 2.5,
+                        "credit": 7,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "MATH2055 ",
+                        "grade": 1.0,
+                        "credit": 4,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
+                    }
+                ],
+                "letter_grades": [
+                    "BB",
+                    "CB",
+                    "BB",
+                    "BB",
+                    "BA",
+                    "CB",
+                    "DD",
+                    "DC"
+                ]
+            },
+            {
+                "semester_no": 4,
+                "yano": 2.2,
+                "taken_credit": 17,
+                "completed_credit": 17,
+                "note": 37.5,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE3063",
+                        "grade": 1.5,
+                        "credit": 5,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "CSE2260 ",
+                        "grade": 2.5,
+                        "credit": 6,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 3.5,
+                        "credit": 2,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "MATH2055 ",
+                        "grade": 2.0,
+                        "credit": 4,
+                        "letterGrade": "CC"
+                    }
+                ],
+                "letter_grades": [
+                    "DC",
+                    "CB",
+                    "BA",
+                    "CC"
+                ]
+            },
+            {
+                "semester_no": 5,
+                "yano": 3.5,
+                "taken_credit": 10,
+                "completed_credit": 10,
+                "note": 35.0,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE3264",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE3063",
+                        "grade": 4.0,
+                        "credit": 5,
+                        "letterGrade": "AA"
+                    }
+                ],
+                "letter_grades": [
+                    "BB",
+                    "AA"
+                ]
+            },
+            {
+                "semester_no": 6,
+                "yano": 2.08,
+                "taken_credit": 30,
+                "completed_credit": 30,
+                "note": 62.5,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE4000",
+                        "grade": 0.5,
+                        "credit": 10,
+                        "letterGrade": "FD"
+                    },
+                    {
+                        "courseCode": "TExxx",
+                        "grade": 4.0,
+                        "credit": 5,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "CSE4297",
+                        "grade": 2.5,
+                        "credit": 5,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "UE ",
+                        "grade": 1.5,
+                        "credit": 3,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "ISG121",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "CSE4074",
+                        "grade": 3.5,
+                        "credit": 5,
+                        "letterGrade": "BA"
+                    }
+                ],
+                "letter_grades": [
+                    "FD",
+                    "AA",
+                    "CB",
+                    "DC",
+                    "DC",
+                    "BA"
+                ]
+            },
+            {
+                "semester_no": 7,
+                "yano": 2.66,
+                "taken_credit": 30,
+                "completed_credit": 30,
+                "note": 80.0,
+                "given_courses": [
+                    {
+                        "courseCode": "ISG122",
+                        "grade": 2.0,
+                        "credit": 2,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "ISG121",
+                        "grade": 2.0,
+                        "credit": 2,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "CSE4000",
+                        "grade": 3.0,
+                        "credit": 10,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE4298",
+                        "grade": 1.5,
+                        "credit": 5,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "NTExxx ",
+                        "grade": 4.0,
+                        "credit": 3,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "UE ",
+                        "grade": 2.5,
+                        "credit": 3,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "FTExxx ",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    }
+                ],
+                "letter_grades": [
+                    "CC",
+                    "CC",
+                    "BB",
+                    "DC",
+                    "AA",
+                    "CB",
+                    "BB"
+                ]
+            },
+            {
+                "semester_no": 8,
+                "yano": 3.0,
+                "taken_credit": 5,
+                "completed_credit": 5,
+                "note": 15.0,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE4298",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    }
+                ],
+                "letter_grades": [
+                    "BB"
+                ]
             }
-        ]
+        ],
+        "cumulative_credit": 190
     },
-    "_logs": []
+    "_advisor": "Doc. Dr. Murat Can GANIZ",
+    "_logs": [
+        "Cant add course: Computer Programming II to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Linear Algebra for Computer Engineering to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Physics II to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Electric Circuits to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Numerical Methods to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Analysis of Algorithms to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Electronics to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Database Systems to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Operating Systems to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Digital Logic Design to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Modeling and Disc. Simulation to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Software Engineering to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Computer Organization to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Int. to Signals and Systems to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Operations Research to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Principles of Embedded Systems Design to Student : 150118004 because of trying to take upper semester course",
+        "Cant add course: Introduction to Machine Learning to Student : 150118004 because of trying to take upper semester course"
+    ]
 }

@@ -1,193 +1,264 @@
 {
-    "py/object": "CSE3063F22P1_GRP4.Student.Student",
     "_name": "150121004",
     "_id": "150121004",
     "_term": 2,
-    "_enrolled_courses": [],
+    "_enrolled_courses": [
+        "Introduction to Computer Engineering",
+        "Physics I",
+        "Ataturk\u00e2\u20ac\u2122s Principles and the History of Turkish Renovation II ",
+        "Computer Programming II",
+        "Non-Technical Elective - 1",
+        "Calculus II",
+        "Physics Lab II",
+        "T\u00c3\u00bcrk Dili II "
+    ],
     "_student_semester": {
-        "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
         "semester_no": 2,
-        "yano": 0,
-        "taken_credit": 0,
-        "completed_credit": 0,
-        "note": 0,
-        "given_courses": [],
-        "letter_grades": []
+        "yano": 2.56,
+        "taken_credit": 29,
+        "completed_credit": 29,
+        "note": 74.5,
+        "given_courses": [
+            {
+                "courseCode": "PHYS1104",
+                "grade": 2.5,
+                "credit": 2,
+                "letterGrade": "CB"
+            },
+            {
+                "courseCode": "PHYS1101",
+                "grade": 4.0,
+                "credit": 4,
+                "letterGrade": "AA"
+            },
+            {
+                "courseCode": "TRD122 ",
+                "grade": 2.0,
+                "credit": 2,
+                "letterGrade": "CC"
+            },
+            {
+                "courseCode": "CSE1200",
+                "grade": 4.0,
+                "credit": 4,
+                "letterGrade": "AA"
+            },
+            {
+                "courseCode": "CSE1242",
+                "grade": 3.5,
+                "credit": 6,
+                "letterGrade": "BA"
+            },
+            {
+                "courseCode": "ATA122",
+                "grade": 4.0,
+                "credit": 2,
+                "letterGrade": "AA"
+            },
+            {
+                "courseCode": "CSE-NTE1",
+                "grade": 0.5,
+                "credit": 3,
+                "letterGrade": "FD"
+            },
+            {
+                "courseCode": "MATH1002",
+                "grade": 0.5,
+                "credit": 6,
+                "letterGrade": "FD"
+            }
+        ],
+        "letter_grades": [
+            "CB",
+            "AA",
+            "CC",
+            "AA",
+            "BA",
+            "AA",
+            "FD",
+            "FD"
+        ]
     },
     "_transcript": {
-        "py/object": "Transcript.Transcript",
-        "gpa": 2.52,
+        "gpa": 2.45,
         "semesters": [
             {
-                "py/object": "CSE3063F22P1_GRP4.StudentSemester.StudentSemester",
                 "semester_no": 1,
-                "yano": 2.52,
+                "yano": 2.35,
                 "taken_credit": 31,
                 "completed_credit": 31,
-                "note": 78.28666961508584,
+                "note": 73.0,
                 "given_courses": [
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "CSE1241",
+                        "grade": 2.0,
+                        "credit": 6,
+                        "letterGrade": "CC"
+                    },
+                    {
                         "courseCode": "ATA121",
-                        "grade": 1.068062347514065,
+                        "grade": 3.0,
                         "credit": 2,
-                        "letterGrade": "AA"
+                        "letterGrade": "BB"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
+                        "courseCode": "MATH1001",
+                        "grade": 3.0,
+                        "credit": 6,
+                        "letterGrade": "BB"
+                    },
+                    {
                         "courseCode": "CSE1200",
-                        "grade": 1.2183232032767988,
+                        "grade": 1.0,
                         "credit": 4,
-                        "letterGrade": "AA"
+                        "letterGrade": "DD"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "PHYS1101",
-                        "grade": 2.633279285411688,
-                        "credit": 4,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
                         "courseCode": "MBG1201",
-                        "grade": 3.809583060495811,
+                        "grade": 4.0,
                         "credit": 5,
                         "letterGrade": "AA"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
                         "courseCode": "PHYS1103",
-                        "grade": 1.6257009367989084,
+                        "grade": 2.0,
                         "credit": 2,
-                        "letterGrade": "AA"
+                        "letterGrade": "CC"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "MATH1001",
-                        "grade": 1.8408685014824555,
-                        "credit": 6,
-                        "letterGrade": "AA"
+                        "courseCode": "PHYS1101",
+                        "grade": 1.0,
+                        "credit": 4,
+                        "letterGrade": "DD"
                     },
                     {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
                         "courseCode": "TRD121",
-                        "grade": 3.335880238554785,
+                        "grade": 2.5,
                         "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "py/object": "CSE3063F22P1_GRP4.GivenCourse.GivenCourse",
-                        "courseCode": "CSE1241",
-                        "grade": 3.454641050537099,
-                        "credit": 6,
-                        "letterGrade": "AA"
+                        "letterGrade": "CB"
                     }
                 ],
-                "letter_grades": []
+                "letter_grades": [
+                    "CC",
+                    "BB",
+                    "BB",
+                    "DD",
+                    "AA",
+                    "CC",
+                    "DD",
+                    "CB"
+                ]
             },
             {
-                "py/id": 2
+                "semester_no": 2,
+                "yano": 2.56,
+                "taken_credit": 29,
+                "completed_credit": 29,
+                "note": 74.5,
+                "given_courses": [
+                    {
+                        "courseCode": "PHYS1104",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "PHYS1101",
+                        "grade": 4.0,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 2.0,
+                        "credit": 2,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 4.0,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "CSE1242",
+                        "grade": 3.5,
+                        "credit": 6,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "ATA122",
+                        "grade": 4.0,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "CSE-NTE1",
+                        "grade": 0.5,
+                        "credit": 3,
+                        "letterGrade": "FD"
+                    },
+                    {
+                        "courseCode": "MATH1002",
+                        "grade": 0.5,
+                        "credit": 6,
+                        "letterGrade": "FD"
+                    }
+                ],
+                "letter_grades": [
+                    "CB",
+                    "AA",
+                    "CC",
+                    "AA",
+                    "BA",
+                    "AA",
+                    "FD",
+                    "FD"
+                ]
             }
         ],
-        "cumulative_credit": 31
+        "cumulative_credit": 60
     },
-    "_advisor": {
-        "py/object": "Advisor.Advisor",
-        "name": "Dr. Ogr. Uyesi Fatma Corut ERGIN",
-        "id": "advisor",
-        "courses_offered_list": [
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "Linear Algebra for Computer Engineering",
-                "code": "MATH2256",
-                "term": 2,
-                "year": 1,
-                "credit": 5,
-                "quota": 150,
-                "prerequisiteTo": [
-                    "IE3235"
-                ],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Monday",
-                        "hours": "10:00-10:50"
-                    },
-                    {
-                        "py/object": "Section.Section",
-                        "day": "Thursday",
-                        "hours": "10:00-10:50,11:00-11:50"
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "MandatoryCourse.MandatoryCourse",
-                "name": "University Elective",
-                "code": "UE ",
-                "term": 1,
-                "year": 4,
-                "credit": 3,
-                "quota": 70,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            },
-            {
-                "py/object": "TechnicalElective.TechnicalElective",
-                "name": "Technical Elective - 3",
-                "code": "TExxx",
-                "term": 2,
-                "year": 4,
-                "credit": 5,
-                "quota": 50,
-                "prerequisiteTo": [],
-                "courseSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "labSessions": [
-                    {
-                        "py/object": "Section.Section",
-                        "day": "",
-                        "hours": ""
-                    }
-                ],
-                "instructor": {
-                    "py/id": 18
-                },
-                "enrolledStudents": []
-            }
-        ]
-    },
-    "_logs": []
+    "_advisor": "Prof. Dr. Haluk Rahmi TOPCUOGLU",
+    "_logs": [
+        "Cant add course: Linear Algebra for Computer Engineering to Student : 150121004 because of trying to take upper semester course",
+        "Cant add course: Physics II to Student : 150121004 because of trying to take upper semester course",
+        "Cant add course: Discrete Computational Structures to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Data Structures to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Engineering Economy to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Electric Circuits to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Differential Equations to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Numerical Methods to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Analysis of Algorithms to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Systems Programming to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Principles of Programming Languages to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Electronics to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Prob. and Stat. for Computer Engineering to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Database Systems to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Operating Systems to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Object-Oriented Software Desg. to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Digital Logic Design to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Modeling and Disc. Simulation to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Tech. Comm. & Entrepreneurship to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Software Engineering to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Formal Lang. & Auto. Theory to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Computer Organization to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Int. to Signals and Systems to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Operations Research to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Computer Networks to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Principles of Embedded Systems Design to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Engineering Project I to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Work Safety I to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Introduction to Machine Learning to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Technical Elective - 1 to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: University Elective to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Summer Practice II to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Engineering Project II to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Work Safety II to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Non-Technical Elective - 2 to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Faculty Technical Electives to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Technical Elective - 2 to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Technical Elective - 3 to Student : 150121004 because of maximum allowed course amount exceeded",
+        "Cant add course: Technical Elective - 4 to Student : 150121004 because of maximum allowed course amount exceeded"
+    ]
 }
