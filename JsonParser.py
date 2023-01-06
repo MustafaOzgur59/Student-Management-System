@@ -1,6 +1,7 @@
 import os
 import json
 import random
+
 import jsonpickle
 from typing import List
 import logging
@@ -45,6 +46,7 @@ class JsonParser:
                     courses.append(self.createMandatoryCourse(courseDict))
                 elif courseDict["type"] == "TE":
                     courses.append(self.createTechnicalElectiveCourse(courseDict))
+            jsonFile.close()
         for i in range(len(courses)):
             randomInt = random.randint(0, len(instructors) - 1)
             courses[i].instructor = instructors[randomInt]
@@ -104,12 +106,13 @@ class JsonParser:
 
     def parseParameters(self) -> SystemParameter:
         try:
-            jsonFile = open("parameters.json")
+            jsonFile = open("C:/Users/Mustafa/Desktop/ite3-deneme/CSE3063F22P1_GRP4/parameters.json")
         except FileNotFoundError:
             print("parameter json file not found")
         else:
             parametersJson = json.load(jsonFile)
             logging.info("Parsed parameters")
+            jsonFile.close()
             return SystemParameter(parametersJson["semester"]
                                    , parametersJson["studentPerSemester"]
                                    , parametersJson["maxCoursePerSemester"]
