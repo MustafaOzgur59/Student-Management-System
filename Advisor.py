@@ -1,10 +1,10 @@
 import logging
 
-import Course
+from Course import Course
 import Curriculum
 import Student
-import SystemParameter
 from Instructor import Instructor
+from SystemParameter import SystemParameter
 
 logger = logging.getLogger(__name__)
 
@@ -14,15 +14,15 @@ class Advisor(Instructor):
         super().__init__(name, "advisor")
 
     def enroll_student(self, course: Course, student: Student, curriculum: Curriculum,
-                       system_parameters: SystemParameter) -> bool:
+                       systemParameter: SystemParameter) -> bool:
         # check if student enrolled more than allowed amount of course
         if self.check_amount_of_course(course, student, len(student.enrolled_courses),
-                                       system_parameters.max_course_per_semester):
+                                       systemParameter.max_course_per_semester):
             return False
 
         # check if student exceeded allowable credit limit
         if self.check_credit_limit(course, student, student.student_semester.taken_credit,
-                                   system_parameters.max_credit_per_semester):
+                                   systemParameter.max_credit_per_semester):
             return False
 
         # if course quota is full
@@ -46,17 +46,6 @@ class Advisor(Instructor):
             else:
                 return False
 
-    def check_course_collision(self, student: Student, course: Course, curriculum: Curriculum) -> bool:
-        for course_name in student.enrolled_courses:
-            std_course = curriculum.get_course(course_name)
-            if course.check_collision(std_course):
-                student.logs.append(
-                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
-                logger.info(
-                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
-                return True
-        return False
-
     def check_amount_of_course(self, course: Course, student: Student, size: int, max: int) -> bool:
         if size >= max:
             student.logs.append(
@@ -66,11 +55,31 @@ class Advisor(Instructor):
             return True
         return False
 
+    def check_if_upper(self, course: Course, student: Student, year: int, term: int, std_term: int) -> bool:
+        if (year - 1) * 2 + term - std_term >= 2:
+            student.logs.append(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+            logger.info(
+                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+            return True
+        return False
+
+    def check_course_collision(self, student: Student, course: Course, curriculum: Curriculum) -> bool:
+        for course_name in student.enrolled_courses:
+            std_course = curriculum.get_course(course_name)
+            if course.checkCollision(std_course):
+                student.logs.append(
+                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
+                logging.info(
+                    f"Cant add course: {course.name} to Student : {student.name} because of course hour collisions")
+                return True
+        return False
+
     def check_credit_limit(self, course: Course, student: Student, taken_credit: int, max: int) -> bool:
         if taken_credit >= max:
             student.logs.append(
                 f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed credit amount exceeded")
-            logger.info(
+            logging.info(
                 f"Cant add course: {course.name} to Student : {student.name} because of maximum allowed credit amount exceeded")
             return True
         return False
@@ -79,16 +88,7 @@ class Advisor(Instructor):
         if quota <= std_num:
             student.logs.append(
                 f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
-            logger.info(f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
-            return True
-        return False
-
-    def check_if_upper(self, course: Course, student: Student, year: int, term: int, std_term: int) -> bool:
-        if (year - 1) * 2 + term - std_term >= 2:
-            student.logs.append(
-                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
-            logger.info(
-                f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
+            logging.info(f"Cant add course: {course.name} to Student : {student.name} because of course quota exceeded")
             return True
         return False
 
@@ -116,5 +116,5 @@ class Advisor(Instructor):
         else:
             student.logs.append(
                 f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")
-            logger.info(
+            logging.info(
                 f"Cant add course: {course.name} to Student : {student.name} because of trying to take upper semester course")

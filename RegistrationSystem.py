@@ -1,6 +1,7 @@
 import logging
 import random
 
+from Course import Course
 from Student import Student
 from StudentSemester import StudentSemester
 from StudentSemester import StudentSemester
@@ -123,3 +124,4 @@ class RegistrationSystem:
         self.department.advisor_list = []
         self.jsonParser.parseAdvisors(self.department)
         self.jsonParser.parseCourses(self.curriculum, self.department.get_advisor_list())
+
