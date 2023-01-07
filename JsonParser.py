@@ -106,17 +106,20 @@ class JsonParser:
 
     def parseParameters(self) -> SystemParameter:
         try:
-            jsonFile = open("C:/Users/Mustafa/Desktop/ite3-deneme/CSE3063F22P1_GRP4/parameters.json")
-        except FileNotFoundError:
-            print("parameter json file not found")
-        else:
+            jsonFile = open("parameters.json")
             parametersJson = json.load(jsonFile)
             logging.info("Parsed parameters")
             jsonFile.close()
-            return SystemParameter(parametersJson["semester"]
+            systemParameter = SystemParameter(parametersJson["semester"]
                                    , parametersJson["studentPerSemester"]
                                    , parametersJson["maxCoursePerSemester"]
                                    , parametersJson["maxCreditPerSemester"])
+
+            return systemParameter
+        except FileNotFoundError:
+            print("parameter json file not found")
+
+
 
     def parseAdvisors(self, department: Department):
         try:
