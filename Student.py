@@ -89,7 +89,6 @@ class Student(Person):
 
     def enroll(self, available_courses: List[Course], curriculum: Curriculum, system_parameters: SystemParameter):
         for available_course in available_courses:
-            print(available_course.__class__.__name__)
             available_course.addStudent(self, curriculum, system_parameters, self.advisor)
 
     def __getstate__(self):
