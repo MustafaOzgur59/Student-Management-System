@@ -13,117 +13,44 @@
         "letter_grades": []
     },
     "_transcript": {
-        "gpa": 2.48,
+        "gpa": 2.36,
         "semesters": [
             {
                 "semester_no": 1,
-                "yano": 2.03,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 63.0,
+                "yano": 1.9,
+                "taken_credit": 25,
+                "completed_credit": 25,
+                "note": 47.5,
                 "given_courses": [
-                    {
-                        "courseCode": "MATH1001",
-                        "grade": 1.5,
-                        "credit": 6,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "ATA121",
-                        "grade": 1.5,
-                        "credit": 2,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "CSE1200",
-                        "grade": 2.5,
-                        "credit": 4,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "MBG1201",
-                        "grade": 3.0,
-                        "credit": 5,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "PHYS1101",
-                        "grade": 3.0,
-                        "credit": 4,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "PHYS1103",
-                        "grade": 1.5,
-                        "credit": 2,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "CSE1241",
-                        "grade": 1.0,
-                        "credit": 6,
-                        "letterGrade": "DD"
-                    },
                     {
                         "courseCode": "TRD121",
-                        "grade": 2.5,
-                        "credit": 2,
-                        "letterGrade": "CB"
-                    }
-                ],
-                "letter_grades": [
-                    "DC",
-                    "DC",
-                    "CB",
-                    "BB",
-                    "BB",
-                    "DC",
-                    "DD",
-                    "CB"
-                ]
-            },
-            {
-                "semester_no": 2,
-                "yano": 2.81,
-                "taken_credit": 33,
-                "completed_credit": 33,
-                "note": 93.0,
-                "given_courses": [
-                    {
-                        "courseCode": "CSE-NTE1",
                         "grade": 3.0,
-                        "credit": 3,
+                        "credit": 2,
                         "letterGrade": "BB"
                     },
                     {
                         "courseCode": "ATA122",
-                        "grade": 3.5,
+                        "grade": 1.0,
                         "credit": 2,
-                        "letterGrade": "BA"
+                        "letterGrade": "DD"
                     },
                     {
-                        "courseCode": "CSE1241",
-                        "grade": 3.5,
-                        "credit": 6,
-                        "letterGrade": "BA"
+                        "courseCode": "CSE1200",
+                        "grade": 2.0,
+                        "credit": 4,
+                        "letterGrade": "CC"
                     },
                     {
-                        "courseCode": "CSE1242",
-                        "grade": 1.5,
-                        "credit": 6,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "MATH1002",
-                        "grade": 2.5,
-                        "credit": 6,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "MATH1001",
+                        "courseCode": "PHYS1103",
                         "grade": 4.0,
-                        "credit": 6,
+                        "credit": 2,
                         "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "PHYS1101",
+                        "grade": 2.5,
+                        "credit": 4,
+                        "letterGrade": "CB"
                     },
                     {
                         "courseCode": "ATA121",
@@ -132,224 +59,202 @@
                         "letterGrade": "BB"
                     },
                     {
-                        "courseCode": "PHYS1103",
-                        "grade": 1.0,
-                        "credit": 2,
-                        "letterGrade": "DD"
+                        "courseCode": "CSE-NTE1",
+                        "grade": 2.5,
+                        "credit": 3,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "CSE1241",
+                        "grade": 0.0,
+                        "credit": 6,
+                        "letterGrade": "FF"
                     }
                 ],
                 "letter_grades": [
                     "BB",
-                    "BA",
-                    "BA",
-                    "DC",
-                    "CB",
+                    "DD",
+                    "CC",
                     "AA",
+                    "CB",
                     "BB",
-                    "DD"
+                    "CB",
+                    "FF"
                 ]
             },
             {
-                "semester_no": 3,
-                "yano": 2.63,
-                "taken_credit": 34,
-                "completed_credit": 34,
-                "note": 89.5,
+                "semester_no": 2,
+                "yano": 2.37,
+                "taken_credit": 33,
+                "completed_credit": 33,
+                "note": 78.5,
                 "given_courses": [
                     {
-                        "courseCode": "CSE2138",
-                        "grade": 3.0,
-                        "credit": 7,
-                        "letterGrade": "BB"
+                        "courseCode": "MBG1201",
+                        "grade": 1.5,
+                        "credit": 5,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
                     },
                     {
                         "courseCode": "PHYS1104",
-                        "grade": 2.5,
+                        "grade": 3.5,
                         "credit": 2,
-                        "letterGrade": "CB"
+                        "letterGrade": "BA"
                     },
                     {
-                        "courseCode": "PHYS1103",
-                        "grade": 3.0,
-                        "credit": 2,
-                        "letterGrade": "BB"
+                        "courseCode": "CSE1241",
+                        "grade": 1.0,
+                        "credit": 6,
+                        "letterGrade": "DD"
                     },
                     {
-                        "courseCode": "ECON2004 ",
+                        "courseCode": "ATA122",
                         "grade": 3.0,
-                        "credit": 4,
+                        "credit": 2,
                         "letterGrade": "BB"
                     },
                     {
                         "courseCode": "CSE2023",
+                        "grade": 3.0,
+                        "credit": 6,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "MATH1002",
                         "grade": 3.5,
                         "credit": 6,
                         "letterGrade": "BA"
                     },
                     {
-                        "courseCode": "CSE2225 ",
+                        "courseCode": "ECON2004 ",
+                        "grade": 2.5,
+                        "credit": 4,
+                        "letterGrade": "CB"
+                    }
+                ],
+                "letter_grades": [
+                    "DC",
+                    "DC",
+                    "BA",
+                    "DD",
+                    "BB",
+                    "BB",
+                    "BA",
+                    "CB"
+                ]
+            },
+            {
+                "semester_no": 3,
+                "yano": 2.43,
+                "taken_credit": 24,
+                "completed_credit": 24,
+                "note": 58.5,
+                "given_courses": [
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "CSE2138",
                         "grade": 2.5,
                         "credit": 7,
                         "letterGrade": "CB"
                     },
                     {
-                        "courseCode": "MATH2055 ",
-                        "grade": 1.0,
-                        "credit": 4,
-                        "letterGrade": "DD"
-                    },
-                    {
-                        "courseCode": "TRD122 ",
-                        "grade": 1.5,
-                        "credit": 2,
-                        "letterGrade": "DC"
-                    }
-                ],
-                "letter_grades": [
-                    "BB",
-                    "CB",
-                    "BB",
-                    "BB",
-                    "BA",
-                    "CB",
-                    "DD",
-                    "DC"
-                ]
-            },
-            {
-                "semester_no": 4,
-                "yano": 2.2,
-                "taken_credit": 17,
-                "completed_credit": 17,
-                "note": 37.5,
-                "given_courses": [
-                    {
-                        "courseCode": "CSE3063",
-                        "grade": 1.5,
-                        "credit": 5,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "CSE2260 ",
-                        "grade": 2.5,
-                        "credit": 6,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "TRD122 ",
-                        "grade": 3.5,
-                        "credit": 2,
-                        "letterGrade": "BA"
-                    },
-                    {
-                        "courseCode": "MATH2055 ",
+                        "courseCode": "CSE1241",
                         "grade": 2.0,
-                        "credit": 4,
+                        "credit": 6,
                         "letterGrade": "CC"
-                    }
-                ],
-                "letter_grades": [
-                    "DC",
-                    "CB",
-                    "BA",
-                    "CC"
-                ]
-            },
-            {
-                "semester_no": 5,
-                "yano": 3.5,
-                "taken_credit": 10,
-                "completed_credit": 10,
-                "note": 35.0,
-                "given_courses": [
+                    },
                     {
-                        "courseCode": "CSE3264",
-                        "grade": 3.0,
+                        "courseCode": "MBG1201",
+                        "grade": 2.0,
                         "credit": 5,
-                        "letterGrade": "BB"
+                        "letterGrade": "CC"
                     },
                     {
-                        "courseCode": "CSE3063",
-                        "grade": 4.0,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    }
-                ],
-                "letter_grades": [
-                    "BB",
-                    "AA"
-                ]
-            },
-            {
-                "semester_no": 6,
-                "yano": 2.08,
-                "taken_credit": 30,
-                "completed_credit": 30,
-                "note": 62.5,
-                "given_courses": [
-                    {
-                        "courseCode": "CSE4000",
-                        "grade": 0.5,
-                        "credit": 10,
-                        "letterGrade": "FD"
-                    },
-                    {
-                        "courseCode": "TExxx",
-                        "grade": 4.0,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "courseCode": "CSE4297",
-                        "grade": 2.5,
-                        "credit": 5,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "UE ",
-                        "grade": 1.5,
-                        "credit": 3,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "ISG121",
-                        "grade": 1.5,
-                        "credit": 2,
-                        "letterGrade": "DC"
-                    },
-                    {
-                        "courseCode": "CSE4074",
+                        "courseCode": "MATH2055 ",
                         "grade": 3.5,
-                        "credit": 5,
+                        "credit": 4,
                         "letterGrade": "BA"
                     }
                 ],
                 "letter_grades": [
-                    "FD",
-                    "AA",
                     "CB",
-                    "DC",
-                    "DC",
+                    "CB",
+                    "CC",
+                    "CC",
                     "BA"
                 ]
             },
             {
-                "semester_no": 7,
-                "yano": 2.66,
-                "taken_credit": 30,
-                "completed_credit": 30,
-                "note": 80.0,
+                "semester_no": 4,
+                "yano": 3.0,
+                "taken_credit": 6,
+                "completed_credit": 6,
+                "note": 18.0,
                 "given_courses": [
                     {
-                        "courseCode": "ISG122",
+                        "courseCode": "MATH1001",
+                        "grade": 3.0,
+                        "credit": 6,
+                        "letterGrade": "BB"
+                    }
+                ],
+                "letter_grades": [
+                    "BB"
+                ]
+            },
+            {
+                "semester_no": 5,
+                "yano": 3.05,
+                "taken_credit": 9,
+                "completed_credit": 9,
+                "note": 27.5,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE3264",
+                        "grade": 3.5,
+                        "credit": 5,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "MATH2059 ",
+                        "grade": 2.5,
+                        "credit": 4,
+                        "letterGrade": "CB"
+                    }
+                ],
+                "letter_grades": [
+                    "BA",
+                    "CB"
+                ]
+            },
+            {
+                "semester_no": 6,
+                "yano": 2.38,
+                "taken_credit": 25,
+                "completed_credit": 25,
+                "note": 59.5,
+                "given_courses": [
+                    {
+                        "courseCode": "CSE4297",
                         "grade": 2.0,
-                        "credit": 2,
+                        "credit": 5,
                         "letterGrade": "CC"
                     },
                     {
-                        "courseCode": "ISG121",
+                        "courseCode": "UE ",
                         "grade": 2.0,
-                        "credit": 2,
+                        "credit": 3,
                         "letterGrade": "CC"
                     },
                     {
@@ -359,27 +264,15 @@
                         "letterGrade": "BB"
                     },
                     {
-                        "courseCode": "CSE4298",
+                        "courseCode": "CSE4074",
                         "grade": 1.5,
                         "credit": 5,
                         "letterGrade": "DC"
                     },
                     {
-                        "courseCode": "NTExxx ",
-                        "grade": 4.0,
-                        "credit": 3,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "courseCode": "UE ",
-                        "grade": 2.5,
-                        "credit": 3,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "FTExxx ",
+                        "courseCode": "ISG121",
                         "grade": 3.0,
-                        "credit": 5,
+                        "credit": 2,
                         "letterGrade": "BB"
                     }
                 ],
@@ -388,14 +281,79 @@
                     "CC",
                     "BB",
                     "DC",
+                    "BB"
+                ]
+            },
+            {
+                "semester_no": 7,
+                "yano": 2.37,
+                "taken_credit": 35,
+                "completed_credit": 35,
+                "note": 83.0,
+                "given_courses": [
+                    {
+                        "courseCode": "NTExxx ",
+                        "grade": 2.0,
+                        "credit": 3,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "CSE4074",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "FTExxx ",
+                        "grade": 1.0,
+                        "credit": 5,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "CSE4057 ",
+                        "grade": 4.0,
+                        "credit": 5,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "CSE4057 ",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "ISG122",
+                        "grade": 1.0,
+                        "credit": 2,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "CSE4053",
+                        "grade": 1.0,
+                        "credit": 5,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "CSE4298",
+                        "grade": 3.0,
+                        "credit": 5,
+                        "letterGrade": "BB"
+                    }
+                ],
+                "letter_grades": [
+                    "CC",
+                    "BB",
+                    "DD",
                     "AA",
-                    "CB",
+                    "BB",
+                    "DD",
+                    "DD",
                     "BB"
                 ]
             }
         ],
-        "cumulative_credit": 185
+        "cumulative_credit": 157
     },
-    "_advisor": "Doc. Dr. Murat Can GANIZ",
+    "_advisor": "Doc. Dr. Mujdat SOYTURK",
     "_logs": []
 }

@@ -13,78 +13,78 @@
         "letter_grades": []
     },
     "_transcript": {
-        "gpa": 2.35,
+        "gpa": 2.31,
         "semesters": [
             {
                 "semester_no": 1,
-                "yano": 2.35,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 73.0,
+                "yano": 2.31,
+                "taken_credit": 25,
+                "completed_credit": 25,
+                "note": 58.0,
                 "given_courses": [
+                    {
+                        "courseCode": "CSE-NTE1",
+                        "grade": 4.0,
+                        "credit": 3,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 0.0,
+                        "credit": 2,
+                        "letterGrade": "FF"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 1.5,
+                        "credit": 2,
+                        "letterGrade": "DC"
+                    },
+                    {
+                        "courseCode": "PHYS1101",
+                        "grade": 2.0,
+                        "credit": 4,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 2.5,
+                        "credit": 4,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "ATA122",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "TRD121",
+                        "grade": 4.0,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
                     {
                         "courseCode": "CSE1241",
                         "grade": 2.0,
                         "credit": 6,
                         "letterGrade": "CC"
-                    },
-                    {
-                        "courseCode": "ATA121",
-                        "grade": 3.0,
-                        "credit": 2,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "MATH1001",
-                        "grade": 3.0,
-                        "credit": 6,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "CSE1200",
-                        "grade": 1.0,
-                        "credit": 4,
-                        "letterGrade": "DD"
-                    },
-                    {
-                        "courseCode": "MBG1201",
-                        "grade": 4.0,
-                        "credit": 5,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "courseCode": "PHYS1103",
-                        "grade": 2.0,
-                        "credit": 2,
-                        "letterGrade": "CC"
-                    },
-                    {
-                        "courseCode": "PHYS1101",
-                        "grade": 1.0,
-                        "credit": 4,
-                        "letterGrade": "DD"
-                    },
-                    {
-                        "courseCode": "TRD121",
-                        "grade": 2.5,
-                        "credit": 2,
-                        "letterGrade": "CB"
                     }
                 ],
                 "letter_grades": [
-                    "CC",
-                    "BB",
-                    "BB",
-                    "DD",
                     "AA",
+                    "FF",
+                    "DC",
                     "CC",
-                    "DD",
-                    "CB"
+                    "CB",
+                    "CB",
+                    "AA",
+                    "CC"
                 ]
             }
         ],
-        "cumulative_credit": 31
+        "cumulative_credit": 25
     },
-    "_advisor": "Prof. Dr. Haluk Rahmi TOPCUOGLU",
+    "_advisor": "Doc. Dr. Mujdat SOYTURK",
     "_logs": []
 }

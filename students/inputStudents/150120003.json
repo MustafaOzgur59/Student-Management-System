@@ -13,15 +13,51 @@
         "letter_grades": []
     },
     "_transcript": {
-        "gpa": 2.6,
+        "gpa": 2.62,
         "semesters": [
             {
                 "semester_no": 1,
-                "yano": 2.37,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 73.5,
+                "yano": 2.88,
+                "taken_credit": 25,
+                "completed_credit": 25,
+                "note": 72.0,
                 "given_courses": [
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 1.0,
+                        "credit": 2,
+                        "letterGrade": "DD"
+                    },
+                    {
+                        "courseCode": "CSE-NTE1",
+                        "grade": 2.0,
+                        "credit": 3,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "TRD121",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 3.5,
+                        "credit": 4,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "ATA122",
+                        "grade": 2.5,
+                        "credit": 2,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 3.5,
+                        "credit": 2,
+                        "letterGrade": "BA"
+                    },
                     {
                         "courseCode": "PHYS1101",
                         "grade": 3.0,
@@ -30,70 +66,46 @@
                     },
                     {
                         "courseCode": "CSE1241",
-                        "grade": 3.0,
+                        "grade": 3.5,
                         "credit": 6,
-                        "letterGrade": "BB"
-                    },
+                        "letterGrade": "BA"
+                    }
+                ],
+                "letter_grades": [
+                    "DD",
+                    "CC",
+                    "CB",
+                    "BA",
+                    "CB",
+                    "BA",
+                    "BB",
+                    "BA"
+                ]
+            },
+            {
+                "semester_no": 2,
+                "yano": 2.42,
+                "taken_credit": 35,
+                "completed_credit": 35,
+                "note": 85.0,
+                "given_courses": [
                     {
-                        "courseCode": "CSE1200",
+                        "courseCode": "TRD122 ",
                         "grade": 1.0,
-                        "credit": 4,
+                        "credit": 2,
                         "letterGrade": "DD"
                     },
                     {
-                        "courseCode": "MBG1201",
-                        "grade": 2.5,
-                        "credit": 5,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "PHYS1103",
-                        "grade": 3.0,
+                        "courseCode": "ATA121",
+                        "grade": 1.0,
                         "credit": 2,
-                        "letterGrade": "BB"
+                        "letterGrade": "DD"
                     },
                     {
                         "courseCode": "MATH1001",
                         "grade": 1.0,
                         "credit": 6,
                         "letterGrade": "DD"
-                    },
-                    {
-                        "courseCode": "ATA121",
-                        "grade": 4.0,
-                        "credit": 2,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "courseCode": "TRD121",
-                        "grade": 3.5,
-                        "credit": 2,
-                        "letterGrade": "BA"
-                    }
-                ],
-                "letter_grades": [
-                    "BB",
-                    "BB",
-                    "DD",
-                    "CB",
-                    "BB",
-                    "DD",
-                    "AA",
-                    "BA"
-                ]
-            },
-            {
-                "semester_no": 2,
-                "yano": 2.74,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 85.0,
-                "given_courses": [
-                    {
-                        "courseCode": "PHYS1104",
-                        "grade": 4.0,
-                        "credit": 2,
-                        "letterGrade": "AA"
                     },
                     {
                         "courseCode": "MATH1002",
@@ -102,109 +114,111 @@
                         "letterGrade": "CC"
                     },
                     {
-                        "courseCode": "ATA122",
-                        "grade": 2.0,
-                        "credit": 2,
-                        "letterGrade": "CC"
+                        "courseCode": "MBG1201",
+                        "grade": 4.0,
+                        "credit": 5,
+                        "letterGrade": "AA"
                     },
                     {
                         "courseCode": "CSE1242",
+                        "grade": 2.5,
+                        "credit": 6,
+                        "letterGrade": "CB"
+                    },
+                    {
+                        "courseCode": "CSE2023",
                         "grade": 3.5,
                         "credit": 6,
                         "letterGrade": "BA"
                     },
                     {
-                        "courseCode": "MATH1001",
-                        "grade": 2.0,
-                        "credit": 6,
-                        "letterGrade": "CC"
-                    },
-                    {
-                        "courseCode": "CSE-NTE1",
-                        "grade": 4.0,
-                        "credit": 3,
-                        "letterGrade": "AA"
-                    },
-                    {
-                        "courseCode": "CSE1200",
-                        "grade": 2.0,
-                        "credit": 4,
-                        "letterGrade": "CC"
-                    },
-                    {
-                        "courseCode": "TRD122 ",
-                        "grade": 4.0,
+                        "courseCode": "PHYS1104",
+                        "grade": 3.5,
                         "credit": 2,
-                        "letterGrade": "AA"
+                        "letterGrade": "BA"
                     }
                 ],
                 "letter_grades": [
+                    "DD",
+                    "DD",
+                    "DD",
+                    "CC",
                     "AA",
-                    "CC",
-                    "CC",
+                    "CB",
                     "BA",
-                    "CC",
-                    "AA",
-                    "CC",
-                    "AA"
+                    "BA"
                 ]
             },
             {
                 "semester_no": 3,
-                "yano": 2.69,
-                "taken_credit": 34,
-                "completed_credit": 34,
-                "note": 91.5,
+                "yano": 2.64,
+                "taken_credit": 38,
+                "completed_credit": 38,
+                "note": 100.5,
                 "given_courses": [
                     {
-                        "courseCode": "CSE2260 ",
-                        "grade": 2.5,
-                        "credit": 6,
-                        "letterGrade": "CB"
-                    },
-                    {
                         "courseCode": "CSE2225 ",
-                        "grade": 2.5,
-                        "credit": 7,
-                        "letterGrade": "CB"
-                    },
-                    {
-                        "courseCode": "CSE2138",
                         "grade": 3.0,
                         "credit": 7,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "CSE2023",
-                        "grade": 3.0,
-                        "credit": 6,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "MATH2055 ",
-                        "grade": 3.0,
-                        "credit": 4,
                         "letterGrade": "BB"
                     },
                     {
                         "courseCode": "ECON2004 ",
+                        "grade": 4.0,
+                        "credit": 4,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "MATH2059 ",
                         "grade": 2.0,
                         "credit": 4,
                         "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "MATH1001",
+                        "grade": 3.5,
+                        "credit": 6,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "CSE2260 ",
+                        "grade": 3.5,
+                        "credit": 6,
+                        "letterGrade": "BA"
+                    },
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 2.0,
+                        "credit": 2,
+                        "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "TRD122 ",
+                        "grade": 3.0,
+                        "credit": 2,
+                        "letterGrade": "BB"
+                    },
+                    {
+                        "courseCode": "CSE2138",
+                        "grade": 0.5,
+                        "credit": 7,
+                        "letterGrade": "FD"
                     }
                 ],
                 "letter_grades": [
-                    "CB",
-                    "CB",
                     "BB",
+                    "AA",
+                    "CC",
+                    "BA",
+                    "BA",
+                    "CC",
                     "BB",
-                    "BB",
-                    "CC"
+                    "FD"
                 ]
             }
         ],
-        "cumulative_credit": 96
+        "cumulative_credit": 98
     },
-    "_advisor": "Dr. Ogr. Uyesi Betul Demiroz BOZ",
+    "_advisor": "Dr. Ogr. Uyesi Ali Haydar OZER",
     "_logs": []
 }

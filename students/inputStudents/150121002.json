@@ -13,55 +13,25 @@
         "letter_grades": []
     },
     "_transcript": {
-        "gpa": 1.87,
+        "gpa": 1.18,
         "semesters": [
             {
                 "semester_no": 1,
-                "yano": 1.87,
-                "taken_credit": 31,
-                "completed_credit": 31,
-                "note": 58.0,
+                "yano": 1.18,
+                "taken_credit": 25,
+                "completed_credit": 25,
+                "note": 29.5,
                 "given_courses": [
                     {
-                        "courseCode": "MBG1201",
-                        "grade": 0.0,
-                        "credit": 5,
-                        "letterGrade": "FF"
-                    },
-                    {
-                        "courseCode": "PHYS1103",
-                        "grade": 3.0,
-                        "credit": 2,
-                        "letterGrade": "BB"
+                        "courseCode": "CSE1241",
+                        "grade": 0.5,
+                        "credit": 6,
+                        "letterGrade": "FD"
                     },
                     {
                         "courseCode": "TRD121",
-                        "grade": 3.0,
-                        "credit": 2,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "CSE1241",
-                        "grade": 3.0,
-                        "credit": 6,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "MATH1001",
-                        "grade": 1.0,
-                        "credit": 6,
-                        "letterGrade": "DD"
-                    },
-                    {
-                        "courseCode": "ATA121",
-                        "grade": 3.0,
-                        "credit": 2,
-                        "letterGrade": "BB"
-                    },
-                    {
-                        "courseCode": "CSE1200",
                         "grade": 2.0,
-                        "credit": 4,
+                        "credit": 2,
                         "letterGrade": "CC"
                     },
                     {
@@ -69,22 +39,52 @@
                         "grade": 2.0,
                         "credit": 4,
                         "letterGrade": "CC"
+                    },
+                    {
+                        "courseCode": "PHYS1103",
+                        "grade": 0.0,
+                        "credit": 2,
+                        "letterGrade": "FF"
+                    },
+                    {
+                        "courseCode": "ATA121",
+                        "grade": 0.0,
+                        "credit": 2,
+                        "letterGrade": "FF"
+                    },
+                    {
+                        "courseCode": "CSE1200",
+                        "grade": 0.5,
+                        "credit": 4,
+                        "letterGrade": "FD"
+                    },
+                    {
+                        "courseCode": "ATA122",
+                        "grade": 4.0,
+                        "credit": 2,
+                        "letterGrade": "AA"
+                    },
+                    {
+                        "courseCode": "CSE-NTE1",
+                        "grade": 1.5,
+                        "credit": 3,
+                        "letterGrade": "DC"
                     }
                 ],
                 "letter_grades": [
-                    "FF",
-                    "BB",
-                    "BB",
-                    "BB",
-                    "DD",
-                    "BB",
+                    "FD",
                     "CC",
-                    "CC"
+                    "CC",
+                    "FF",
+                    "FF",
+                    "FD",
+                    "AA",
+                    "DC"
                 ]
             }
         ],
-        "cumulative_credit": 31
+        "cumulative_credit": 25
     },
-    "_advisor": "Doc. Dr. Borahan TUMER",
+    "_advisor": "Dr. Ogr. Uyesi Fatma Corut ERGIN",
     "_logs": []
 }
