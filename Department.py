@@ -8,17 +8,17 @@ class Department:
         self.advisor_list = []
 
     def add_student(self, student: Student, course: Course) -> bool:
-        if course.quota > len(course.enrolled_students):
-            course.enrolled_students.add(student.id)
+        if course.quota > len(course.enrolledStudents):
+            course.enrolledStudents.add(student.id)
             return True
         else:
             return False
 
     def search_student(self, student: Student, course: Course) -> bool:
-        return student.id in course.enrolled_students
+        return student.id in course.enrolledStudents
 
     def remove_student(self, student: Student, course: Course):
-        course.enrolled_students.remove(student.id)
+        course.enrolledStudents.remove(student.id)
 
     def get_student_list(self) -> List[Student]:
         return self.student_list

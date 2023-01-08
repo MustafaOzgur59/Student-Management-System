@@ -1,5 +1,5 @@
 class StudentSemester:
-    def __init__(self, semester_no:int):
+    def __init__(self, semester_no: int):
         self.semester_no = semester_no
         self.yano = None
         self.taken_credit = 0
@@ -46,9 +46,11 @@ class StudentSemester:
             elif course.grade == 4:
                 self.letter_grades.append("AA")
 
+
 @property
 def yano(self):
     return self.yano
+
 
 @yano.setter
 def yano(self, yano):
@@ -117,11 +119,11 @@ def letter_grades(self, letter_grades):
 
 def __str__(self):
     return "StudentSemester{" + \
-           "semesterNo=" + str(self.semester_no) + \
-           ", yano=" + str(self.yano) + \
-           ", takenCredit=" + str(self.taken_credit) + \
-           ", completedCredit=" + str(self.completed_credit) + \
-           ", note=" + str(self.note) + \
-           ", givenCourses=" + str(self.given_courses) + \
-           ", letterGrades=" + str(self.letter_grades) + \
-           '}'
+        "semesterNo=" + str(self.semester_no) + \
+        ", yano=" + str(self.yano) + \
+        ", takenCredit=" + str(self.taken_credit) + \
+        ", completedCredit=" + str(self.completed_credit) + \
+        ", note=" + str(self.note) + \
+        ", givenCourses=" + str(self.given_courses) + \
+        ", letterGrades=" + str(self.letter_grades) + \
+        '}'

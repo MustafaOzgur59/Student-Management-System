@@ -1,7 +1,9 @@
-from abc import ABC, abstractmethod
-from iteration3 import Person
+from abc import abstractmethod
 
-class FacultyMember(Person, ABC):
+from Person import Person
+
+
+class FacultyMember(Person):
     def __init__(self, name: str, id: str):
         super().__init__(name, id)
 
