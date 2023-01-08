@@ -3,12 +3,12 @@ from typing import List
 import logging
 from Course import Course
 from GivenCourse import GivenCourse
+from Person import Person
 
 
-class Instructor:
+class Instructor(Person):
     def __init__(self, name: str, id: str):
-        self.name = name
-        self.id = id
+        super().__init__(name, id)
         self.courses_offered_list = []
 
     def grade_students(self, student, course):
